@@ -28,7 +28,7 @@
       {{ if gt (len $cardTags) 0 }}
       <div class="flex flex-wrap gap-1.5 mt-1.5 relative z-20">
         {{ range $cardTags }}
-        <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}" class="inline-flex items-center px-2 py-0.5 rounded-full text-xs bg-blue-50 text-blue-600 dark:bg-blue-900/30 dark:text-blue-400" onclick="event.stopPropagation();">{{ . }}</a>
+        <a href="{{ "/Betzalels_Writings/tags/" }}{{ . | urlize }}" class="inline-flex items-center px-2 py-0.5 rounded-full text-xs bg-blue-50 text-blue-600 dark:bg-blue-900/30 dark:text-blue-400" onclick="event.stopPropagation();">{{ . }}</a>
         {{ end }}
       </div>
       {{ end }}
