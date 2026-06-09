@@ -1,0 +1,57 @@
+{{ $p := . }}
+{{ $isSection := $p.IsSection }}
+{{ $totalMin := 0 }}{{ $totalWords := 0 }}{{ $hasDate := false }}{{ $latestDate := time "1970-01-01T00:00:00Z" }}{{ $vc := len $p.Sections }}{{ $cc := 0 }}{{ $cardTags := slice }}
+{{ if $isSection }}
+  {{ $allEntries := $p.RegularPages }}{{ range $p.Sections }}{{ $allEntries = $allEntries | append .RegularPages }}{{ end }}{{ $cc = len $allEntries }}
+  {{ range $allEntries }}{{ $totalMin = add $totalMin .ReadingTime }}{{ $totalWords = add $totalWords .WordCount }}{{ $d := .Date }}{{ if $d.IsZero }}{{ with .File }}{{ with .FileInfo.ModTime }}{{ if not .IsZero }}{{ $d = . }}{{ end }}{{ end }}{{ end }}{{ end }}{{ if not $d.IsZero }}{{ if not $hasDate }}{{ $latestDate = $d }}{{ $hasDate = true }}{{ else }}{{ if $d.After $latestDate }}{{ $latestDate = $d }}{{ end }}{{ end }}{{ end }}{{ end }}
+  {{ $cardTags = $p.Params.tags | default slice }}{{ range $allEntries }}{{ with .Params.tags }}{{ $cardTags = $cardTags | append . }}{{ end }}{{ end }}{{ $cardTags = uniq $cardTags }}
+{{ else }}
+  {{ $totalMin = $p.ReadingTime }}{{ $totalWords = $p.WordCount }}{{ $d := $p.Date }}{{ if $d.IsZero }}{{ with $p.File }}{{ with .FileInfo.ModTime }}{{ if not .IsZero }}{{ $d = . }}{{ end }}{{ end }}{{ end }}{{ end }}{{ if not $d.IsZero }}{{ $latestDate = $d }}{{ $hasDate = true }}{{ end }}
+  {{ $cardTags = $p.Params.tags | default slice }}
+{{ end }}
+<div class="relative">
+  <a href="{{ $p.RelPermalink }}" class="absolute inset-0 z-10" aria-label="{{ $p.Title }}"></a>
+  <div class="bg-white dark:bg-slate-900 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 overflow-hidden group{{ if $isSection }} border-l-4 border-blue-300 dark:border-blue-600{{ end }}">
+    <div class="p-5">
+      {{ if $isSection }}
+      <div class="flex items-center gap-2 mb-1">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-blue-500 dark:text-blue-400 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z" />
+        </svg>
+        <span class="text-xs font-medium text-blue-600 dark:text-blue-400 uppercase tracking-wide">{{ $p.Params.badge | default "Section" }}</span>
+      </div>
+      {{ end }}
+      <h3 class="text-lg font-medium text-gray-800 dark:text-gray-100 group-hover:text-blue-600 transition-colors">{{ $p.Title }}</h3>
+      {{ with $p.Params.description }}
+        <p class="text-gray-600 dark:text-gray-300 text-sm mt-1 line-clamp-2">{{ . }}</p>
+      {{ end }}
+      {{ if gt (len $cardTags) 0 }}
+      <div class="flex flex-wrap gap-1.5 mt-1.5 relative z-20">
+        {{ range $cardTags }}
+        <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}" class="inline-flex items-center px-2 py-0.5 rounded-full text-xs bg-blue-50 text-blue-600 dark:bg-blue-900/30 dark:text-blue-400" onclick="event.stopPropagation();">{{ . }}</a>
+        {{ end }}
+      </div>
+      {{ end }}
+      <div class="flex items-center gap-3 text-xs text-gray-500 dark:text-gray-400 mt-2">
+        {{ if $hasDate }}
+          <time datetime="{{ $latestDate.Format "2006-01-02T15:04:05-07:00" }}">{{ $latestDate.Format "Jan 2, 2006" }}</time>
+        {{ end }}
+        {{ if gt $totalMin 0 }}<span>{{ $totalMin }} min read</span>{{ end }}
+        {{ if gt $totalWords 0 }}<span>{{ $totalWords }} words</span>{{ end }}
+        <span class="page-pv" data-bsz-path="{{ $p.RelPermalink }}">- views</span>
+        {{ if and $isSection (gt $vc 0) }}<span>{{ $vc }} {{ if eq $vc 1 }}volume{{ else }}volumes{{ end }}</span>{{ end }}
+        {{ if and $isSection (gt $cc 0) }}<span>{{ $cc }} {{ if eq $cc 1 }}chapter{{ else }}chapters{{ end }}</span>{{ end }}
+      </div>
+      {{ if not $isSection }}
+      <div class="mt-3">
+        <span class="inline-flex items-center text-blue-600 text-sm group-hover:translate-x-1 transition-transform duration-300">
+          Read more
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+          </svg>
+        </span>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</div>

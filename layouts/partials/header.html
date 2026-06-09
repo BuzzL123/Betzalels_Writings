@@ -1,0 +1,156 @@
+<div class="site-header flex items-center justify-between w-full">
+  <div class="site-title-wrap">
+    <a href="{{ "/" | relLangURL }}" class="site-title-link">
+      {{ .Site.Title }}
+    </a>
+  </div>
+
+  <div class="relative mx-2 hidden sm:block flex-1 max-w-xs">
+    <svg class="absolute left-2.5 top-1/2 -translate-y-1/2 h-4 w-4 text-gray-400 pointer-events-none" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <circle cx="11" cy="11" r="8" /><path d="M21 21l-4.35-4.35" />
+    </svg>
+    <input id="header-search-input" type="search" placeholder="Search..." autocomplete="off" class="w-full pl-8 pr-3 py-1.5 text-sm rounded-md border border-gray-200 dark:border-slate-700 bg-gray-50 dark:bg-slate-800 text-gray-800 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+    <div id="header-search-results" class="hidden absolute top-full left-0 right-0 mt-1 z-50 bg-white dark:bg-slate-900 rounded-lg shadow-lg border border-gray-200 dark:border-slate-700 max-h-96 overflow-y-auto"></div>
+  </div>
+
+  <div class="nav-desktop">
+    {{ partial "menu.html" (dict "menuID" "main" "page" .) }}
+  </div>
+
+  {{ $showDrafts := false }}
+  {{ with site.GetPage "/drafts" }}{{ if .RegularPagesRecursive }}{{ $showDrafts = true }}{{ end }}{{ end }}
+  {{ if $showDrafts }}
+    <a href="/drafts" class="nav-drafts-desktop">Drafts</a>
+  {{ end }}
+
+  <div class="nav-mobile">
+    <button id="nav-toggle-btn" class="nav-toggle-btn" aria-label="Toggle menu" aria-expanded="false">
+      <svg class="nav-icon-hamburger" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+      <svg class="nav-icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M6 18L18 6M6 6l12 12" />
+      </svg>
+    </button>
+    <div class="nav-mobile-backdrop"></div>
+    <div class="nav-mobile-drawer">
+      <nav>
+        {{ range site.Menus.main }}
+          <a href="{{ .URL }}" class="nav-mobile-link">{{ .Name }}</a>
+        {{ end }}
+        {{ if $showDrafts }}
+          <a href="/drafts" class="nav-mobile-link">Drafts</a>
+        {{ end }}
+      </nav>
+      <div class="mt-4 px-4 sm:hidden">
+        <input id="header-search-input-mobile" type="search" placeholder="Search..." autocomplete="off" class="w-full px-3 py-2 text-sm rounded-md border border-gray-200 dark:border-slate-700 bg-gray-50 dark:bg-slate-800 text-gray-800 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500">
+      </div>
+    </div>
+  </div>
+
+  <button id="theme-toggle" type="button" class="theme-toggle theme-toggle-btn" aria-label="Toggle dark mode" aria-pressed="false">
+    <svg class="icon-sun" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path d="M512 192c179.2 0 320 140.8 320 320s-140.8 320-320 320-320-140.8-320-320S332.8 192 512 192M512 128C300.8 128 128 300.8 128 512s172.8 384 384 384 384-172.8 384-384S723.2 128 512 128L512 128z" fill="currentColor"></path>
+      <path d="M544 416l236.8 0C774.4 403.2 768 384 761.6 371.2L544 371.2 544 416z" fill="currentColor"></path>
+      <path d="M544 608l0 44.8 217.6 0c6.4-12.8 12.8-32 19.2-44.8L544 608z" fill="currentColor"></path>
+      <path d="M544 723.2 544 768 640 768c25.6-12.8 44.8-25.6 64-44.8L544 723.2z" fill="currentColor"></path>
+      <path d="M800 492.8l-256 0 0 44.8 256 0c0-6.4 0-12.8 0-25.6S800 499.2 800 492.8z" fill="currentColor"></path>
+      <path d="M544 300.8 704 300.8c-19.2-19.2-38.4-32-64-44.8L544 256 544 300.8z" fill="currentColor"></path>
+    </svg>
+    <svg class="icon-moon" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path d="M512 832c-179.2 0-320-140.8-320-320s140.8-320 320-320 320 140.8 320 320S691.2 832 512 832M512 896c211.2 0 384-172.8 384-384s-172.8-384-384-384S128 300.8 128 512 300.8 896 512 896L512 896zM800 512c0-160-128-288-288-288l0 576C672 800 800 672 800 512zM480 608 243.2 608C249.6 620.8 256 640 262.4 652.8l217.6 0L480 608zM480 416 480 371.2 262.4 371.2C256 384 249.6 403.2 243.2 416L480 416zM480 300.8 480 256 384 256C358.4 268.8 339.2 281.6 320 300.8L480 300.8zM224 537.6l256 0L480 492.8l-256 0c0 6.4 0 12.8 0 19.2S224 524.8 224 537.6zM480 723.2 320 723.2c19.2 19.2 38.4 32 64 44.8l96 0L480 723.2z" fill="currentColor"></path>
+    </svg>
+  </button>
+</div>
+
+<script>
+(function() {
+  var searchInput = document.getElementById('header-search-input');
+  var searchInputMobile = document.getElementById('header-search-input-mobile');
+  var resultsEl = document.getElementById('header-search-results');
+
+  function highlight(text, query) {
+    if (!query || !text) return text;
+    var words = query.trim().split(/\s+/).filter(Boolean);
+    var result = text;
+    for (var w = 0; w < words.length; w++) {
+      var word = words[w].replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+      var re = new RegExp('(' + word + ')', 'gi');
+      result = result.replace(re, '<mark class="bg-yellow-200 dark:bg-yellow-700/40 rounded px-0.5">$1</mark>');
+    }
+    return result;
+  }
+
+  function doSearch(q) {
+    if (!window.__search) {
+      resultsEl.innerHTML = '<div class="p-3 text-sm text-gray-500">Loading...</div>';
+      resultsEl.classList.remove('hidden');
+      return;
+    }
+    if (!q.trim()) {
+      resultsEl.classList.add('hidden');
+      return;
+    }
+    var results = window.__search(q, 8);
+    if (!results.length) {
+      resultsEl.innerHTML = '<div class="p-3 text-sm text-gray-500 dark:text-gray-400">No results.</div>';
+      resultsEl.classList.remove('hidden');
+      return;
+    }
+    var html = '';
+    for (var i = 0; i < results.length; i++) {
+      var p = results[i];
+      var title = highlight(p.title, q);
+      var summary = p.summary ? highlight(p.summary, q) : '';
+      html += '<a href="' + p.url + '" class="block p-3 border-b border-gray-100 dark:border-slate-700 last:border-0 hover:bg-gray-50 dark:hover:bg-slate-800 transition-colors">';
+      html += '<div class="text-sm font-medium text-gray-800 dark:text-gray-100">' + title + '</div>';
+      if (summary) {
+        html += '<div class="text-xs text-gray-500 dark:text-gray-400 mt-0.5 line-clamp-1">' + summary + '</div>';
+      }
+      html += '</a>';
+    }
+    resultsEl.innerHTML = html;
+    resultsEl.classList.remove('hidden');
+  }
+
+  function handleInput(e) {
+    doSearch(e.target.value);
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener('input', handleInput);
+    searchInput.addEventListener('blur', function() {
+      setTimeout(function() { resultsEl.classList.add('hidden'); }, 200);
+    });
+    searchInput.addEventListener('focus', function() {
+      if (this.value.trim()) doSearch(this.value);
+    });
+  }
+
+  if (searchInputMobile) {
+    searchInputMobile.addEventListener('input', function(e) {
+      if (searchInput) {
+        searchInput.value = e.target.value;
+        doSearch(e.target.value);
+      }
+    });
+  }
+
+  var navBtn = document.getElementById('nav-toggle-btn');
+  var navBackdrop = document.querySelector('.nav-mobile-backdrop');
+
+  if (navBtn) {
+    navBtn.addEventListener('click', function() {
+      var isOpen = document.body.classList.toggle('nav-open');
+      this.setAttribute('aria-expanded', isOpen);
+    });
+  }
+
+  if (navBackdrop) {
+    navBackdrop.addEventListener('click', function() {
+      document.body.classList.remove('nav-open');
+      if (navBtn) navBtn.setAttribute('aria-expanded', 'false');
+    });
+  }
+})();
+</script>

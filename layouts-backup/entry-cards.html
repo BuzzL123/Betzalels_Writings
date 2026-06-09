@@ -1,0 +1,10 @@
+{{ range . }}
+  <a href="{{ .RelPermalink }}" class="section-card-link">
+    <article class="section-card">
+      <h2>{{ .Title | markdownify }}</h2>
+      {{ with .Params.description }}
+        <p>{{ . }}</p>
+      {{ end }}
+    </article>
+  </a>
+{{ end }}

@@ -1,0 +1,36 @@
+{{ define "main" }}
+  <div class="max-w-4xl mx-auto px-4 py-8">
+    <section class="mb-10">
+      <h1 class="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-4 relative after:block after:w-12 after:h-0.5 after:bg-blue-500 after:mt-2">{{ .Title | markdownify }}</h1>
+
+      {{ with .Params.description }}
+        <p class="text-gray-600 dark:text-gray-300 text-base mb-4">{{ . }}</p>
+      {{ end }}
+
+      {{ with .Content }}
+        <div class="text-gray-700 dark:text-gray-200 leading-7 mb-6">
+          {{ . }}
+        </div>
+      {{ end }}
+
+      {{ $entries := slice }}
+      {{ range .Sections }}
+        {{ $entries = $entries | append . }}
+      {{ end }}
+      {{ range .RegularPages }}
+        {{ $entries = $entries | append . }}
+      {{ end }}
+
+      {{ if gt (len $entries) 0 }}
+        {{ $paginator := .Paginate $entries }}
+        {{ partial "pagination.html" . }}
+        <div class="space-y-4 my-6">
+          {{ range $paginator.Pages }}
+            {{ partial "card.html" . }}
+          {{ end }}
+        </div>
+        {{ partial "pagination.html" . }}
+      {{ end }}
+    </section>
+  </div>
+{{ end }}

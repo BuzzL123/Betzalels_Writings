@@ -1,0 +1,18 @@
+<script>
+(function() {
+  var els = document.querySelectorAll('[data-bsz-path]');
+  if (!els.length) return;
+  var pending = els.length;
+  els.forEach(function(el) {
+    var path = el.getAttribute('data-bsz-path');
+    var cb = 'bsz_' + Math.random().toString(36).substr(2, 9);
+    window[cb] = function(d) {
+      el.textContent = (d.page_pv || 0) + ' views';
+      delete window[cb];
+    };
+    var s = document.createElement('script');
+    s.src = '//busuanzi.ibruce.info/busuanzi?jsonpCallback=' + cb + '&path=' + encodeURIComponent(path);
+    document.body.appendChild(s);
+  });
+})();
+</script>

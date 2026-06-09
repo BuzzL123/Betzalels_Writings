@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Tags on Betzalel&#39;s Writings</title>
+		<link>http://localhost:1313/tags/</link>
+		<description>Recent content in Tags on Betzalel&#39;s Writings</description>
+		<generator>Hugo</generator>
+		<language>en-us</language>
+		
+		
+		
+		
+			<atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Epic</title>
+				<link>http://localhost:1313/tags/epic/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/tags/epic/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Fantasy</title>
+				<link>http://localhost:1313/tags/fantasy/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/tags/fantasy/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Fiction</title>
+				<link>http://localhost:1313/tags/fiction/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/tags/fiction/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Mystery</title>
+				<link>http://localhost:1313/tags/mystery/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/tags/mystery/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Noir</title>
+				<link>http://localhost:1313/tags/noir/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/tags/noir/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Philosophy</title>
+				<link>http://localhost:1313/tags/philosophy/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/tags/philosophy/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Strategy</title>
+				<link>http://localhost:1313/tags/strategy/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/tags/strategy/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Writing</title>
+				<link>http://localhost:1313/tags/writing/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/tags/writing/</guid>
+				<description></description>
+			</item>
+	</channel>
+</rss>

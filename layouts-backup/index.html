@@ -1,0 +1,82 @@
+{{ define "main" }}
+  <style>
+    .content-section h1 {
+      margin-bottom: 1rem;
+    }
+    .section-card {
+      border: 2px solid var(--bg4);
+      border-radius: 0.8rem;
+      padding: 0.9rem;
+      margin-bottom: 1rem;
+      background-color: var(--bg1);
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    }
+    .section-card h2 {
+      margin: 0 0 0.4rem;
+      font-size: 1.1rem;
+    }
+    .section-card p {
+      margin: 0;
+      color: var(--fg2);
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+    .section-card-link {
+      display: block;
+      text-decoration: none;
+      color: inherit;
+    }
+  </style>
+
+  <div class="content-section">
+    <h1>{{ .Title | markdownify }}</h1>
+    {{ with .Params.description }}
+      <p class="single-subtitle">{{ . }}</p>
+    {{ end }}
+    {{ with .Content }}
+      <div>{{ . }}</div>
+    {{ end }}
+  </div>
+
+  <!-- Recent Essays: depth-2 pages + sub-folders -->
+  {{ $essayEntries := slice }}
+  {{ with site.GetPage "/essays" }}
+    {{ range .RegularPages }}
+      {{ $essayEntries = $essayEntries | append . }}
+    {{ end }}
+    {{ range .Sections }}
+      {{ $essayEntries = $essayEntries | append . }}
+    {{ end }}
+  {{ end }}
+  {{ if $essayEntries }}
+    <h2>Recent Essays</h2>
+    {{ partial "entry-cards.html" $essayEntries }}
+  {{ end }}
+
+  <!-- Recent Novels: sub-folders only -->
+  {{ $novelEntries := slice }}
+  {{ with site.GetPage "/novels" }}
+    {{ range .Sections }}
+      {{ $novelEntries = $novelEntries | append . }}
+    {{ end }}
+  {{ end }}
+  {{ if $novelEntries }}
+    <h2>Recent Novels</h2>
+    {{ partial "entry-cards.html" $novelEntries }}
+  {{ end }}
+
+  <!-- Drafts: depth-2 pages + sub-folders -->
+  {{ $draftEntries := slice }}
+  {{ with site.GetPage "/drafts" }}
+    {{ range .RegularPages }}
+      {{ $draftEntries = $draftEntries | append . }}
+    {{ end }}
+    {{ range .Sections }}
+      {{ $draftEntries = $draftEntries | append . }}
+    {{ end }}
+  {{ end }}
+  {{ if $draftEntries }}
+    <h2>Drafts</h2>
+    {{ partial "entry-cards.html" $draftEntries }}
+  {{ end }}
+{{ end }}

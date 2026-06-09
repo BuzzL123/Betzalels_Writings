@@ -1,0 +1,2368 @@
+Watching for changes in C:/Users/Buzz/bjlessays/archetypes, C:/Users/Buzz/bjlessays/assets, C:/Users/Buzz/bjlessays/content/articles, C:/Users/Buzz/bjlessays/data, C:/Users/Buzz/bjlessays/hugo_stats.json, C:/Users/Buzz/bjlessays/i18n, C:/Users/Buzz/bjlessays/layouts, C:/Users/Buzz/bjlessays/node_modules/@tabler/icons/icons/{filled,outline}, C:/Users/Buzz/bjlessays/node_modules/prism-themes/themes, C:/Users/Buzz/bjlessays/node_modules/prismjs/{components,plugins,themes}, ... and 6 more
+Watching for config changes in C:\Users\Buzz\bjlessays\hugo.toml, C:\Users\Buzz\bjlessays\go.mod
+Start building sites … 
+hugo v0.162.1-bba860e3eda3091efe8c6d1a96bc49a29ad2d5f6+extended windows/amd64 BuildDate=2026-05-28T17:40:44Z VendorInfo=gohugoio
+
+
+                  │ DE │ EN 
+──────────────────┼────┼────
+ Pages            │  9 │ 43 
+ Paginator pages  │  0 │  7 
+ Non-page files   │  0 │  1 
+ Static files     │ 45 │ 45 
+ Processed images │  0 │  0 
+ Aliases          │  3 │ 10 
+ Cleaned          │  0 │  0 
+
+Built in 1603 ms
+Environment: "development"
+Serving pages from disk
+Running in Fast Render Mode. For full rebuilds on change: hugo server --disableFastRender
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1) 
+Press Ctrl+C to stop
+
+Change detected, rebuilding site (#1).
+2026-06-08 17:44:45.281 +0300
+Source changed /articles/drafts/essays/infective-vs-effective-thinking/the-infectious-disease-of-the-modern-left/everyone's-depressed;-why-modernity-leads-to-depression-(and-what-actually-fixes-it)-v0.3.md
+Source changed /articles/drafts/essays/infective-vs-effective-thinking/everyone's-depressed-(why-modernity-leads-to-depression)/everyone's-depressed;-why-modernity-leads-to-depression-(and-what-actually-fixes-it)-v0.3.md
+Source changed /articles/drafts/essays/infective-vs-effective-thinking/the-infectious-disease-of-the-modern-left
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 1671 ms
+adding created directory to watchlist C:\Users\Buzz\bjlessays\layouts\articles
+
+Change detected, rebuilding site (#2).
+2026-06-08 17:45:06.781 +0300
+Template added /articles/list.html
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 1698 ms
+
+Change detected, rebuilding site (#3).
+2026-06-08 17:45:44.780 +0300
+Source changed /articles/readme.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 866 ms
+
+Change detected, rebuilding site (#4).
+2026-06-08 17:46:00.780 +0300
+Source changed /articles/readme.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 876 ms
+adding created directory to watchlist C:\Users\Buzz\bjlessays\content\articles\Essays
+adding created directory to watchlist C:\Users\Buzz\bjlessays\content\articles\Essays\Infective vs effective thinking
+adding created directory to watchlist C:\Users\Buzz\bjlessays\content\articles\Essays\Infective vs effective thinking\Truth versus Ideals and Religion as a Vaccine
+adding created directory to watchlist C:\Users\Buzz\bjlessays\content\articles\Essays\Pleasure Over Purpose
+
+Change detected, rebuilding site (#5).
+2026-06-08 17:59:48.781 +0300
+Source changed /articles/essays
+Source changed /articles
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 1587 ms
+
+Change detected, rebuilding site (#6).
+2026-06-08 18:00:03.780 +0300
+Source changed /articles/drafts/essays/pleasure-over-purpose/pleasure-over-purpose.md
+Source changed /articles/essays/pleasure-over-purpose/pleasure-over-purpose.md
+Source changed /articles/drafts/essays/pleasure-over-purpose
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 1549 ms
+
+Change detected, rebuilding site (#7).
+2026-06-08 18:00:06.886 +0300
+Source changed /articles/drafts/essays/infective-vs-effective-thinking/truth-versus-ideals-and-religion-as-a-vaccine/truth-versus-ideals-and-religion-as-a-vaccine-v0.md
+Source changed /articles/essays/infective-vs-effective-thinking/truth-versus-ideals-and-religion-as-a-vaccine/truth-versus-ideals-and-religion-as-a-vaccine-v0.md
+Source changed /articles/drafts/essays/infective-vs-effective-thinking/truth-versus-ideals-and-religion-as-a-vaccine
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 1547 ms
+adding created directory to watchlist C:\Users\Buzz\bjlessays\content\articles\Essays\Infective vs effective thinking\The Infectious Disease of the Modern Left
+adding created directory to watchlist C:\Users\Buzz\bjlessays\content\articles\Essays\Infective vs effective thinking\Everyone's Depressed (Why Modernity Leads to Depression)
+adding created directory to watchlist C:\Users\Buzz\bjlessays\content\articles\Essays\Infective vs effective thinking\Demonizing Institutions and Normalizing the Unnormalized
+adding created directory to watchlist C:\Users\Buzz\bjlessays\content\articles\Projects
+adding created directory to watchlist C:\Users\Buzz\bjlessays\content\articles\Projects\Drone Swarm
+adding created directory to watchlist C:\Users\Buzz\bjlessays\content\articles\Jab!
+adding created directory to watchlist C:\Users\Buzz\bjlessays\content\articles\Jab!\Game Dev
+adding created directory to watchlist C:\Users\Buzz\bjlessays\content\articles\Jab!\Game Dev\JAB!
+adding created directory to watchlist C:\Users\Buzz\bjlessays\content\articles\Jab!\Game Dev\JAB!\diary
+
+Change detected, rebuilding site (#8).
+2026-06-08 18:00:25.783 +0300
+Source changed /articles/essays/infective-vs-effective-thinking/demonizing-institutions-and-normalizing-the-unnormalized
+Source changed /articles/essays/infective-vs-effective-thinking/everyone's-depressed-(why-modernity-leads-to-depression)
+Source changed /articles/essays/infective-vs-effective-thinking/the-infectious-disease-of-the-modern-left
+Source changed /articles/jab!
+Source changed /articles/projects
+Source changed /articles
+Source changed /articles/essays/infective-vs-effective-thinking
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 1519 ms
+
+Change detected, rebuilding site (#9).
+2026-06-08 18:00:28.847 +0300
+Source changed /articles/essays/infective-vs-effective-thinking
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 801 ms
+
+Change detected, rebuilding site (#10).
+2026-06-08 18:00:31.171 +0300
+Source changed /articles/drafts/essays/infective-vs-effective-thinking/the-infectious-disease-of-the-modern-left/the-infectious-disease-of-the-modern-left-v0.3.1.md
+Source changed /articles/essays/infective-vs-effective-thinking/the-infectious-disease-of-the-modern-left/the-infectious-disease-of-the-modern-left-v0.3.1.md
+Source changed /articles/drafts/essays/infective-vs-effective-thinking/the-infectious-disease-of-the-modern-left
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 1549 ms
+
+Change detected, rebuilding site (#11).
+2026-06-08 18:00:34.418 +0300
+Source changed /articles/drafts/essays/infective-vs-effective-thinking/everyone's-depressed-(why-modernity-leads-to-depression)/everyone's-depressed;-why-modernity-leads-to-depression-(and-what-actually-fixes-it)-v0.3.md
+Source changed /articles/essays/infective-vs-effective-thinking/everyone's-depressed-(why-modernity-leads-to-depression)/everyone's-depressed;-why-modernity-leads-to-depression-(and-what-actually-fixes-it)-v0.3.md
+Source changed /articles/drafts/essays/infective-vs-effective-thinking/everyone's-depressed-(why-modernity-leads-to-depression)
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 1536 ms
+
+Change detected, rebuilding site (#12).
+2026-06-08 18:00:37.527 +0300
+Source changed /articles/drafts/essays/infective-vs-effective-thinking/demonizing-institutions-and-normalizing-the-unnormalized/demonizing-institutions-and-normalizing-the-unnormalized-v0.1.md
+Source changed /articles/essays/infective-vs-effective-thinking/demonizing-institutions-and-normalizing-the-unnormalized/demonizing-institutions-and-normalizing-the-unnormalized-v0.1.md
+Source changed /articles/drafts/essays/infective-vs-effective-thinking/demonizing-institutions-and-normalizing-the-unnormalized
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 1556 ms
+
+Change detected, rebuilding site (#13).
+2026-06-08 18:00:40.619 +0300
+Source changed /articles/drafts/projects/drone-swarm/drone-swarm-project-—-design-notes-v4.0.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 1578 ms
+
+Change detected, rebuilding site (#14).
+2026-06-08 18:00:43.764 +0300
+Source changed /articles/drafts/jab!/game-dev/jab!/diary/2025-04-27.md
+Source changed /articles/drafts/jab!/welcome.md
+Source changed /articles/jab!/game-dev/jab!/diary/2025-04-27.md
+Source changed /articles/jab!/welcome.md
+Source changed /articles/projects/drone-swarm/drone-swarm-project-—-design-notes-v4.0.md
+Source changed /articles/drafts/jab!
+Source changed /articles/drafts/jab!/game-dev/jab!/diary
+Source changed /articles/drafts/projects/drone-swarm
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 1527 ms
+
+Change detected, rebuilding site (#15).
+2026-06-08 18:00:53.280 +0300
+Source changed /articles/essays/pleasure-over-purpose/pleasure-over-purpose.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 780 ms
+
+Change detected, rebuilding site (#16).
+2026-06-08 18:00:54.842 +0300
+Source changed /articles/essays/infective-vs-effective-thinking/truth-versus-ideals-and-religion-as-a-vaccine/truth-versus-ideals-and-religion-as-a-vaccine-v0.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 802 ms
+
+Change detected, rebuilding site (#17).
+2026-06-08 18:00:56.462 +0300
+Source changed /articles/essays/infective-vs-effective-thinking/the-infectious-disease-of-the-modern-left/the-infectious-disease-of-the-modern-left-v0.3.1.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 820 ms
+
+Change detected, rebuilding site (#18).
+2026-06-08 18:00:58.122 +0300
+Source changed /articles/essays/infective-vs-effective-thinking/everyone's-depressed-(why-modernity-leads-to-depression)/everyone's-depressed;-why-modernity-leads-to-depression-(and-what-actually-fixes-it)-v0.3.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 827 ms
+
+Change detected, rebuilding site (#19).
+2026-06-08 18:00:59.794 +0300
+Source changed /articles/essays/infective-vs-effective-thinking/demonizing-institutions-and-normalizing-the-unnormalized/demonizing-institutions-and-normalizing-the-unnormalized-v0.1.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 843 ms
+
+Change detected, rebuilding site (#20).
+2026-06-08 18:01:01.450 +0300
+Source changed /articles/jab!/game-dev/jab!/diary/2025-04-27.md
+Source changed /articles/jab!/welcome.md
+Source changed /articles/projects/drone-swarm/drone-swarm-project-—-design-notes-v4.0.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 811 ms
+
+Change detected, rebuilding site (#21).
+2026-06-08 18:02:40.280 +0300
+Source changed /articles/essays/infective-vs-effective-thinking/everyone's-depressed-(why-modernity-leads-to-depression)/everyone's-depressed;-why-modernity-leads-to-depression-(and-what-actually-fixes-it)-v0.3.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 829 ms
+
+Change detected, rebuilding site (#22).
+2026-06-08 18:02:41.896 +0300
+Source changed /articles/projects/drone-swarm/drone-swarm-project-—-design-notes-v4.0.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 798 ms
+
+Change detected, rebuilding site (#23).
+2026-06-08 18:13:50.779 +0300
+Template changed /articles/list.html
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 27 ms
+
+Change detected, rebuilding site (#24).
+2026-06-08 18:46:15.783 +0300
+Source changed /articles/essays/_index.md
+Source changed /articles/essays/infective-vs-effective-thinking/_index.md
+Source changed /articles/essays/infective-vs-effective-thinking/demonizing-institutions-and-normalizing-the-unnormalized/_index.md
+Source changed /articles/essays/infective-vs-effective-thinking/demonizing-institutions-and-normalizing-the-unnormalized/demonizing-institutions-and-normalizing-the-unnormalized-v0.1.md
+Source changed /articles/essays/infective-vs-effective-thinking/everyone's-depressed-(why-modernity-leads-to-depression)/_index.md
+Source changed /articles/essays/infective-vs-effective-thinking/everyone's-depressed-(why-modernity-leads-to-depression)/everyone's-depressed;-why-modernity-leads-to-depression-(and-what-actually-fixes-it)-v0.3.md
+Source changed /articles/essays/infective-vs-effective-thinking/the-infectious-disease-of-the-modern-left/_index.md
+Source changed /articles/essays/infective-vs-effective-thinking/the-infectious-disease-of-the-modern-left/the-infectious-disease-of-the-modern-left-v0.3.1.md
+Source changed /articles/essays/infective-vs-effective-thinking/truth-versus-ideals-and-religion-as-a-vaccine/_index.md
+Source changed /articles/essays/infective-vs-effective-thinking/truth-versus-ideals-and-religion-as-a-vaccine/truth-versus-ideals-and-religion-as-a-vaccine-v0.md
+Source changed /articles/essays/pleasure-over-purpose/_index.md
+Source changed /articles/essays/pleasure-over-purpose/pleasure-over-purpose.md
+Source changed /articles/jab!/_index.md
+Source changed /articles/jab!/game-dev/_index.md
+Source changed /articles/jab!/game-dev/jab!/_index.md
+Source changed /articles/jab!/game-dev/jab!/diary/_index.md
+Source changed /articles/jab!/game-dev/jab!/diary/2025-04-27.md
+Source changed /articles/jab!/welcome.md
+Source changed /articles/projects/_index.md
+Source changed /articles/projects/drone-swarm/_index.md
+Source changed /articles/projects/drone-swarm/drone-swarm-project-—-design-notes-v4.0.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 1389 ms
+adding created directory to watchlist C:\Users\Buzz\bjlessays\content\drafts
+adding created directory to watchlist C:\Users\Buzz\bjlessays\content\drafts\Essays
+adding created directory to watchlist C:\Users\Buzz\bjlessays\content\drafts\Essays\Infective vs effective thinking
+adding created directory to watchlist C:\Users\Buzz\bjlessays\content\drafts\Essays\Infective vs effective thinking\Demonizing Institutions and Normalizing the Unnormalized
+adding created directory to watchlist C:\Users\Buzz\bjlessays\content\drafts\Essays\Infective vs effective thinking\Demonizing Institutions and Normalizing the Unnormalized\Drafts
+adding created directory to watchlist C:\Users\Buzz\bjlessays\content\drafts\Essays\Infective vs effective thinking\Everyone's Depressed (Why Modernity Leads to Depression)
+adding created directory to watchlist C:\Users\Buzz\bjlessays\content\drafts\Essays\Infective vs effective thinking\Everyone's Depressed (Why Modernity Leads to Depression)\Drafts
+adding created directory to watchlist C:\Users\Buzz\bjlessays\content\drafts\Essays\Infective vs effective thinking\The Infectious Disease of the Modern Left
+adding created directory to watchlist C:\Users\Buzz\bjlessays\content\drafts\Essays\Infective vs effective thinking\The Infectious Disease of the Modern Left\Drafts
+adding created directory to watchlist C:\Users\Buzz\bjlessays\content\drafts\Essays\Infective vs effective thinking\Truth versus Ideals and Religion as a Vaccine
+adding created directory to watchlist C:\Users\Buzz\bjlessays\content\drafts\Essays\Pleasure Over Purpose
+adding created directory to watchlist C:\Users\Buzz\bjlessays\content\drafts\Jab!
+adding created directory to watchlist C:\Users\Buzz\bjlessays\content\drafts\Jab!\Game Dev
+adding created directory to watchlist C:\Users\Buzz\bjlessays\content\drafts\Jab!\Game Dev\JAB!
+adding created directory to watchlist C:\Users\Buzz\bjlessays\content\drafts\Jab!\Game Dev\JAB!\diary
+adding created directory to watchlist C:\Users\Buzz\bjlessays\content\drafts\Projects
+adding created directory to watchlist C:\Users\Buzz\bjlessays\content\drafts\Projects\Drone Swarm
+adding created directory to watchlist C:\Users\Buzz\bjlessays\content\drafts\Projects\Untitled
+
+Change detected, rebuilding site (#25).
+2026-06-08 18:58:32.786 +0300
+Source changed /drafts/essays/infective-vs-effective-thinking/demonizing-institutions-and-normalizing-the-unnormalized/drafts/demonizing-institutions-and-normalizing-the-unnormalized-v0.md
+Source changed /drafts/essays/infective-vs-effective-thinking/everyone's-depressed-(why-modernity-leads-to-depression)/drafts/everyone's-depressed-(why-modernity-leads-to-depression)-v0.md
+Source changed /drafts/essays/infective-vs-effective-thinking/everyone's-depressed-(why-modernity-leads-to-depression)/drafts/everyone's-depressed;-why-modernity-leads-to-depression-(and-what-actually-fixes-it)-v0.1.md
+Source changed /drafts/essays/infective-vs-effective-thinking/everyone's-depressed-(why-modernity-leads-to-depression)/drafts/everyone's-depressed;-why-modernity-leads-to-depression-(and-what-actually-fixes-it)-v0.2.md
+Source changed /drafts/essays/infective-vs-effective-thinking/the-infectious-disease-of-the-modern-left/drafts/the-infectious-disease-of-the-modern-left-v0.1.md
+Source changed /drafts/essays/infective-vs-effective-thinking/the-infectious-disease-of-the-modern-left/drafts/the-infectious-disease-of-the-modern-left-v0.2.md
+Source changed /drafts/essays/infective-vs-effective-thinking/the-infectious-disease-of-the-modern-left/drafts/the-infectious-disease-of-the-modern-left-v0.3.md
+Source changed /drafts/essays/infective-vs-effective-thinking/the-infectious-disease-of-the-modern-left/drafts/the-infectious-disease-of-the-modern-left-v0.md
+Source changed /drafts/essays/untitled.md
+Source changed /drafts/projects/drone-swarm/drone-swarm-project-—-design-notes-v2.md
+Source changed /drafts/projects/drone-swarm/drone-swarm-project-—-design-notes-v3.1.md
+Source changed /drafts/projects/drone-swarm/drone-swarm-project-—-design-notes-v3.md
+Source changed /drafts/projects/untitled.md
+Source changed /drafts/projects/untitled/pasted-image-20260323163455.png
+Source changed /drafts/projects/untitled/untitled.md
+Source changed /drafts/_index.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 1440 ms
+
+Change detected, rebuilding site (#26).
+2026-06-08 18:58:34.227 +0300
+Source changed /drafts/essays/infective-vs-effective-thinking/the-infectious-disease-of-the-modern-left
+Source changed /drafts/jab!/game-dev
+Source changed /drafts/jab!/game-dev/jab!
+Source changed /drafts/projects/drone-swarm
+Source changed /drafts/projects/untitled
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 715 ms
+
+Change detected, rebuilding site (#27).
+2026-06-08 18:59:59.280 +0300
+Source changed /drafts/essays/infective-vs-effective-thinking/truth-versus-ideals-and-religion-as-a-vaccine/_index.md
+Source changed /drafts/essays/pleasure-over-purpose/_index.md
+Source changed /drafts/jab!/game-dev/jab!/diary/_index.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 1366 ms
+
+Change of config file detected, rebuilding site (#28).
+2026-06-08 19:01:42.779 +0300
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Rebuilt in 1511 ms
+
+Change of config file detected, rebuilding site (#29).
+2026-06-08 19:02:13.779 +0300
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Rebuilt in 2840 ms
+
+Change detected, rebuilding site (#30).
+2026-06-08 19:07:49.141 +0300
+Template changed /articles/list.html
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 41 ms
+
+Change detected, rebuilding site (#31).
+2026-06-08 19:07:55.640 +0300
+Template changed /articles/list.html
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 18 ms
+
+Change detected, rebuilding site (#32).
+2026-06-08 19:09:02.141 +0300
+Template changed /articles/list.html
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 24 ms
+
+Change detected, rebuilding site (#33).
+2026-06-08 19:09:11.640 +0300
+Template changed /articles/list.html
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 18 ms
+adding created directory to watchlist C:\Users\Buzz\bjlessays\layouts\drafts
+
+Change detected, rebuilding site (#34).
+2026-06-08 19:15:11.270 +0300
+Template added /drafts/list.html
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 1327 ms
+
+Change detected, rebuilding site (#35).
+2026-06-08 19:16:37.143 +0300
+Template changed /drafts/list.html
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 6 ms
+adding created directory to watchlist C:\Users\Buzz\bjlessays\layouts\_default
+
+Change detected, rebuilding site (#36).
+2026-06-08 19:25:22.641 +0300
+Template changed /_default/list.html
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 1385 ms
+adding created directory to watchlist C:\Users\Buzz\bjlessays\content\essays
+adding created directory to watchlist C:\Users\Buzz\bjlessays\content\novels
+
+Change detected, rebuilding site (#37).
+2026-06-08 19:25:27.300 +0300
+Source changed /essays/_index.md
+Source changed /essays/first-essay.md
+Source changed /novels/_index.md
+Template changed /_default/single.html
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 1356 ms
+adding created directory to watchlist C:\Users\Buzz\bjlessays\content\novels\the-long-game
+
+Change detected, rebuilding site (#38).
+2026-06-08 19:25:30.730 +0300
+Source changed /novels/the-long-game/_index.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 1407 ms
+
+Change detected, rebuilding site (#39).
+2026-06-08 19:25:35.433 +0300
+Source changed /novels/the-long-game
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 679 ms
+
+Change detected, rebuilding site (#40).
+2026-06-08 19:25:36.803 +0300
+Source changed /novels
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 696 ms
+
+Change detected, rebuilding site (#41).
+2026-06-08 19:25:39.050 +0300
+Source changed /novels/the-long-game/chapter-1.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 1334 ms
+
+Change detected, rebuilding site (#42).
+2026-06-08 19:25:42.775 +0300
+Source changed /novels/the-long-game
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 677 ms
+
+Change detected, rebuilding site (#43).
+2026-06-08 19:25:44.984 +0300
+Source changed /novels/the-long-game/chapter-2.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 1327 ms
+
+Change detected, rebuilding site (#44).
+2026-06-08 19:25:48.735 +0300
+Source changed /novels/the-long-game
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 690 ms
+adding created directory to watchlist C:\Users\Buzz\bjlessays\content\novels\winter-city
+
+Change detected, rebuilding site (#45).
+2026-06-08 19:25:50.941 +0300
+Source changed /novels/winter-city/_index.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 1331 ms
+
+Change detected, rebuilding site (#46).
+2026-06-08 19:25:54.701 +0300
+Source changed /novels/winter-city
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 717 ms
+
+Change detected, rebuilding site (#47).
+2026-06-08 19:25:56.957 +0300
+Source changed /novels
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 694 ms
+
+Change detected, rebuilding site (#48).
+2026-06-08 19:25:59.895 +0300
+Source changed /novels/winter-city/chapter-1.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 1399 ms
+
+Change detected, rebuilding site (#49).
+2026-06-08 19:26:03.023 +0300
+Source changed /novels/winter-city
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 674 ms
+adding created directory to watchlist C:\Users\Buzz\bjlessays\content\projects
+
+Change detected, rebuilding site (#50).
+2026-06-08 19:26:06.525 +0300
+Source changed /projects/_index.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 1349 ms
+adding created directory to watchlist C:\Users\Buzz\bjlessays\content\ideas
+
+Change detected, rebuilding site (#51).
+2026-06-08 19:26:10.126 +0300
+Source changed /ideas/_index.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 1330 ms
+
+Change of config file detected, rebuilding site (#52).
+2026-06-08 19:26:11.456 +0300
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Rebuilt in 3047 ms
+
+Change detected, rebuilding site (#53).
+2026-06-08 19:26:15.899 +0300
+Source changed /projects/rp2040-tracker.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 1392 ms
+
+Change detected, rebuilding site (#54).
+2026-06-08 19:26:20.141 +0300
+Source changed /ideas/thinking-pad.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 1388 ms
+
+Change of config file detected, rebuilding site (#55).
+2026-06-08 19:29:19.983 +0300
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Rebuilt in 2973 ms
+
+Change detected, rebuilding site (#56).
+2026-06-08 19:43:46.141 +0300
+Template changed /_default/list.html
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 62 ms
+
+Change detected, rebuilding site (#57).
+2026-06-08 19:43:52.641 +0300
+Source changed /_index.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 1359 ms
+
+Change detected, rebuilding site (#58).
+2026-06-08 19:43:56.604 +0300
+Source changed /_index.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 695 ms
+
+Change detected, rebuilding site (#59).
+2026-06-08 19:44:01.141 +0300
+Template changed /index.html
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 1329 ms
+
+Change detected, rebuilding site (#60).
+2026-06-08 19:45:39.642 +0300
+Source changed /_index.md
+Template changed /_default/list.html
+Template changed /index.html
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 727 ms
+
+Change detected, rebuilding site (#61).
+2026-06-08 19:46:52.513 +0300
+Template changed /articles/list.html
+Template changed /drafts/list.html
+Template changed /index.html
+Template added /articles
+Template added /drafts
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 1320 ms
+
+Change detected, rebuilding site (#62).
+2026-06-08 19:48:04.140 +0300
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Rebuilt in 1551 ms
+
+Change detected, rebuilding site (#63).
+2026-06-08 19:52:30.641 +0300
+Template changed /_default/list.html
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 56 ms
+
+Change detected, rebuilding site (#64).
+2026-06-08 19:53:21.641 +0300
+Template changed /_default/list.html
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 29 ms
+
+Change detected, rebuilding site (#65).
+2026-06-08 19:54:54.641 +0300
+Template changed /_default/list.html
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 37 ms
+
+Change detected, rebuilding site (#66).
+2026-06-08 19:56:05.129 +0300
+Template changed /index.html
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 1292 ms
+
+Change detected, rebuilding site (#67).
+2026-06-08 19:56:08.132 +0300
+Template changed /_default/list.html
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 37 ms
+
+Change detected, rebuilding site (#68).
+2026-06-08 19:59:29.641 +0300
+Template changed /index.html
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 9 ms
+
+Change detected, rebuilding site (#69).
+2026-06-08 20:02:47.641 +0300
+Source changed /drafts/essays/infective-vs-effective-thinking/everyone's-depressed-(why-modernity-leads-to-depression)/drafts/everyone's-depressed;-why-modernity-leads-to-depression-(and-what-actually-fixes-it)-v0.2.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 699 ms
+
+Change detected, rebuilding site (#70).
+2026-06-08 20:03:31.291 +0300
+Source changed /drafts/essays/infective-vs-effective-thinking/everyone's-depressed-(why-modernity-leads-to-depression)/drafts/everyone's-depressed;-why-modernity-leads-to-depression-(and-what-actually-fixes-it)-v0.2.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 686 ms
+
+Change detected, rebuilding site (#71).
+2026-06-08 20:05:06.140 +0300
+Template changed /_default/list.html
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 36 ms
+
+Change detected, rebuilding site (#72).
+2026-06-08 20:05:51.141 +0300
+Template changed /_default/list.html
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 30 ms
+
+Change detected, rebuilding site (#73).
+2026-06-08 20:14:22.641 +0300
+Source changed /drafts/_index.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 705 ms
+
+Change detected, rebuilding site (#74).
+2026-06-08 20:14:52.141 +0300
+Source changed /drafts/_index.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 673 ms
+
+Change detected, rebuilding site (#75).
+2026-06-08 20:24:03.641 +0300
+Template changed /_default/single.html
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 17 ms
+
+Change detected, rebuilding site (#76).
+2026-06-08 20:24:32.641 +0300
+Template changed /_default/single.html
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 18 ms
+
+Change detected, rebuilding site (#77).
+2026-06-08 20:25:48.641 +0300
+Template changed /_default/single.html
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 15 ms
+
+Change detected, rebuilding site (#78).
+2026-06-08 20:26:15.141 +0300
+Template changed /_default/single.html
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 17 ms
+
+Change detected, rebuilding site (#79).
+2026-06-08 21:32:31.486 +0300
+Source changed /drafts/jab!/game-dev/jab!/diary/_index.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 1336 ms
+
+Change detected, rebuilding site (#80).
+2026-06-08 21:32:41.792 +0300
+Source changed /drafts/jab!/game-dev/jab!
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 684 ms
+
+Change detected, rebuilding site (#81).
+2026-06-08 21:33:17.642 +0300
+Source changed /drafts/jab!/_index.md
+Source changed /drafts/jab!/game-dev/_index.md
+Source changed /drafts/jab!/game-dev/jab!/_index.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 1387 ms
+
+Change detected, rebuilding site (#82).
+2026-06-08 21:33:25.141 +0300
+Source changed /drafts
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 717 ms
+
+Change detected, rebuilding site (#83).
+2026-06-08 21:33:34.488 +0300
+Source changed /drafts/essays/_index.md
+Source changed /drafts/essays/infective-vs-effective-thinking/_index.md
+Source changed /drafts/essays/infective-vs-effective-thinking/demonizing-institutions-and-normalizing-the-unnormalized/_index.md
+Source changed /drafts/essays/infective-vs-effective-thinking/demonizing-institutions-and-normalizing-the-unnormalized/drafts/_index.md
+Source changed /drafts/essays/infective-vs-effective-thinking/demonizing-institutions-and-normalizing-the-unnormalized/drafts/demonizing-institutions-and-normalizing-the-unnormalized-v0.md
+Source changed /drafts/essays/infective-vs-effective-thinking/everyone's-depressed-(why-modernity-leads-to-depression)/_index.md
+Source changed /drafts/essays/infective-vs-effective-thinking/everyone's-depressed-(why-modernity-leads-to-depression)/drafts/_index.md
+Source changed /drafts/essays/infective-vs-effective-thinking/everyone's-depressed-(why-modernity-leads-to-depression)/drafts/everyone's-depressed-(why-modernity-leads-to-depression)-v0.md
+Source changed /drafts/essays/infective-vs-effective-thinking/everyone's-depressed-(why-modernity-leads-to-depression)/drafts/everyone's-depressed;-why-modernity-leads-to-depression-(and-what-actually-fixes-it)-v0.1.md
+Source changed /drafts/essays/infective-vs-effective-thinking/everyone's-depressed-(why-modernity-leads-to-depression)/drafts/everyone's-depressed;-why-modernity-leads-to-depression-(and-what-actually-fixes-it)-v0.2.md
+Source changed /drafts/essays/infective-vs-effective-thinking/the-infectious-disease-of-the-modern-left/_index.md
+Source changed /drafts/essays/infective-vs-effective-thinking/the-infectious-disease-of-the-modern-left/drafts/_index.md
+Source changed /drafts/essays/infective-vs-effective-thinking/the-infectious-disease-of-the-modern-left/drafts/the-infectious-disease-of-the-modern-left-v0.1.md
+Source changed /drafts/essays/infective-vs-effective-thinking/the-infectious-disease-of-the-modern-left/drafts/the-infectious-disease-of-the-modern-left-v0.2.md
+Source changed /drafts/essays/infective-vs-effective-thinking/the-infectious-disease-of-the-modern-left/drafts/the-infectious-disease-of-the-modern-left-v0.3.md
+Source changed /drafts/essays/infective-vs-effective-thinking/the-infectious-disease-of-the-modern-left/drafts/the-infectious-disease-of-the-modern-left-v0.md
+Source changed /drafts/essays/infective-vs-effective-thinking/truth-versus-ideals-and-religion-as-a-vaccine/_index.md
+Source changed /drafts/essays/pleasure-over-purpose/_index.md
+Source changed /drafts/essays/untitled.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 1566 ms
+
+Change detected, rebuilding site (#84).
+2026-06-08 21:33:39.537 +0300
+Source changed /drafts
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 747 ms
+
+Change detected, rebuilding site (#85).
+2026-06-08 21:34:11.533 +0300
+Source changed /drafts/projects/_index.md
+Source changed /drafts/projects/drone-swarm/_index.md
+Source changed /drafts/projects/drone-swarm/drone-swarm-project-—-design-notes-v2.md
+Source changed /drafts/projects/drone-swarm/drone-swarm-project-—-design-notes-v3.1.md
+Source changed /drafts/projects/drone-swarm/drone-swarm-project-—-design-notes-v3.md
+Source changed /drafts/projects/untitled/_index.md
+Source changed /drafts/projects/untitled.md
+Source changed /drafts/projects/untitled/pasted-image-20260323163455.png
+Source changed /drafts/projects/untitled/untitled.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 1299 ms
+
+Change detected, rebuilding site (#86).
+2026-06-08 21:35:34.188 +0300
+Source changed /drafts
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 18 ms
+
+Change detected, rebuilding site (#87).
+2026-06-08 21:35:34.642 +0300
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Rebuilt in 4043 ms
+adding created directory to watchlist C:\Users\Buzz\bjlessays\content\drafts\Infective vs effective thinking
+
+Change detected, rebuilding site (#88).
+2026-06-08 21:37:25.640 +0300
+Source changed /drafts/infective-vs-effective-thinking
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 1387 ms
+adding created directory to watchlist C:\Users\Buzz\bjlessays\content\drafts\Infective vs effective thinking\Demonizing Institutions and Normalizing the Unnormalized
+adding created directory to watchlist C:\Users\Buzz\bjlessays\content\drafts\Infective vs effective thinking\Demonizing Institutions and Normalizing the Unnormalized\Drafts
+adding created directory to watchlist C:\Users\Buzz\bjlessays\content\drafts\Infective vs effective thinking\Everyone's Depressed (Why Modernity Leads to Depression)
+adding created directory to watchlist C:\Users\Buzz\bjlessays\content\drafts\Infective vs effective thinking\Everyone's Depressed (Why Modernity Leads to Depression)\Drafts
+adding created directory to watchlist C:\Users\Buzz\bjlessays\content\drafts\Infective vs effective thinking\labels and identities
+adding created directory to watchlist C:\Users\Buzz\bjlessays\content\drafts\Infective vs effective thinking\The Infectious Disease of the Modern Left
+adding created directory to watchlist C:\Users\Buzz\bjlessays\content\drafts\Infective vs effective thinking\The Infectious Disease of the Modern Left\Drafts
+adding created directory to watchlist C:\Users\Buzz\bjlessays\content\drafts\Infective vs effective thinking\Truth versus Ideals and Religion as a Vaccine
+adding created directory to watchlist C:\Users\Buzz\bjlessays\content\drafts\Pleasure Over Purpose
+
+Change detected, rebuilding site (#89).
+2026-06-08 21:37:30.984 +0300
+Source changed /drafts/infective-vs-effective-thinking/demonizing-institutions-and-normalizing-the-unnormalized/demonizing-institutions-and-normalizing-the-unnormalized-v0.1.md
+Source changed /drafts/infective-vs-effective-thinking/demonizing-institutions-and-normalizing-the-unnormalized/drafts/demonizing-institutions-and-normalizing-the-unnormalized-v0.md
+Source changed /drafts/infective-vs-effective-thinking/everyone's-depressed-(why-modernity-leads-to-depression)/drafts/everyone's-depressed-(why-modernity-leads-to-depression)-v0.md
+Source changed /drafts/infective-vs-effective-thinking/everyone's-depressed-(why-modernity-leads-to-depression)/drafts/everyone's-depressed;-why-modernity-leads-to-depression-(and-what-actually-fixes-it)-v0.1.md
+Source changed /drafts/infective-vs-effective-thinking/everyone's-depressed-(why-modernity-leads-to-depression)/everyone's-depressed;-why-modernity-leads-to-depression-(and-what-actually-fixes-it)-v0.2.md
+Source changed /drafts/infective-vs-effective-thinking/everyone's-depressed;-why-modernity-leads-to-depression-(and-what-actually-fixes-it).zip
+Source changed /drafts/infective-vs-effective-thinking/introduction.md
+Source changed /drafts/infective-vs-effective-thinking/the-infectious-disease-of-the-modern-left/drafts/the-infectious-disease-of-the-modern-left-v0.1.md
+Source changed /drafts/infective-vs-effective-thinking/the-infectious-disease-of-the-modern-left/drafts/the-infectious-disease-of-the-modern-left-v0.2.md
+Source changed /drafts/infective-vs-effective-thinking/the-infectious-disease-of-the-modern-left/drafts/the-infectious-disease-of-the-modern-left-v0.3.md
+Source changed /drafts/infective-vs-effective-thinking/the-infectious-disease-of-the-modern-left/drafts/the-infectious-disease-of-the-modern-left-v0.md
+Source changed /drafts/infective-vs-effective-thinking/the-infectious-disease-of-the-modern-left/the-infectious-disease-of-the-modern-left-v0.3.1.md
+Source changed /drafts/infective-vs-effective-thinking/truth-versus-ideals-and-religion-as-a-vaccine/truth-versus-ideals-and-religion-as-a-vaccine-v0.md
+Source changed /drafts/pleasure-over-purpose/pleasure-over-purpose.md
+Source changed /drafts/infective-vs-effective-thinking/labels-and-identities
+Source changed /drafts
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 1333 ms
+
+Change detected, rebuilding site (#90).
+2026-06-08 21:47:41.123 +0300
+Source changed /drafts/infective-vs-effective-thinking/everyone's-depressed;-why-modernity-leads-to-depression-(and-what-actually-fixes-it).zip
+Source changed /drafts/infective-vs-effective-thinking
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 1339 ms
+
+Change detected, rebuilding site (#91).
+2026-06-08 21:49:34.141 +0300
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Rebuilt in 3154 ms
+
+Change detected, rebuilding site (#92).
+2026-06-08 21:52:56.903 +0300
+Source changed /drafts/pleasure-over-purpose/_index.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 1401 ms
+
+Change detected, rebuilding site (#93).
+2026-06-08 21:53:26.141 +0300
+Source changed /drafts/pleasure-over-purpose/_index.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 71 ms
+
+Change detected, rebuilding site (#94).
+2026-06-08 21:54:03.067 +0300
+Source changed /drafts/infective-vs-effective-thinking/_index.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 1361 ms
+
+Change detected, rebuilding site (#95).
+2026-06-08 21:59:28.022 +0300
+Source changed /drafts/infective-vs-effective-thinking/_index.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 57 ms
+
+Change detected, rebuilding site (#96).
+2026-06-08 21:59:28.144 +0300
+Source changed /drafts/infective-vs-effective-thinking/demonizing-institutions-and-normalizing-the-unnormalized/_index.md
+Source changed /drafts/infective-vs-effective-thinking/demonizing-institutions-and-normalizing-the-unnormalized/demonizing-institutions-and-normalizing-the-unnormalized-v0.1.md
+Source changed /drafts/infective-vs-effective-thinking/demonizing-institutions-and-normalizing-the-unnormalized/drafts/_index.md
+Source changed /drafts/infective-vs-effective-thinking/demonizing-institutions-and-normalizing-the-unnormalized/drafts/demonizing-institutions-and-normalizing-the-unnormalized-v0.md
+Source changed /drafts/infective-vs-effective-thinking/everyone's-depressed-(why-modernity-leads-to-depression)/_index.md
+Source changed /drafts/infective-vs-effective-thinking/everyone's-depressed-(why-modernity-leads-to-depression)/drafts/_index.md
+Source changed /drafts/infective-vs-effective-thinking/everyone's-depressed-(why-modernity-leads-to-depression)/everyone's-depressed;-why-modernity-leads-to-depression-(and-what-actually-fixes-it)-v0.2.md
+Source changed /drafts/infective-vs-effective-thinking/the-infectious-disease-of-the-modern-left/_index.md
+Source changed /drafts/infective-vs-effective-thinking/the-infectious-disease-of-the-modern-left/drafts/_index.md
+Source changed /drafts/infective-vs-effective-thinking/the-infectious-disease-of-the-modern-left/the-infectious-disease-of-the-modern-left-v0.3.1.md
+Source changed /drafts/infective-vs-effective-thinking/truth-versus-ideals-and-religion-as-a-vaccine/_index.md
+Source changed /drafts/infective-vs-effective-thinking/truth-versus-ideals-and-religion-as-a-vaccine/truth-versus-ideals-and-religion-as-a-vaccine-v0.md
+Source changed /drafts/infective-vs-effective-thinking/labels-and-identities/_index.md
+Source changed /drafts/pleasure-over-purpose/_index.md
+Source changed /drafts/pleasure-over-purpose/pleasure-over-purpose.md
+Source changed /drafts/infective-vs-effective-thinking/demonizing-institutions-and-normalizing-the-unnormalized-v0.1.md
+Source changed /drafts/infective-vs-effective-thinking/everyone's-depressed;-why-modernity-leads-to-depression-(and-what-actually-fixes-it)-v0.2.md
+Source changed /drafts/infective-vs-effective-thinking/the-infectious-disease-of-the-modern-left-v0.3.1.md
+Source changed /drafts/infective-vs-effective-thinking/truth-versus-ideals-and-religion-as-a-vaccine-v0.md
+Source changed /drafts/pleasure-over-purpose.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 1387 ms
+
+Change detected, rebuilding site (#97).
+2026-06-08 21:59:34.305 +0300
+Source changed /drafts
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 53 ms
+
+Change detected, rebuilding site (#98).
+2026-06-08 22:04:36.642 +0300
+Source changed /drafts/infective-vs-effective-thinking/introduction.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 62 ms
+
+Change detected, rebuilding site (#99).
+2026-06-08 22:06:12.642 +0300
+Source changed /drafts/infective-vs-effective-thinking/the-infectious-disease-of-the-modern-left-v0.3.1.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 14 ms
+
+Change detected, rebuilding site (#100).
+2026-06-08 22:07:46.052 +0300
+Source changed /drafts/everyone's-depressed;-why-modernity-leads-to-depression-(and-what-actually-fixes-it)-v0.2.md
+Source changed /drafts/infective-vs-effective-thinking/everyone's-depressed;-why-modernity-leads-to-depression-(and-what-actually-fixes-it)-v0.2.md
+Source changed /drafts/infective-vs-effective-thinking
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 1398 ms
+
+Change detected, rebuilding site (#101).
+2026-06-08 22:07:51.799 +0300
+Source changed /drafts/everyone's-depressed;-why-modernity-leads-to-depression-(and-what-actually-fixes-it)-v0.1.md
+Source changed /drafts
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 1324 ms
+
+Change detected, rebuilding site (#102).
+2026-06-08 22:09:52.141 +0300
+Source changed /drafts/infective-vs-effective-thinking/truth-versus-ideals-and-religion-as-a-vaccine-v0.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 16 ms
+
+Change detected, rebuilding site (#103).
+2026-06-08 22:10:04.641 +0300
+Source changed /drafts/infective-vs-effective-thinking/the-infectious-disease-of-the-modern-left-v0.3.1.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 18 ms
+
+Change detected, rebuilding site (#104).
+2026-06-08 22:12:33.640 +0300
+Source changed /drafts/infective-vs-effective-thinking/the-infectious-disease-of-the-modern-left-v0.3.1.md
+Source changed /drafts/infective-vs-effective-thinking/the-infectious-disease-of-the-modern-left.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 1378 ms
+
+Change detected, rebuilding site (#105).
+2026-06-08 22:12:49.372 +0300
+Source changed /drafts/infective-vs-effective-thinking/the-infectious-disease-of-the-modern-left.md
+Source changed /drafts/infective-vs-effective-thinking/chapter-1.-the-infectious-disease-of-the-modern-left.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 1323 ms
+
+Change detected, rebuilding site (#106).
+2026-06-08 22:13:13.641 +0300
+Source changed /drafts/infective-vs-effective-thinking/demonizing-institutions-and-normalizing-the-unnormalized-v0.1.md
+Source changed /drafts/infective-vs-effective-thinking/chapter-2.-demonizing-institutions-and-normalizing-the-unnormalized.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 1332 ms
+
+Change detected, rebuilding site (#107).
+2026-06-08 22:13:41.323 +0300
+Source changed /drafts/infective-vs-effective-thinking/truth-versus-ideals-and-religion-as-a-vaccine-v0.md
+Source changed /drafts/infective-vs-effective-thinking/chapter-3.-truth-versus-ideals-and-religion-as-a-vaccine.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 1311 ms
+
+Change detected, rebuilding site (#108).
+2026-06-08 22:13:46.811 +0300
+Source changed /ideas/_index.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 1333 ms
+
+Change detected, rebuilding site (#109).
+2026-06-08 22:13:52.053 +0300
+Source changed /projects/_index.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 1324 ms
+
+Change detected, rebuilding site (#110).
+2026-06-08 22:15:07.141 +0300
+Source changed /drafts/infective-vs-effective-thinking/chapter-2.-demonizing-institutions-and-normalizing-the-unnormalized.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 25 ms
+
+Change detected, rebuilding site (#111).
+2026-06-08 22:16:15.641 +0300
+Source changed /drafts/infective-vs-effective-thinking/chapter-2.-demonizing-institutions-and-normalizing-the-unnormalized.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 16 ms
+
+Change detected, rebuilding site (#112).
+2026-06-08 22:16:21.641 +0300
+Source changed /drafts/infective-vs-effective-thinking/chapter-3.-truth-versus-ideals-and-religion-as-a-vaccine.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 20 ms
+
+Change detected, rebuilding site (#113).
+2026-06-08 22:18:29.641 +0300
+Source changed /novels/the-long-game/chapter-2.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 13 ms
+
+Change detected, rebuilding site (#114).
+2026-06-08 22:18:42.640 +0300
+Source changed /novels/the-long-game/chapter-1.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 12 ms
+
+Change detected, rebuilding site (#115).
+2026-06-08 22:19:10.141 +0300
+Source changed /novels/the-long-game/chapter-2.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 13 ms
+
+Change detected, rebuilding site (#116).
+2026-06-08 22:19:16.641 +0300
+Source changed /novels/the-long-game/chapter-1.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 14 ms
+
+Change of config file detected, rebuilding site (#117).
+2026-06-08 22:24:55.141 +0300
+Rebuilt in 0 ms
+
+Change of config file detected, rebuilding site (#118).
+2026-06-08 22:25:18.269 +0300
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Rebuilt in 2875 ms
+
+Change detected, rebuilding site (#119).
+2026-06-08 22:27:55.141 +0300
+Template changed /index.html
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 4 ms
+
+Change detected, rebuilding site (#120).
+2026-06-08 22:28:08.641 +0300
+Template changed /index.html
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 4 ms
+
+Change detected, rebuilding site (#121).
+2026-06-08 22:41:47.641 +0300
+Template changed /index.html
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 9 ms
+
+Change detected, rebuilding site (#122).
+2026-06-08 22:42:47.641 +0300
+Template changed /index.html
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 18 ms
+adding created directory to watchlist C:\Users\Buzz\bjlessays\layouts\partials
+
+Change detected, rebuilding site (#123).
+2026-06-08 22:48:53.141 +0300
+Template added /partials
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 1412 ms
+
+Change detected, rebuilding site (#124).
+2026-06-08 22:49:00.679 +0300
+Template added /partials/entry-cards.html
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 1399 ms
+
+Change detected, rebuilding site (#125).
+2026-06-08 22:49:03.414 +0300
+Template added /partials
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 5 ms
+
+Change detected, rebuilding site (#126).
+2026-06-08 22:49:05.140 +0300
+Template changed /index.html
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 17 ms
+
+Change of config file detected, rebuilding site (#127).
+2026-06-08 22:51:22.212 +0300
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Rebuilt in 2895 ms
+
+Change detected, rebuilding site (#128).
+2026-06-08 22:52:45.641 +0300
+Template changed /partials/entry-cards.html
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 51 ms
+
+Change detected, rebuilding site (#129).
+2026-06-08 22:52:49.640 +0300
+Template changed /index.html
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 19 ms
+
+Change detected, rebuilding site (#130).
+2026-06-08 22:52:53.141 +0300
+Template changed /index.html
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 20 ms
+
+Change detected, rebuilding site (#131).
+2026-06-08 22:55:06.141 +0300
+Template changed /index.html
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 20 ms
+
+Change detected, rebuilding site (#132).
+2026-06-08 22:55:10.141 +0300
+Template changed /index.html
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 20 ms
+
+Change detected, rebuilding site (#133).
+2026-06-08 22:55:46.641 +0300
+Template changed /partials/header.html
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 1375 ms
+
+Change detected, rebuilding site (#134).
+2026-06-08 22:55:54.294 +0300
+Template added /partials
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 5 ms
+
+Change detected, rebuilding site (#135).
+2026-06-08 22:55:54.369 +0300
+Template changed /index.html
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 21 ms
+
+Change detected, rebuilding site (#136).
+2026-06-08 22:56:05.141 +0300
+Template changed /partials/header.html
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 54 ms
+
+Change detected, rebuilding site (#137).
+2026-06-08 22:56:08.641 +0300
+Template changed /index.html
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 16 ms
+
+Change detected, rebuilding site (#138).
+2026-06-08 22:58:39.641 +0300
+Template changed /partials/header.html
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 73 ms
+
+Change detected, rebuilding site (#139).
+2026-06-08 22:58:43.641 +0300
+Template changed /partials/header.html
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 73 ms
+
+Change detected, rebuilding site (#140).
+2026-06-08 22:58:47.641 +0300
+Template changed /partials/header.html
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 73 ms
+
+Change detected, rebuilding site (#141).
+2026-06-08 22:58:51.141 +0300
+Template changed /partials/header.html
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 74 ms
+
+Change detected, rebuilding site (#142).
+2026-06-08 23:03:35.641 +0300
+Template changed /_default/single.html
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 26 ms
+adding created directory to watchlist C:\Users\Buzz\bjlessays\data\json_resume
+
+Change detected, rebuilding site (#143).
+2026-06-08 23:19:38.403 +0300
+Data changed /json_resume
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 1405 ms
+
+Change detected, rebuilding site (#144).
+2026-06-08 23:19:45.821 +0300
+Data changed /json_resume/en.json
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 1368 ms
+
+Change detected, rebuilding site (#145).
+2026-06-08 23:24:26.640 +0300
+Data changed /json_resume/en.json
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 47 ms
+
+Change detected, rebuilding site (#146).
+2026-06-08 23:27:15.141 +0300
+Data changed /json_resume/en.json
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 66 ms
+
+Change detected, rebuilding site (#147).
+2026-06-08 23:28:34.641 +0300
+Data changed /json_resume/en.json
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 65 ms
+
+Change detected, rebuilding site (#148).
+2026-06-08 23:35:45.955 +0300
+Source changed /drafts/demonizing-institutions-and-normalizing-the-unnormalized-v0.1.md
+Source changed /drafts
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 1344 ms
+
+Change detected, rebuilding site (#149).
+2026-06-08 23:36:22.640 +0300
+Source changed /drafts/the-infectious-disease-of-the-modern-left-v0.1.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 1401 ms
+
+Change detected, rebuilding site (#150).
+2026-06-08 23:36:29.530 +0300
+Source changed /drafts
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 69 ms
+
+Change detected, rebuilding site (#151).
+2026-06-08 23:36:34.851 +0300
+Source changed /drafts/the-infectious-disease-of-the-modern-left-v0.3.md
+Source changed /drafts
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 1350 ms
+
+Change detected, rebuilding site (#152).
+2026-06-08 23:36:39.118 +0300
+Source changed /drafts/the-infectious-disease-of-the-modern-left-v0.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 1356 ms
+
+Change detected, rebuilding site (#153).
+2026-06-08 23:36:43.524 +0300
+Source changed /drafts
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 64 ms
+
+Change detected, rebuilding site (#154).
+2026-06-08 23:37:04.535 +0300
+Source changed /drafts/ai-as-progression.md
+Source changed /drafts/everyone's-depressed;-why-modernity-leads-to-depression-(and-what-actually-fixes-it)-v0.2.md
+Source changed /drafts/introduction.md
+Source changed /drafts/pleasure-over-purpose.md
+Source changed /drafts/psyops-and-conspiracies.md
+Source changed /drafts/sense-of-humor-and-of-mindsets.md
+Source changed /drafts/terrorism-and-extremism.md
+Source changed /drafts/the-dsm,-identity-and-the-spectrum.md
+Source changed /drafts/the-broken-school-system.md
+Source changed /drafts/the-broken-society-we-don't-know-we-live-in.md
+Source changed /drafts/the-hell-you-don't-want-to-leave.md
+Source changed /drafts/the-industries-that-control-are-every-move.md
+Source changed /drafts/doing-evil-for-the-sake-of-good.md
+Source changed /drafts/is-democracy-the-best-we-can-do.md
+Source changed /drafts/music-as-an-influence-for-emotion.md
+Source changed /drafts/the-collective-unconscious-we-call-the-internet.md
+Source changed /drafts/the-days-of-messiah.md
+Source changed /drafts/the-gender-war.md
+Source changed /drafts/the-god-variable.md
+Source changed /drafts/the-meaning-bucket-list.md
+Source changed /drafts/the-modern-gods.md
+Source changed /drafts
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 1277 ms
+
+Change detected, rebuilding site (#155).
+2026-06-08 23:37:11.367 +0300
+Source changed /drafts/why-smart-people-believe-stupid-things.md
+Source changed /drafts/wokeism-is-the-the-tower-of-babel-story-all-over-again.md
+Source changed /drafts/the-psychology-behind-mitzvot-and-judaism.md
+Source changed /drafts/twin-competition.md
+Source changed /drafts
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 1291 ms
+
+Change detected, rebuilding site (#156).
+2026-06-08 23:37:14.048 +0300
+Source changed /drafts
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 28 ms
+
+Change detected, rebuilding site (#157).
+2026-06-08 23:37:23.142 +0300
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Rebuilt in 6829 ms
+
+Change detected, rebuilding site (#158).
+2026-06-08 23:37:36.643 +0300
+Source changed /drafts/ai-as-progression-(1).md
+Source changed /drafts/can-you-make-a-one-man-army.md
+Source changed /drafts/doing-evil-for-the-sake-of-good-(1).md
+Source changed /drafts
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 1341 ms
+
+Change detected, rebuilding site (#159).
+2026-06-08 23:37:43.231 +0300
+Source changed /drafts/psyops-and-conspiracies-(1).md
+Source changed /drafts/sense-of-humor-and-of-mindsets-(1).md
+Source changed /drafts/spinoza's-ethics-and-modern-dating.md
+Source changed /drafts/terrorism-and-extremism-(1).md
+Source changed /drafts/the-dsm,-identity-and-the-spectrum-(1).md
+Source changed /drafts/the-broken-school-system-(1).md
+Source changed /drafts/the-broken-society-we-don't-know-we-live-in-(1).md
+Source changed /drafts/the-hell-you-don't-want-to-leave-(1).md
+Source changed /drafts/the-industries-that-control-are-every-move-(1).md
+Source changed /drafts/is-democracy-the-best-we-can-do-(1).md
+Source changed /drafts/music-as-an-influence-for-emotion-(1).md
+Source changed /drafts/racism-as-a-defense-mechanism.md
+Source changed /drafts/the-collective-unconscious-we-call-the-internet-(1).md
+Source changed /drafts/the-days-of-messiah-(1).md
+Source changed /drafts/the-gender-war-(1).md
+Source changed /drafts/the-god-variable-(1).md
+Source changed /drafts/the-meaning-bucket-list-(1).md
+Source changed /drafts
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 1307 ms
+
+Change detected, rebuilding site (#160).
+2026-06-08 23:37:49.590 +0300
+Source changed /drafts/why-smart-people-believe-stupid-things-(1).md
+Source changed /drafts/wokeism-is-the-the-tower-of-babel-story-all-over-again-(1).md
+Source changed /drafts/the-modern-gods-(1).md
+Source changed /drafts/the-psychology-behind-mitzvot-and-judaism-(1).md
+Source changed /drafts/twin-competition-(1).md
+Source changed /drafts
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 1280 ms
+
+Change detected, rebuilding site (#161).
+2026-06-08 23:40:26.799 +0300
+Source changed /drafts/the-dsm,-identity-and-the-spectrum-(2).md
+Source changed /drafts/the-hell-you-don't-want-to-leave-(2).md
+Source changed /drafts/the-industries-that-control-are-every-move-(2).md
+Source changed /drafts/why-smart-people-believe-stupid-things-(2).md
+Source changed /drafts/wokeism-is-the-the-tower-of-babel-story-all-over-again-(2).md
+Source changed /drafts/the-gender-war-(2).md
+Source changed /drafts/the-god-variable-(2).md
+Source changed /drafts/the-meaning-bucket-list-(2).md
+Source changed /drafts/the-modern-gods-(2).md
+Source changed /drafts/the-psychology-behind-mitzvot-and-judaism-(2).md
+Source changed /drafts/twin-competition-(2).md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 1322 ms
+
+Change detected, rebuilding site (#162).
+2026-06-08 23:40:29.476 +0300
+Source changed /drafts
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 24 ms
+
+Change detected, rebuilding site (#163).
+2026-06-08 23:40:30.791 +0300
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Rebuilt in 5735 ms
+
+Change detected, rebuilding site (#164).
+2026-06-08 23:41:43.141 +0300
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Rebuilt in 5519 ms
+
+Change detected, rebuilding site (#165).
+2026-06-08 23:42:02.205 +0300
+Source changed /drafts/spinoza's-ethics-and-modern-dating-(1).md
+Source changed /drafts/can-you-make-a-one-man-army-(1).md
+Source changed /drafts/racism-as-a-defense-mechanism-(1).md
+Source changed /drafts/spinoza's-ethics-and-modern-dating.md
+Source changed /drafts/can-you-make-a-one-man-army.md
+Source changed /drafts/racism-as-a-defense-mechanism.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 1411 ms
+
+Change detected, rebuilding site (#166).
+2026-06-08 23:42:53.640 +0300
+Source changed /drafts/ai-as-progression.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 66 ms
+
+Change detected, rebuilding site (#167).
+2026-06-08 23:47:31.641 +0300
+Source changed /drafts/the-meaning-bucket-list.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 60 ms
+
+Change detected, rebuilding site (#168).
+2026-06-08 23:50:24.641 +0300
+Source changed /drafts/can-you-make-a-one-man-army.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 65 ms
+
+Change detected, rebuilding site (#169).
+2026-06-08 23:50:29.141 +0300
+Source changed /drafts/doing-evil-for-the-sake-of-good.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 57 ms
+
+Change detected, rebuilding site (#170).
+2026-06-08 23:50:30.641 +0300
+Source changed /drafts/is-democracy-the-best-we-can-do.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 59 ms
+
+Change detected, rebuilding site (#171).
+2026-06-08 23:50:31.641 +0300
+Source changed /drafts/music-as-an-influence-for-emotion.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 62 ms
+
+Change detected, rebuilding site (#172).
+2026-06-08 23:50:32.641 +0300
+Source changed /drafts/psyops-and-conspiracies.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 62 ms
+
+Change detected, rebuilding site (#173).
+2026-06-08 23:50:34.140 +0300
+Source changed /drafts/racism-as-a-defense-mechanism.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 58 ms
+
+Change detected, rebuilding site (#174).
+2026-06-08 23:50:36.641 +0300
+Source changed /drafts/sense-of-humor-and-of-mindsets.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 58 ms
+
+Change detected, rebuilding site (#175).
+2026-06-08 23:50:38.142 +0300
+Source changed /drafts/spinoza's-ethics-and-modern-dating.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 32 ms
+
+Change detected, rebuilding site (#176).
+2026-06-08 23:50:38.643 +0300
+Source changed /drafts/terrorism-and-extremism.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 17 ms
+
+Change detected, rebuilding site (#177).
+2026-06-08 23:50:39.141 +0300
+Source changed /drafts/the-broken-school-system.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 21 ms
+
+Change detected, rebuilding site (#178).
+2026-06-08 23:50:39.641 +0300
+Source changed /drafts/the-broken-society-we-don't-know-we-live-in.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 22 ms
+
+Change detected, rebuilding site (#179).
+2026-06-08 23:50:40.641 +0300
+Source changed /drafts/the-collective-unconscious-we-call-the-internet.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 15 ms
+
+Change detected, rebuilding site (#180).
+2026-06-08 23:50:41.141 +0300
+Source changed /drafts/the-days-of-messiah.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 16 ms
+
+Change detected, rebuilding site (#181).
+2026-06-08 23:50:41.640 +0300
+Source changed /drafts/the-dsm,-identity-and-the-spectrum.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 15 ms
+
+Change detected, rebuilding site (#182).
+2026-06-08 23:50:42.141 +0300
+Source changed /drafts/the-gender-war.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 15 ms
+
+Change detected, rebuilding site (#183).
+2026-06-08 23:50:44.641 +0300
+Source changed /drafts/the-god-variable.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 21 ms
+
+Change detected, rebuilding site (#184).
+2026-06-08 23:50:46.141 +0300
+Source changed /drafts/the-gender-war.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 15 ms
+
+Change detected, rebuilding site (#185).
+2026-06-08 23:50:47.141 +0300
+Source changed /drafts/the-hell-you-don't-want-to-leave.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 15 ms
+
+Change detected, rebuilding site (#186).
+2026-06-08 23:50:47.641 +0300
+Source changed /drafts/the-industries-that-control-are-every-move.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 29 ms
+
+Change detected, rebuilding site (#187).
+2026-06-08 23:50:48.641 +0300
+Source changed /drafts/the-meaning-bucket-list.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 22 ms
+
+Change detected, rebuilding site (#188).
+2026-06-08 23:50:49.641 +0300
+Source changed /drafts/the-modern-gods.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 18 ms
+
+Change detected, rebuilding site (#189).
+2026-06-08 23:50:50.140 +0300
+Source changed /drafts/the-psychology-behind-mitzvot-and-judaism.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 20 ms
+
+Change detected, rebuilding site (#190).
+2026-06-08 23:50:51.141 +0300
+Source changed /drafts/twin-competition.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 14 ms
+
+Change detected, rebuilding site (#191).
+2026-06-08 23:50:52.641 +0300
+Source changed /drafts/wokeism-is-the-the-tower-of-babel-story-all-over-again.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 23 ms
+
+Change detected, rebuilding site (#192).
+2026-06-08 23:50:56.141 +0300
+Source changed /drafts/why-smart-people-believe-stupid-things.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 20 ms
+
+Change detected, rebuilding site (#193).
+2026-06-08 23:50:57.641 +0300
+Source changed /drafts/wokeism-is-the-the-tower-of-babel-story-all-over-again.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 19 ms
+
+Change detected, rebuilding site (#194).
+2026-06-08 23:52:59.141 +0300
+Source changed /drafts/doing-evil-for-the-sake-of-good.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 18 ms
+
+Change of config file detected, rebuilding site (#195).
+2026-06-08 23:56:00.641 +0300
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Rebuilt in 3028 ms
+
+Change of config file detected, rebuilding site (#196).
+2026-06-09 00:02:17.140 +0300
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Rebuilt in 1665 ms
+
+Change detected, rebuilding site (#197).
+2026-06-09 00:50:31.641 +0300
+Data changed /json_resume/en.json
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 106 ms
+
+Change detected, rebuilding site (#198).
+2026-06-09 00:51:49.141 +0300
+Data changed /json_resume/en.json
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 61 ms
+
+Change detected, rebuilding site (#199).
+2026-06-09 00:52:12.641 +0300
+Data changed /json_resume/en.json
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 28 ms
+
+Change detected, rebuilding site (#200).
+2026-06-09 00:52:31.641 +0300
+Template changed /partials/json-resume/basics.html
+Template changed /_default/baseof.html
+Template changed /partials/sidebar.html
+Data changed /json_resume/en.json
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 68 ms
+
+Change detected, rebuilding site (#201).
+2026-06-09 00:52:49.141 +0300
+Data changed /json_resume/en.json
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 62 ms
+
+Change detected, rebuilding site (#202).
+2026-06-09 00:52:59.141 +0300
+Data changed /json_resume/en.json
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 26 ms
+
+Change detected, rebuilding site (#203).
+2026-06-09 00:53:16.641 +0300
+Template changed /partials/json-resume/basics.html
+Template changed /_default/baseof.html
+Template changed /partials/sidebar.html
+Data changed /json_resume/en.json
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 69 ms
+
+Change detected, rebuilding site (#204).
+2026-06-09 00:53:34.141 +0300
+Data changed /json_resume/en.json
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 21 ms
+
+Change detected, rebuilding site (#205).
+2026-06-09 00:53:37.141 +0300
+Template changed /partials/json-resume/basics.html
+Template changed /partials/simple-icon.html
+Template changed /_default/baseof.html
+Template changed /partials/sidebar.html
+Data changed /json_resume/en.json
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 67 ms
+
+Change detected, rebuilding site (#206).
+2026-06-09 00:53:57.641 +0300
+Data changed /json_resume/en.json
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 24 ms
+
+Change detected, rebuilding site (#207).
+2026-06-09 00:54:05.141 +0300
+Template changed /partials/json-resume/basics.html
+Template changed /_default/baseof.html
+Template changed /partials/sidebar.html
+Data changed /json_resume/en.json
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 29 ms
+
+Change detected, rebuilding site (#208).
+2026-06-09 00:54:16.641 +0300
+Template changed /partials/json-resume/basics.html
+Template changed /_default/baseof.html
+Template changed /partials/sidebar.html
+Data changed /json_resume/en.json
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 66 ms
+
+Change detected, rebuilding site (#209).
+2026-06-09 01:05:01.641 +0300
+Template changed /_default/list.html
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 59 ms
+
+Change detected, rebuilding site (#210).
+2026-06-09 01:05:05.641 +0300
+Template changed /_default/list.html
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 76 ms
+
+Change detected, rebuilding site (#211).
+2026-06-09 01:05:09.641 +0300
+Template changed /_default/list.html
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 57 ms
+
+Change detected, rebuilding site (#212).
+2026-06-09 01:09:06.641 +0300
+Data changed /json_resume/en.json
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 91 ms
+
+Change detected, rebuilding site (#213).
+2026-06-09 01:09:45.141 +0300
+Data changed /json_resume/en.json
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 20 ms
+
+Change detected, rebuilding site (#214).
+2026-06-09 01:10:10.641 +0300
+Template changed /partials/json-resume/basics.html
+Template changed /_default/baseof.html
+Template changed /partials/sidebar.html
+Data changed /json_resume/en.json
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 88 ms
+
+Change detected, rebuilding site (#215).
+2026-06-09 01:11:44.641 +0300
+Template changed /index.html
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 23 ms
+
+Change detected, rebuilding site (#216).
+2026-06-09 01:13:22.641 +0300
+Template changed /index.html
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 15 ms
+
+Change detected, rebuilding site (#217).
+2026-06-09 01:15:38.641 +0300
+Source changed /_index.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 695 ms
+
+Change detected, rebuilding site (#218).
+2026-06-09 01:15:58.641 +0300
+Source changed /_index.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 698 ms
+
+Change detected, rebuilding site (#219).
+2026-06-09 01:16:05.141 +0300
+Source changed /_index.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 716 ms
+
+Change detected, rebuilding site (#220).
+2026-06-09 01:16:12.141 +0300
+Source changed /_index.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 709 ms
+
+Change detected, rebuilding site (#221).
+2026-06-09 01:16:19.641 +0300
+Source changed /_index.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 706 ms
+
+Change detected, rebuilding site (#222).
+2026-06-09 01:16:48.641 +0300
+Source changed /novels/_index.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 33 ms
+
+Change detected, rebuilding site (#223).
+2026-06-09 01:23:58.641 +0300
+Data changed /json_resume/en.json
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 85 ms
+
+Change detected, rebuilding site (#224).
+2026-06-09 01:26:09.641 +0300
+Data changed /json_resume/en.json
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 88 ms
+
+Change of config file detected, rebuilding site (#225).
+2026-06-09 09:58:53.141 +0300
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Rebuilt in 243 ms
+
+Change detected, rebuilding site (#226).
+2026-06-09 09:58:59.540 +0300
+Template changed /_default/list.html
+Template changed /_default/single.html
+Template changed /index.html
+Template changed /partials/entry-cards.html
+Template changed /partials/header.html
+Template changed /_default/baseof.html
+Template added /_default
+Template added /partials
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 483 ms
+adding created directory to watchlist C:\Users\Buzz\bjlessays\layouts\partials\head
+
+Change detected, rebuilding site (#227).
+2026-06-09 09:59:11.141 +0300
+Template changed /partials/head/css.html
+Template added /partials/head
+Template added /partials
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 312 ms
+
+Change detected, rebuilding site (#228).
+2026-06-09 09:59:17.141 +0300
+Template changed /partials/head.html
+Template changed /partials/head/css.html
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 299 ms
+
+Change detected, rebuilding site (#229).
+2026-06-09 09:59:27.640 +0300
+Template changed /partials/head/css.html
+Template changed /partials/head/css.html
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 122 ms
+
+Change detected, rebuilding site (#230).
+2026-06-09 10:00:30.641 +0300
+Template changed /index.html
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 53 ms
+
+Change detected, rebuilding site (#231).
+2026-06-09 10:00:42.640 +0300
+Template changed /partials/header.html
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 278 ms
+
+Change detected, rebuilding site (#232).
+2026-06-09 10:05:53.142 +0300
+Template changed /index.html
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 300 ms
+
+Change detected, rebuilding site (#233).
+2026-06-09 10:06:28.141 +0300
+Template changed /_default/single.html
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 278 ms
+
+Change detected, rebuilding site (#234).
+2026-06-09 10:08:31.640 +0300
+Template changed /_default/single.html
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 281 ms
+
+Change detected, rebuilding site (#235).
+2026-06-09 10:08:34.640 +0300
+Template changed /_default/single.html
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 32 ms
+
+Change detected, rebuilding site (#236).
+2026-06-09 10:13:01.645 +0300
+Template changed /_default/single.html
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 276 ms
+
+Change detected, rebuilding site (#237).
+2026-06-09 10:13:07.141 +0300
+Template changed /_default/single.html
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 30 ms
+
+Change detected, rebuilding site (#238).
+2026-06-09 10:16:49.141 +0300
+Template changed /index.html
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 35 ms
+
+Change detected, rebuilding site (#239).
+2026-06-09 10:16:59.641 +0300
+Template changed /_default/single.html
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 32 ms
+
+Change detected, rebuilding site (#240).
+2026-06-09 10:21:58.140 +0300
+Template changed /index.html
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 301 ms
+
+Change detected, rebuilding site (#241).
+2026-06-09 10:33:46.641 +0300
+Template changed /index.html
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 7 ms
+
+Change detected, rebuilding site (#242).
+2026-06-09 10:34:57.141 +0300
+Template changed /index.html
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 9 ms
+
+Change detected, rebuilding site (#243).
+2026-06-09 10:35:24.641 +0300
+Template changed /index.html
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 4 ms
+
+Change detected, rebuilding site (#244).
+2026-06-09 10:35:28.640 +0300
+Template changed /index.html
+Template changed /_default/baseof.html
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 4 ms
+
+Change detected, rebuilding site (#245).
+2026-06-09 10:35:43.640 +0300
+Template changed /index.html
+Template changed /_default/baseof.html
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 4 ms
+
+Change detected, rebuilding site (#246).
+2026-06-09 10:36:08.641 +0300
+Template changed /index.html
+Template changed /_default/baseof.html
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 447 ms
+
+Change detected, rebuilding site (#247).
+2026-06-09 10:39:39.640 +0300
+Template changed /index.html
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 316 ms
+
+Change detected, rebuilding site (#248).
+2026-06-09 10:39:43.141 +0300
+Template changed /index.html
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 38 ms
+
+Change detected, rebuilding site (#249).
+2026-06-09 10:41:59.141 +0300
+Template changed /index.html
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 37 ms
+
+Change detected, rebuilding site (#250).
+2026-06-09 10:42:15.640 +0300
+Template changed /index.html
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 35 ms
+
+Change detected, rebuilding site (#251).
+2026-06-09 10:43:51.641 +0300
+Template changed /index.html
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 37 ms
+
+Change detected, rebuilding site (#252).
+2026-06-09 10:45:54.641 +0300
+Source changed /drafts/psyops-and-conspiracies.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 331 ms
+
+Change detected, rebuilding site (#253).
+2026-06-09 10:51:02.140 +0300
+Template changed /index.html
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 207 ms
+
+Change detected, rebuilding site (#254).
+2026-06-09 10:51:27.641 +0300
+Template changed /index.html
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 36 ms
+
+Change detected, rebuilding site (#255).
+2026-06-09 10:51:28.640 +0300
+Template changed /index.html
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 37 ms
+
+Change detected, rebuilding site (#256).
+2026-06-09 10:51:29.641 +0300
+Template changed /index.html
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 37 ms
+
+Change detected, rebuilding site (#257).
+2026-06-09 10:51:30.140 +0300
+Template changed /index.html
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 36 ms
+
+Change detected, rebuilding site (#258).
+2026-06-09 10:51:34.640 +0300
+Template changed /index.html
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 36 ms
+
+Change detected, rebuilding site (#259).
+2026-06-09 10:51:37.641 +0300
+Template changed /index.html
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 37 ms
+
+Change detected, rebuilding site (#260).
+2026-06-09 10:51:42.141 +0300
+Template changed /index.html
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 38 ms
+
+Change detected, rebuilding site (#261).
+2026-06-09 10:51:45.640 +0300
+Template changed /index.html
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 43 ms
+
+Change detected, rebuilding site (#262).
+2026-06-09 10:51:50.641 +0300
+Template changed /index.html
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 38 ms
+
+Change detected, rebuilding site (#263).
+2026-06-09 10:51:52.640 +0300
+Template changed /index.html
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 39 ms
+
+Change detected, rebuilding site (#264).
+2026-06-09 10:51:59.140 +0300
+Template changed /index.html
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 40 ms
+
+Change detected, rebuilding site (#265).
+2026-06-09 10:52:22.640 +0300
+Template changed /index.html
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 42 ms
+
+Change of config file detected, rebuilding site (#266).
+2026-06-09 10:53:51.141 +0300
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Rebuilt in 821 ms
+
+Change of config file detected, rebuilding site (#267).
+2026-06-09 10:54:35.140 +0300
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Rebuilt in 618 ms
+
+Change of config file detected, rebuilding site (#268).
+2026-06-09 10:54:52.141 +0300
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Rebuilt in 249 ms
+
+Change of config file detected, rebuilding site (#269).
+2026-06-09 10:55:03.641 +0300
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Rebuilt in 535 ms
+
+Change detected, rebuilding site (#270).
+2026-06-09 11:01:21.640 +0300
+Template changed /index.html
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 50 ms
+
+Change detected, rebuilding site (#271).
+2026-06-09 11:01:28.879 +0300
+Template changed /index.html
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 728 ms
+
+Change detected, rebuilding site (#272).
+2026-06-09 11:02:26.640 +0300
+Template changed /index.html
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 50 ms
+
+Change detected, rebuilding site (#273).
+2026-06-09 11:02:29.141 +0300
+Template changed /index.html
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 44 ms
+
+Change detected, rebuilding site (#274).
+2026-06-09 11:02:49.141 +0300
+Template changed /index.html
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 44 ms
+
+Change detected, rebuilding site (#275).
+2026-06-09 11:02:53.141 +0300
+Template changed /index.html
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 51 ms
+
+Change detected, rebuilding site (#276).
+2026-06-09 11:03:28.641 +0300
+Template changed /index.html
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 47 ms
+
+Change detected, rebuilding site (#277).
+2026-06-09 11:03:43.640 +0300
+Template changed /index.html
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 47 ms
+
+Change detected, rebuilding site (#278).
+2026-06-09 11:03:46.640 +0300
+Template changed /index.html
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 47 ms
+
+Change detected, rebuilding site (#279).
+2026-06-09 11:03:57.641 +0300
+Template changed /_default/single.html
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 27 ms
+
+Change detected, rebuilding site (#280).
+2026-06-09 11:03:59.640 +0300
+Template changed /_default/single.html
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 4 ms
+
+Change detected, rebuilding site (#281).
+2026-06-09 11:04:06.640 +0300
+Template changed /_default/single.html
+Template changed /_default/baseof.html
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 131 ms
+
+Change detected, rebuilding site (#282).
+2026-06-09 11:05:34.640 +0300
+Template changed /_default/list.html
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 102 ms
+
+Change detected, rebuilding site (#283).
+2026-06-09 11:05:35.140 +0300
+Template added /_default
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 5 ms
+
+Change detected, rebuilding site (#284).
+2026-06-09 11:09:05.641 +0300
+Template changed /_default/list.html
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 62 ms
+adding created directory to watchlist C:\Users\Buzz\bjlessays\layouts\taxonomy
+
+Change detected, rebuilding site (#285).
+2026-06-09 11:12:01.640 +0300
+Template changed /taxonomy/tag.html
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 6 ms
+
+Change detected, rebuilding site (#286).
+2026-06-09 11:17:48.141 +0300
+Template changed /_default/list.html
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 22 ms
+
+Change detected, rebuilding site (#287).
+2026-06-09 11:17:53.641 +0300
+Source changed /novels/the-long-game/_index.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 45 ms
+
+Change detected, rebuilding site (#288).
+2026-06-09 11:17:54.640 +0300
+Source changed /novels/winter-city/_index.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 45 ms
+
+Change detected, rebuilding site (#289).
+2026-06-09 11:17:55.140 +0300
+Source changed /essays/first-essay.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 61 ms
+
+Change detected, rebuilding site (#290).
+2026-06-09 11:17:55.640 +0300
+Source changed /essays/_index.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 44 ms
+
+Change detected, rebuilding site (#291).
+2026-06-09 11:17:56.640 +0300
+Source changed /novels/_index.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 44 ms
+
+Change detected, rebuilding site (#292).
+2026-06-09 11:18:09.641 +0300
+Template changed /_default/list.html
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 60 ms
+
+Change detected, rebuilding site (#293).
+2026-06-09 11:26:58.141 +0300
+Template changed /index.html
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 354 ms
+
+Change detected, rebuilding site (#294).
+2026-06-09 11:27:08.141 +0300
+Template changed /index.html
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 102 ms
+
+Change detected, rebuilding site (#295).
+2026-06-09 11:27:20.641 +0300
+Template changed /index.html
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 102 ms
+
+Change detected, rebuilding site (#296).
+2026-06-09 11:35:02.140 +0300
+Template changed /_default/list.html
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 5 ms
+
+Change detected, rebuilding site (#297).
+2026-06-09 11:35:20.141 +0300
+Template changed /_default/list.html
+Template changed /_default/baseof.html
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 161 ms
+
+Change detected, rebuilding site (#298).
+2026-06-09 11:40:52.141 +0300
+Template changed /index.html
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 44 ms
+
+Change detected, rebuilding site (#299).
+2026-06-09 11:40:52.641 +0300
+Template changed /index.html
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 104 ms
+
+Change detected, rebuilding site (#300).
+2026-06-09 11:40:53.640 +0300
+Template changed /index.html
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 42 ms
+
+Change detected, rebuilding site (#301).
+2026-06-09 11:40:54.140 +0300
+Template changed /_default/list.html
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 40 ms
+
+Change detected, rebuilding site (#302).
+2026-06-09 11:40:58.141 +0300
+Source changed /novels/the-long-game/_index.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 50 ms
+
+Change detected, rebuilding site (#303).
+2026-06-09 11:40:59.141 +0300
+Source changed /novels/winter-city/_index.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 40 ms
+
+Change detected, rebuilding site (#304).
+2026-06-09 11:40:59.640 +0300
+Source changed /essays/first-essay.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 57 ms
+
+Change detected, rebuilding site (#305).
+2026-06-09 11:41:07.140 +0300
+Source changed /drafts/infective-vs-effective-thinking/_index.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 48 ms
+
+Change detected, rebuilding site (#306).
+2026-06-09 11:41:08.141 +0300
+Source changed /essays/_index.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 40 ms
+adding created directory to watchlist C:\Users\Buzz\bjlessays\content\novels\demo-saga
+adding created directory to watchlist C:\Users\Buzz\bjlessays\content\novels\demo-saga\volume-1
+adding created directory to watchlist C:\Users\Buzz\bjlessays\content\novels\demo-saga\volume-2
+
+Change detected, rebuilding site (#307).
+2026-06-09 11:45:09.641 +0300
+Source changed /novels/demo-saga
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 2 ms
+
+Change detected, rebuilding site (#308).
+2026-06-09 11:45:12.641 +0300
+Source changed /novels/demo-saga/_index.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 43 ms
+
+Change detected, rebuilding site (#309).
+2026-06-09 11:45:13.141 +0300
+Source changed /novels/demo-saga/volume-1/_index.md
+Source changed /novels/demo-saga
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 160 ms
+
+Change detected, rebuilding site (#310).
+2026-06-09 11:45:13.722 +0300
+Source changed /novels
+Source changed /novels/demo-saga/volume-1
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 41 ms
+
+Change detected, rebuilding site (#311).
+2026-06-09 11:45:14.140 +0300
+Source changed /novels/demo-saga/volume-1/chapter-1.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 112 ms
+
+Change detected, rebuilding site (#312).
+2026-06-09 11:45:14.641 +0300
+Source changed /novels/demo-saga/volume-1/chapter-2.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 37 ms
+
+Change detected, rebuilding site (#313).
+2026-06-09 11:45:15.140 +0300
+Source changed /novels/demo-saga/volume-2/_index.md
+Source changed /novels/demo-saga/volume-1
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 17 ms
+
+Change detected, rebuilding site (#314).
+2026-06-09 11:45:15.641 +0300
+Source changed /novels/demo-saga/volume-2/chapter-1.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 111 ms
+
+Change detected, rebuilding site (#315).
+2026-06-09 11:45:16.215 +0300
+Source changed /novels/demo-saga/volume-2
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 14 ms
+
+Change detected, rebuilding site (#316).
+2026-06-09 11:48:07.140 +0300
+Template changed /index.html
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 6 ms
+
+Change detected, rebuilding site (#317).
+2026-06-09 11:48:20.640 +0300
+Template changed /index.html
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 6 ms
+
+Change detected, rebuilding site (#318).
+2026-06-09 11:48:35.641 +0300
+Template changed /index.html
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 6 ms
+
+Change detected, rebuilding site (#319).
+2026-06-09 11:48:43.641 +0300
+Template changed /_default/list.html
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 102 ms
+
+Change detected, rebuilding site (#320).
+2026-06-09 11:48:44.640 +0300
+Template changed /_default/list.html
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 48 ms
+
+Change detected, rebuilding site (#321).
+2026-06-09 11:49:00.641 +0300
+Source changed /novels/demo-saga/_index.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 24 ms
+
+Change detected, rebuilding site (#322).
+2026-06-09 11:50:51.641 +0300
+Template changed /index.html
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 6 ms
+
+Change detected, rebuilding site (#323).
+2026-06-09 11:51:16.640 +0300
+Template changed /index.html
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 6 ms
+
+Change detected, rebuilding site (#324).
+2026-06-09 11:51:26.140 +0300
+Template changed /index.html
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 6 ms
+
+Change detected, rebuilding site (#325).
+2026-06-09 11:54:57.641 +0300
+Template changed /index.html
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 7 ms
+
+Change detected, rebuilding site (#326).
+2026-06-09 11:55:13.140 +0300
+Template changed /_default/list.html
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 49 ms
+
+Change detected, rebuilding site (#327).
+2026-06-09 11:57:40.641 +0300
+Source changed /novels/demo-saga/volume-1/_index.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 23 ms
+
+Change detected, rebuilding site (#328).
+2026-06-09 11:57:42.140 +0300
+Source changed /novels/demo-saga/volume-2/_index.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 22 ms
+
+Change detected, rebuilding site (#329).
+2026-06-09 12:01:05.141 +0300
+Source changed /novels/demo-saga/_index.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 36 ms
+
+Change detected, rebuilding site (#330).
+2026-06-09 12:03:53.141 +0300
+Template changed /index.html
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 47 ms
+
+Change detected, rebuilding site (#331).
+2026-06-09 12:03:56.640 +0300
+Template changed /index.html
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 47 ms
+
+Change detected, rebuilding site (#332).
+2026-06-09 12:07:51.641 +0300
+Template changed /partials/header.html
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 57 ms
+
+Change detected, rebuilding site (#333).
+2026-06-09 12:08:09.140 +0300
+Template changed /_default/baseof.html
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 62 ms
+
+Change detected, rebuilding site (#334).
+2026-06-09 12:11:35.641 +0300
+Template changed /partials/header.html
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 491 ms
+
+Change detected, rebuilding site (#335).
+2026-06-09 12:11:48.141 +0300
+Template changed /partials/header.html
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 218 ms
+
+Change detected, rebuilding site (#336).
+2026-06-09 12:11:58.140 +0300
+Template changed /partials/header.html
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 57 ms
+
+Change detected, rebuilding site (#337).
+2026-06-09 12:14:44.141 +0300
+Template changed /partials/header.html
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 63 ms
+
+Change detected, rebuilding site (#338).
+2026-06-09 12:22:12.141 +0300
+Template changed /partials/header.html
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 292 ms
+
+Change detected, rebuilding site (#339).
+2026-06-09 12:22:12.640 +0300
+Template changed /partials/header.html
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 111 ms
+
+Change detected, rebuilding site (#340).
+2026-06-09 12:22:26.140 +0300
+Template changed /partials/menu.html
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 69 ms
+
+Change detected, rebuilding site (#341).
+2026-06-09 12:22:26.640 +0300
+Template added /partials
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 6 ms
+
+Change detected, rebuilding site (#342).
+2026-06-09 12:23:01.140 +0300
+Template changed /index.html
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 52 ms
+
+Change of config file detected, rebuilding site (#343).
+2026-06-09 12:28:56.640 +0300
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Rebuilt in 893 ms

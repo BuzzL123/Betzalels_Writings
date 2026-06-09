@@ -1,0 +1,57 @@
+{{ define "main" }}
+  <div class="max-w-4xl mx-auto px-4 py-8">
+
+    <div class="text-center mb-16 pt-12">
+      <h1 class="text-4xl font-bold text-gray-900 dark:text-white mb-4">{{ .Title }}</h1>
+      <p class="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+        {{ .Description }}
+      </p>
+    </div>
+
+    {{ $essayEntries := slice }}
+    {{ with site.GetPage "/essays" }}
+      {{ range .RegularPages }}{{ $essayEntries = $essayEntries | append . }}{{ end }}
+      {{ range .Sections }}{{ $essayEntries = $essayEntries | append . }}{{ end }}
+    {{ end }}
+    {{ if $essayEntries }}
+      <section class="mb-10">
+        <h2 class="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-6 relative after:block after:w-12 after:h-0.5 after:bg-blue-500 after:mt-2">Recent Essays</h2>
+        <div class="space-y-4">
+          {{ range $essayEntries }}{{ partial "card.html" . }}{{ end }}
+        </div>
+      </section>
+    {{ end }}
+
+    {{ $novelEntries := slice }}
+    {{ with site.GetPage "/novels" }}
+      {{ range .Sections }}
+        {{ if .Sections }}{{ range .Sections }}{{ $novelEntries = $novelEntries | append . }}{{ end }}
+        {{ else }}{{ $novelEntries = $novelEntries | append . }}{{ end }}
+      {{ end }}
+    {{ end }}
+    {{ if $novelEntries }}
+      <section class="mb-10">
+        <h2 class="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-6 relative after:block after:w-12 after:h-0.5 after:bg-blue-500 after:mt-2">Recent Novels</h2>
+        <div class="space-y-4">
+          {{ range $novelEntries }}{{ partial "card.html" . }}{{ end }}
+        </div>
+      </section>
+    {{ end }}
+
+    {{ $draftEntries := slice }}
+    {{ with site.GetPage "/drafts" }}
+      {{ range .RegularPages }}{{ $draftEntries = $draftEntries | append . }}{{ end }}
+      {{ range .Sections }}{{ $draftEntries = $draftEntries | append . }}{{ end }}
+    {{ end }}
+    {{ if $draftEntries }}
+      <section class="mb-10">
+        <h2 class="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-6 relative after:block after:w-12 after:h-0.5 after:bg-blue-500 after:mt-2">Drafts</h2>
+        <div class="space-y-4">
+          {{ range $draftEntries }}{{ partial "card.html" . }}{{ end }}
+        </div>
+      </section>
+    {{ end }}
+
+  </div>
+  {{ partial "busuanzi_list.html" . }}
+{{ end }}

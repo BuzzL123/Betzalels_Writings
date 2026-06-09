@@ -1,0 +1,38 @@
+baseURL = 'https://example.org/'
+locale = 'en-us'
+title = "Betzalel's Writings"
+theme = "void"
+
+[params]
+  mainSections = ["essays", "novels", "tags"]
+
+[menu]
+  [[menu.main]]
+    identifier = "essays"
+    name = "Essays"
+    url = "/essays"
+    weight = 10
+  [[menu.main]]
+    identifier = "novels"
+    name = "Novels"
+    url = "/novels"
+    weight = 20
+  [[menu.main]]
+    identifier = "tags"
+    name = "Tags"
+    url = "/tags"
+    weight = 30
+
+
+paginate = 5
+
+[build.buildStats]
+  enable = true
+
+[markup]
+  [markup.tableOfContents]
+    startLevel = 1
+    endLevel = 6
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Demo Saga Volume 2: The Middle on Betzalel&#39;s Writings</title>
+		<link>http://localhost:1313/novels/demo-saga/volume-2/</link>
+		<description>Recent content in Demo Saga Volume 2: The Middle on Betzalel&#39;s Writings</description>
+		<generator>Hugo</generator>
+		<language>en-us</language>
+		
+		
+		
+		
+			<atom:link href="http://localhost:1313/novels/demo-saga/volume-2/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Chapter 1: Turning Point</title>
+				<link>http://localhost:1313/novels/demo-saga/volume-2/chapter-1/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/novels/demo-saga/volume-2/chapter-1/</guid>
+				<description>&lt;p&gt;Everything changed when they reached the city.&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>

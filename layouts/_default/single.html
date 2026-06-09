@@ -1,0 +1,294 @@
+{{ define "main" }}
+  {{ $tocRaw := .TableOfContents }}
+  {{ $tocClean := $tocRaw | replaceRE "<li>\\s*</li>" "" }}
+  {{ $tocSanitized := $tocClean
+    | replaceRE `\son\w+\s*=\s*"[^"]*"` "" | replaceRE `\son\w+\s*=\s*'[^']*'` ""
+    | replaceRE `\sstyle\s*=\s*"[^"]*"` "" | replaceRE `\sstyle\s*=\s*'[^']*'` ""
+    | replaceRE `\sclass\s*=\s*"[^"]*"` "" | replaceRE `\sclass\s*=\s*'[^']*'` ""
+    | replaceRE `\sid\s*=\s*"[^"]*"` "" | replaceRE `\sid\s*=\s*'[^']*'` ""
+    | replaceRE `href\s*=\s*"(https?://[^"]*|/[^\"]*|mailto:[^"]*|javascript:[^"]*)"` `href="#"`
+    | replaceRE `href\s*=\s*'(https?://[^']*|/[^']*|mailto:[^']*|javascript:[^']*)'` `href="#"`
+  }}
+  {{ $hasToc := gt (len ($tocSanitized | plainify)) 0 }}
+
+  <div class="{{ if $hasToc }}single-page-shell mx-auto max-w-7xl{{ else }}mx-auto max-w-4xl{{ end }}">
+    {{ if $hasToc }}
+    <aside class="single-toc-column hidden lg:block">
+      <div class="toc-sidebar sticky top-28 max-h-[calc(100vh-9rem)] overflow-y-auto p-6 border border-gray-200 dark:border-slate-700 bg-white dark:bg-slate-900 rounded-lg shadow-md">
+        <h3 class="text-sm font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wider mb-4 pt-2 pl-2">Contents</h3>
+        <div class="toc-nav">
+          {{ $tocClean | safeHTML }}
+        </div>
+      </div>
+    </aside>
+    {{ end }}
+
+    <article class="bg-white rounded-lg shadow-md overflow-hidden {{ if $hasToc }}w-full{{ else }}mx-auto w-full{{ end }}">
+      <header class="p-8 border-b border-gray-100 relative">
+        {{ if .Params.categories }}
+        <div class="mb-3 flex">
+          {{ range first 1 .Params.categories }}
+          <a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}" class="text-xs inline-flex items-center px-2.5 py-1 rounded-full bg-blue-50 text-blue-600 hover:bg-blue-100 transition-colors">
+            {{ . }}
+          </a>
+          {{ end }}
+        </div>
+        {{ end }}
+
+        <h1 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-4 relative">{{ .Title }}</h1>
+
+        {{ with .Params.tags }}
+        <div class="flex flex-wrap gap-2 mb-4">
+          {{ range . }}
+          <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}" class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-50 text-blue-600 dark:bg-blue-900/30 dark:text-blue-400 hover:bg-blue-100 dark:hover:bg-blue-800/40 transition-colors">{{ . }}</a>
+          {{ end }}
+        </div>
+        {{ end }}
+
+        {{ $shareTitle := .Title }}
+        {{ with .Params.share_title }}{{ $shareTitle = . }}{{ end }}
+        {{ $shareText := "" }}
+        {{ with .Params.share_description }}{{ $shareText = . }}{{ end }}
+        {{ if and (not $shareText) .Description }}{{ $shareText = .Description }}{{ end }}
+        {{ if and (not $shareText) .Summary }}{{ $shareText = .Summary | plainify | htmlUnescape }}{{ end }}
+        {{ if not $shareText }}{{ $shareText = site.Title }}{{ end }}
+        {{ $shareText = $shareText | plainify | htmlUnescape | replaceRE `\s+` " " | truncate 120 }}
+
+        <div class="flex flex-wrap items-center text-base text-gray-500 gap-4 relative">
+          {{ $pageDate := .Date }}{{ if $pageDate.IsZero }}{{ with .File }}{{ with .FileInfo.ModTime }}{{ if not .IsZero }}{{ $pageDate = . }}{{ end }}{{ end }}{{ end }}{{ end }}{{ if not $pageDate.IsZero }}{{ $dateMachine := $pageDate | time.Format "2006-01-02T15:04:05-07:00" }}
+          {{ $dateHuman := $pageDate.Format "2006-01-02" }}
+          <time datetime="{{ $dateMachine }}" class="flex items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1.5 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+            </svg>
+            {{ $dateHuman }}
+          </time>{{ end }}
+
+          <span class="flex items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1.5 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            {{ math.Round (div (countwords .Content) 200.0) }} min read
+          </span>
+          <span class="flex items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1.5 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
+            </svg>
+            {{ .WordCount }} words
+          </span>
+
+          <span id="busuanzi_container_page_pv" class="inline-flex items-center whitespace-nowrap">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1.5 text-gray-400 inline-block flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+              <path stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
+            </svg><span class="whitespace-nowrap">{{ i18n "page_views" | default "阅读量" }} <span id="busuanzi_value_page_pv"></span></span>
+          </span>
+
+          <div
+            class="sm:ml-auto"
+            data-share-widget
+            data-share-url="{{ .Permalink }}"
+            data-share-title="{{ $shareTitle }}"
+            data-share-text="{{ $shareText }}"
+            data-share-label-default="{{ i18n "share" | default "Share" }}"
+            data-share-label-success="{{ i18n "share_copied" | default "Copied" }}"
+            data-share-copy-summary-success="{{ i18n "share_copy_summary_success" | default "Share text copied." }}"
+            data-share-copy-failed="{{ i18n "share_copy_failed" | default "Copy failed." }}"
+          >
+            <button
+              type="button"
+              class="share-trigger inline-flex items-center gap-1.5 rounded-full px-2.5 py-1.5 text-sm transition-colors"
+              data-share-copy-summary
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M8.59 13.51l6.83 3.98M15.41 6.51L8.59 10.49" />
+                <circle cx="18" cy="5" r="3" />
+                <circle cx="6" cy="12" r="3" />
+                <circle cx="18" cy="19" r="3" />
+              </svg>
+              <span data-share-label>{{ i18n "share" | default "Share" }}</span>
+            </button>
+          </div>
+        </div>
+      </header>
+
+        {{ if $hasToc }}
+        <div class="px-8 pt-6 lg:hidden" x-data="{ open: false }">
+          <button
+            class="w-full flex items-center justify-between text-sm text-gray-700 dark:text-gray-200 bg-gray-50 dark:bg-slate-800 hover:bg-gray-100 dark:hover:bg-slate-700 border border-gray-200 dark:border-slate-700 rounded-md px-4 py-2 transition-colors"
+            @click="open = !open"
+            aria-controls="toc-content"
+            :aria-expanded="open.toString()"
+          >
+            <span>{{ i18n "table_of_contents" | default "Table of Contents" }}</span>
+            <svg x-show="!open" xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z" clip-rule="evenodd" />
+            </svg>
+            <svg x-show="open" xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M5 9a1 1 0 000 2h10a1 1 0 100-2H5z" clip-rule="evenodd" />
+            </svg>
+          </button>
+          <div id="toc-content" x-cloak x-show="open" x-transition class="mt-3 border border-gray-100 rounded-md bg-white p-4 text-sm leading-relaxed">
+            <div class="prose prose-sm max-w-none">
+              {{ $tocSanitized | safeHTML }}
+            </div>
+          </div>
+        </div>
+        {{ end }}
+
+
+        <div class="p-8 prose prose-sm sm:prose lg:prose-lg max-w-none">
+          {{ .Content }}
+        </div>
+
+        {{ $updated := .Lastmod }}
+        {{ with .GitInfo }}{{ $updated = .AuthorDate }}{{ end }}
+        {{ if $updated }}
+        <div class="px-8 pb-2 text-sm text-gray-500 flex items-center">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1.5 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
+          </svg>
+          {{ i18n "last_updated" | default "最后更新于" }} {{ $updated.Format "2006-01-02" }}
+        </div>
+        {{ end }}
+
+    <footer class="px-8 py-6 bg-gray-50 border-t border-gray-100">
+      {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
+
+      {{ $prev := .NextInSection }}
+      {{ $next := .PrevInSection }}
+      {{ if or $prev $next }}
+      <nav class="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
+        {{ if $prev }}
+        <a href="{{ $prev.RelPermalink }}" class="group block p-4 bg-white border border-gray-200 rounded-lg hover:border-blue-300 hover:bg-blue-50/30 transition-colors">
+          <div class="text-xs text-gray-500 mb-1 flex items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1.5 text-gray-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+            </svg>
+            {{ i18n "pagination_previous" | default "Previous" }}
+          </div>
+          <div class="text-sm font-medium text-gray-900 group-hover:text-blue-700 line-clamp-2">{{ $prev.Title }}</div>
+        </a>
+        {{ end }}
+
+        {{ if $next }}
+        <a href="{{ $next.RelPermalink }}" class="group block p-4 bg-white border border-gray-200 rounded-lg hover:border-blue-300 hover:bg-blue-50/30 transition-colors sm:text-right sm:col-start-2">
+          <div class="text-xs text-gray-500 mb-1 flex items-center sm:justify-end">
+            <span class="sm:order-1 mr-0 sm:ml-1">{{ i18n "pagination_next" | default "Next" }}</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1.5 text-gray-400 sm:order-2 sm:ml-1 sm:mr-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+            </svg>
+          </div>
+          <div class="text-sm font-medium text-gray-900 group-hover:text-blue-700 line-clamp-2">{{ $next.Title }}</div>
+        </a>
+        {{ end }}
+      </nav>
+      {{ end }}
+
+      <div class="mt-6 flex justify-center">
+        <a href="{{ "/" | relLangURL }}" class="inline-flex items-center text-gray-600 hover:text-blue-600 transition-colors">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+          </svg>
+          {{ i18n "back_to_home" | default "返回首页" }}
+        </a>
+      </div>
+    </footer>
+  </article>
+
+  </div>
+
+  {{ if $hasToc }}
+  <style>
+    @media (min-width: 1024px) {
+      .single-page-shell {
+        display: grid;
+        grid-template-columns: minmax(14rem, 18rem) minmax(0, 56rem);
+        gap: 2.5rem;
+        align-items: start;
+        justify-content: center;
+      }
+      .single-toc-column {
+        align-self: stretch;
+      }
+    }
+    .toc-sidebar nav ul { list-style: none; padding: 0; margin: 0; }
+    .toc-sidebar nav li { margin: 0; }
+    .toc-sidebar nav a {
+      display: block;
+      padding: 0.35rem 0.75rem;
+      font-size: 0.875rem;
+      line-height: 1.35;
+      color: #6b7280;
+      border-left: 2px solid transparent;
+      transition: all 0.15s;
+      text-decoration: none;
+    }
+    .toc-sidebar nav a:hover {
+      color: #2563eb;
+      border-left-color: #2563eb;
+    }
+    .toc-sidebar nav a.active {
+      color: #111827;
+      background-color: #f3f4f6;
+      border-left-color: #2563eb;
+      font-weight: 500;
+    }
+    .dark .toc-sidebar nav a:hover,
+    .dark .toc-sidebar nav a.active { 
+      color: #f9fafb; 
+      background-color: #1e293b; 
+      border-left-color: #60a5fa; 
+    }
+
+    .toc-sidebar nav ul ul a { padding-left: 1.5rem; }
+    .toc-sidebar nav ul ul ul a { padding-left: 2.25rem; }
+  </style>
+  <script>
+    (function() {
+      var links = document.querySelectorAll('.toc-sidebar a');
+      if (!links.length) return;
+      var headings = [];
+      links.forEach(function(l) {
+        var id = l.getAttribute('href').substring(1);
+        var el = document.getElementById(id);
+        if (el) headings.push(el);
+      });
+      if (!headings.length) return;
+
+      links.forEach(function(link) {
+        link.addEventListener('click', function(e) {
+          e.preventDefault();
+          var id = this.getAttribute('href').substring(1);
+          var target = document.getElementById(id);
+          if (target) {
+            var y = target.getBoundingClientRect().top + window.pageYOffset - 100;
+            window.scrollTo({ top: y, behavior: 'smooth' });
+            history.pushState(null, null, '#' + id);
+          }
+        });
+      });
+
+      var observer = new IntersectionObserver(function(entries) {
+        var activeId = null;
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) activeId = entry.target.getAttribute('id');
+        });
+        if (activeId) {
+          links.forEach(function(link) {
+            link.classList.remove('active');
+            if (link.getAttribute('href') === '#' + activeId) link.classList.add('active');
+          });
+        }
+      }, { rootMargin: '-80px 0px -80%', threshold: 0 });
+
+      headings.forEach(function(h) { observer.observe(h); });
+      links[0].classList.add('active');
+    })();
+  </script>
+  {{ end }}
+
+  <div class="max-w-4xl mx-auto mt-8 bg-white rounded-lg shadow-md overflow-hidden theme-card" style="--tw-prose-body: #374151; --tw-prose-headings: #111827; --tw-prose-links: #2563eb; --tw-prose-links-hover: #1d4ed8; --tw-prose-code-bg: #f3f4f6; color: #374151;">
+    {{ partial "disqus_lazy.html" . }}
+  </div>
+{{ end }}

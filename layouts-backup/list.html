@@ -1,0 +1,113 @@
+{{ define "main" }}
+  <style>
+    .content-section h1 {
+      margin-bottom: 1rem;
+    }
+    .section-card,
+    .post {
+      border: 2px solid var(--bg4);
+      border-radius: 0.8rem;
+      padding: 0.9rem;
+      margin-bottom: 1rem;
+      background-color: var(--bg1);
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    }
+    .section-card h2,
+    .post h2 {
+      margin: 0 0 0.4rem;
+      font-size: 1.1rem;
+    }
+    .section-card p,
+    .post-preview {
+      margin: 0;
+      color: var(--fg2);
+      font-size: 0.95rem;
+      line-height: 1.5;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+    .single-nav {
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+      margin: 2rem 0 1rem;
+      flex-wrap: wrap;
+    }
+    .single-nav a {
+      padding: 0.75rem 1rem;
+      border: 1px solid var(--bg4);
+      border-radius: 0.75rem;
+      background: var(--bg2);
+      color: var(--fg);
+      text-decoration: none;
+    }
+    .single-nav a:hover {
+      border-color: var(--fg4);
+    }
+    .section-card-link {
+      display: block;
+      text-decoration: none;
+      color: inherit;
+    }
+    .single-subtitle {
+      margin: 0.5rem 0 1rem;
+      color: var(--fg2);
+      font-size: 1rem;
+    }
+  </style>
+
+  <div class="content-section">
+    <h1>{{ .Title | markdownify }}</h1>
+    {{ with .Params.description }}
+      <p class="single-subtitle">{{ . }}</p>
+    {{ end }}
+    {{ with .Content }}
+      <div>{{ . }}</div>
+    {{ end }}
+  </div>
+
+  {{ if gt (len .Sections) 0 }}
+    {{ range .Sections }}
+      <a href="{{ .RelPermalink }}" class="section-card-link">
+        <article class="section-card">
+          <h2>{{ .Title | markdownify }}</h2>
+          {{ with .Params.description }}
+            <p>{{ . }}</p>
+          {{ end }}
+        </article>
+      </a>
+    {{ end }}
+  {{ end }}
+
+  {{ if ne .Kind "home" }}
+    {{ $pages := .RegularPages }}
+    {{ if and (eq .Kind "section") (eq (len .Sections) 0) }}
+      {{ $pages = .RegularPagesRecursive }}
+    {{ end }}
+
+    {{ if gt (len $pages) 0 }}
+      {{ $paginator := .Paginate $pages }}
+      {{ range $pageIndex, $page := $paginator.Pages }}
+        <a href="{{ .RelPermalink }}" class="section-card-link">
+          <article class="post">
+            <div class="post-header">
+              <h2>{{ .Title | markdownify }}</h2>
+            </div>
+            <div class="post-content">
+              <p class="post-preview">
+                {{ with .Description }}
+                  {{ . | plainify }}
+                {{ else }}
+                  {{ .Summary | plainify }}
+                {{ end }}
+              </p>
+            </div>
+          </article>
+        </a>
+      {{ end }}
+      {{ partial "pagination.html" $paginator }}
+    {{ end }}
+  {{ end }}
+{{ end }}

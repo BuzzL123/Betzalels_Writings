@@ -1,0 +1,1452 @@
+<!DOCTYPE html>
+<html
+  lang="en"
+  data-theme="light"
+>
+  <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  
+
+
+<link
+  rel="preload"
+  as="font"
+  type="font/woff2"
+  href="/fonts/roboto-slab-latin-400.woff2"
+  crossorigin="anonymous"
+/>
+
+<link
+  rel="preload"
+  as="font"
+  type="font/woff2"
+  href="/fonts/roboto-slab-latin-700.woff2"
+  crossorigin="anonymous"
+/>
+
+
+<link
+  rel="preload"
+  as="font"
+  type="font/woff2"
+  href="/fonts/fira-code-latin-300.woff2"
+  crossorigin="anonymous"
+/>
+<link
+  rel="preload"
+  as="font"
+  type="font/woff2"
+  href="/fonts/fira-code-latin-400.woff2"
+  crossorigin="anonymous"
+/>
+
+<link
+  rel="preload"
+  as="font"
+  type="font/woff2"
+  href="/fonts/fira-code-latin-700.woff2"
+  crossorigin="anonymous"
+/>
+
+  
+  
+    <meta
+      name="robots"
+      content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+    />
+  
+
+
+
+
+<title>Drone Swarm Project — Design Notes v3.1</title>
+
+<meta
+  name="description"
+  content="Localized Operation and Coordination Unit for Swarm Tactics — LOCUST
+TODO# Okay, so this will be more military-based instead of for commercial use cases.
+Backpack installed drone with a good camera night vision and thermal imaging and strong connection so you can scan tunnels and shit (Meaning, instead of having it built warm for charging, it should be probably on the backpack for comfortability. Or maybe we could also have just extra ones on the backpack. We should also make it that the backpack has a motor that will, like, flip up so that the drones can go on, like, take off automatically) add also a holder for that can release an object with a command. More military-grade equipment, meaning, upgrade cameras instead of them being those cheap ones to be better quality, that can do dual mode for all cameras, and maybe even, like, for dual mode, um, meaning, seeing in the dark and, like, night vision and regular vision. Maybe I&rsquo;ll end up, we&rsquo;ll have to get an extra camera that will be able to do on all the drones, uh, heat signature mapping. And, uh, yeah, once again, military-grade equipment, not, uh, cheap stuff. I can&rsquo;t have this fail on me. Add suicide capability. (meaning for async and synchronous drones, meaning that you can just independently assign each drone a target, and well, the rest is history.) Synchronous Drones (Sync)# Role: Surrounding the perimeter of the building while maintaining formation.
+"
+/>
+
+<link rel="canonical" href="https://example.org/articles/archive/projects/drone-swarm/drone-swarm-project-design-notes-v3-1/" />
+
+
+
+
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="Drone Swarm Project — Design Notes v3.1">
+	<meta name="twitter:description" content="Localized Operation and Coordination Unit for Swarm Tactics — LOCUST
+TODO# Okay, so this will be more military-based instead of for commercial use cases.
+Backpack installed drone with a good camera night vision and thermal imaging and strong connection so you can scan tunnels and shit (Meaning, instead of having it built warm for charging, it should be probably on the backpack for comfortability. Or maybe we could also have just extra ones on the backpack. We should also make it that the backpack has a motor that will, like, flip up so that the drones can go on, like, take off automatically) add also a holder for that can release an object with a command. More military-grade equipment, meaning, upgrade cameras instead of them being those cheap ones to be better quality, that can do dual mode for all cameras, and maybe even, like, for dual mode, um, meaning, seeing in the dark and, like, night vision and regular vision. Maybe I’ll end up, we’ll have to get an extra camera that will be able to do on all the drones, uh, heat signature mapping. And, uh, yeah, once again, military-grade equipment, not, uh, cheap stuff. I can’t have this fail on me. Add suicide capability. (meaning for async and synchronous drones, meaning that you can just independently assign each drone a target, and well, the rest is history.) Synchronous Drones (Sync)# Role: Surrounding the perimeter of the building while maintaining formation.">
+
+<meta property="og:url" content="https://example.org/articles/archive/projects/drone-swarm/drone-swarm-project-design-notes-v3-1/">
+	<meta property="og:site_name" content="My New Hugo Project">
+	<meta property="og:title" content="Drone Swarm Project — Design Notes v3.1">
+	<meta property="og:description" content="Localized Operation and Coordination Unit for Swarm Tactics — LOCUST
+TODO# Okay, so this will be more military-based instead of for commercial use cases.
+Backpack installed drone with a good camera night vision and thermal imaging and strong connection so you can scan tunnels and shit (Meaning, instead of having it built warm for charging, it should be probably on the backpack for comfortability. Or maybe we could also have just extra ones on the backpack. We should also make it that the backpack has a motor that will, like, flip up so that the drones can go on, like, take off automatically) add also a holder for that can release an object with a command. More military-grade equipment, meaning, upgrade cameras instead of them being those cheap ones to be better quality, that can do dual mode for all cameras, and maybe even, like, for dual mode, um, meaning, seeing in the dark and, like, night vision and regular vision. Maybe I’ll end up, we’ll have to get an extra camera that will be able to do on all the drones, uh, heat signature mapping. And, uh, yeah, once again, military-grade equipment, not, uh, cheap stuff. I can’t have this fail on me. Add suicide capability. (meaning for async and synchronous drones, meaning that you can just independently assign each drone a target, and well, the rest is history.) Synchronous Drones (Sync)# Role: Surrounding the perimeter of the building while maintaining formation.">
+	<meta property="og:locale" content="en_us">
+	<meta property="og:type" content="article">
+		<meta property="article:section" content="articles">
+		<meta property="article:published_time" content="2026-04-17T15:53:36+03:00">
+		<meta property="article:modified_time" content="2026-04-17T15:53:36+03:00">
+		<meta property="article:tag" content="Archive">
+		<meta property="article:tag" content="Imported">
+
+
+	<meta itemprop="name" content="Drone Swarm Project — Design Notes v3.1">
+	<meta itemprop="description" content="Localized Operation and Coordination Unit for Swarm Tactics — LOCUST
+TODO# Okay, so this will be more military-based instead of for commercial use cases.
+Backpack installed drone with a good camera night vision and thermal imaging and strong connection so you can scan tunnels and shit (Meaning, instead of having it built warm for charging, it should be probably on the backpack for comfortability. Or maybe we could also have just extra ones on the backpack. We should also make it that the backpack has a motor that will, like, flip up so that the drones can go on, like, take off automatically) add also a holder for that can release an object with a command. More military-grade equipment, meaning, upgrade cameras instead of them being those cheap ones to be better quality, that can do dual mode for all cameras, and maybe even, like, for dual mode, um, meaning, seeing in the dark and, like, night vision and regular vision. Maybe I’ll end up, we’ll have to get an extra camera that will be able to do on all the drones, uh, heat signature mapping. And, uh, yeah, once again, military-grade equipment, not, uh, cheap stuff. I can’t have this fail on me. Add suicide capability. (meaning for async and synchronous drones, meaning that you can just independently assign each drone a target, and well, the rest is history.) Synchronous Drones (Sync)# Role: Surrounding the perimeter of the building while maintaining formation.">
+	<meta itemprop="datePublished" content="2026-04-17T15:53:36+03:00">
+	<meta itemprop="dateModified" content="2026-04-17T15:53:36+03:00">
+	<meta itemprop="wordCount" content="4340">
+	<meta itemprop="keywords" content="Archive,Imported">
+
+
+
+
+
+
+
+
+  
+  
+
+
+  
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+
+
+<style>
+   
+  @font-face{font-display:swap;font-family:Roboto Slab;font-style:normal;font-weight:100;src:local("Roboto Slab Thin "),local("Roboto Slab-Thin"),url(/fonts/roboto-slab-latin-100.woff2) format("woff2"),url(/fonts/roboto-slab-latin-100.woff) format("woff")}@font-face{font-display:swap;font-family:Roboto Slab;font-style:normal;font-weight:200;src:local("Roboto Slab Extra Light "),local("Roboto Slab-Extra Light"),url(/fonts/roboto-slab-latin-200.woff2) format("woff2"),url(/fonts/roboto-slab-latin-200.woff) format("woff")}@font-face{font-display:swap;font-family:Roboto Slab;font-style:normal;font-weight:300;src:local("Roboto Slab Light "),local("Roboto Slab-Light"),url(/fonts/roboto-slab-latin-300.woff2) format("woff2"),url(/fonts/roboto-slab-latin-300.woff) format("woff")}@font-face{font-display:swap;font-family:Roboto Slab;font-style:normal;font-weight:400;src:local("Roboto Slab Regular "),local("Roboto Slab-Regular"),url(/fonts/roboto-slab-latin-400.woff2) format("woff2"),url(/fonts/roboto-slab-latin-400.woff) format("woff")}@font-face{font-display:swap;font-family:Roboto Slab;font-style:normal;font-weight:500;src:local("Roboto Slab Medium "),local("Roboto Slab-Medium"),url(/fonts/roboto-slab-latin-500.woff2) format("woff2"),url(/fonts/roboto-slab-latin-500.woff) format("woff")}@font-face{font-display:swap;font-family:Roboto Slab;font-style:normal;font-weight:600;src:local("Roboto Slab SemiBold "),local("Roboto Slab-SemiBold"),url(/fonts/roboto-slab-latin-600.woff2) format("woff2"),url(/fonts/roboto-slab-latin-600.woff) format("woff")}@font-face{font-display:swap;font-family:Roboto Slab;font-style:normal;font-weight:700;src:local("Roboto Slab Bold "),local("Roboto Slab-Bold"),url(/fonts/roboto-slab-latin-700.woff2) format("woff2"),url(/fonts/roboto-slab-latin-700.woff) format("woff")}@font-face{font-display:swap;font-family:Roboto Slab;font-style:normal;font-weight:800;src:local("Roboto Slab ExtraBold "),local("Roboto Slab-ExtraBold"),url(/fonts/roboto-slab-latin-800.woff2) format("woff2"),url(/fonts/roboto-slab-latin-800.woff) format("woff")}@font-face{font-display:swap;font-family:Roboto Slab;font-style:normal;font-weight:900;src:local("Roboto Slab Black "),local("Roboto Slab-Black"),url(/fonts/roboto-slab-latin-900.woff2) format("woff2"),url(/fonts/roboto-slab-latin-900.woff) format("woff")}@font-face{font-display:swap;font-family:Fira Code;font-style:normal;font-weight:300;src:local("Fira Code Light "),local("Fira Code-Light"),url(/fonts/fira-code-latin-300.woff2) format("woff2"),url(/fonts/fira-code-latin-300.woff) format("woff")}@font-face{font-display:swap;font-family:Fira Code;font-style:normal;font-weight:400;src:local("Fira Code Regular "),local("Fira Code-Regular"),url(/fonts/fira-code-latin-400.woff2) format("woff2"),url(/fonts/fira-code-latin-400.woff) format("woff")}@font-face{font-display:swap;font-family:Fira Code;font-style:normal;font-weight:500;src:local("Fira Code Medium "),local("Fira Code-Medium"),url(/fonts/fira-code-latin-500.woff2) format("woff2"),url(/fonts/fira-code-latin-500.woff) format("woff")}@font-face{font-display:swap;font-family:Fira Code;font-style:normal;font-weight:600;src:local("Fira Code SemiBold "),local("Fira Code-SemiBold"),url(/fonts/fira-code-latin-600.woff2) format("woff2"),url(/fonts/fira-code-latin-600.woff) format("woff")}@font-face{font-display:swap;font-family:Fira Code;font-style:normal;font-weight:700;src:local("Fira Code Bold "),local("Fira Code-Bold"),url(/fonts/fira-code-latin-700.woff2) format("woff2"),url(/fonts/fira-code-latin-700.woff) format("woff")}
+
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:block}h1{font-size:2em;margin:.67em 0}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent}abbr[title]{border-bottom:none;-webkit-text-decoration:underline;text-decoration:underline;-webkit-text-decoration:underline dotted;text-decoration:underline dotted}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details{display:block}summary{display:list-item}[hidden],template{display:none}
+
+/*! CC BY-SA 3.0 License | https://stackoverflow.com/a/36118384/1154965 */@keyframes blink{50%{opacity:0}to{opacity:1}}
+
+/*! MIT License | github.com/schnerring/hugo-theme-gruvbox */:root[data-theme=light]{--bg:var(--bg0);--bg0:#fbf1c7;--bg0_h:#f9f5d7;--bg0_s:#f2e5bc;--bg1:#ebdbb2;--bg2:#d5c4a1;--bg3:#bdae93;--bg4:#a89984;--fg:var(--fg1);--fg0:#282828;--fg1:#3c3836;--fg2:#504945;--fg3:#665c54;--fg4:#7c6f64;--gray1:var(--fg4);--gray2:#928374;--red1:#cc241d;--red2:#9d0006;--green1:#98971a;--green2:#797403;--yellow1:#d79921;--yellow2:#b57614;--blue1:#458588;--blue2:#076678;--purple1:#b16286;--purple2:#8f3f71;--aqua1:#689d6a;--aqua2:#427b58;--orange1:#d65d0e;--orange2:#af3a03}:root[data-theme=dark]{--bg:var(--bg0);--bg0:#282828;--bg0_h:#1d2021;--bg0_s:#32302f;--bg1:#3c3836;--bg2:#504945;--bg3:#665c54;--bg4:#7c6f64;--fg:var(--fg1);--fg0:#fbf1c7;--fg1:#ebdbb2;--fg2:#d5c4a1;--fg3:#bdae93;--fg4:#a89984;--gray1:var(--fg4);--gray2:#928374;--red1:#cc241d;--red2:#fb4934;--green1:#98971a;--green2:#b8bb26;--yellow1:#d79921;--yellow2:#fabd2f;--blue1:#458588;--blue2:#83a598;--purple1:#b16286;--purple2:#d3869b;--aqua1:#689d6a;--aqua2:#8ec07c;--orange1:#d65d0e;--orange2:#fe8019}:root{--primary:var(--blue1);--primary-alt:var(--blue2);--font-monospace:"Fira Code","Lucida Console",Monaco,monospace;--font-sans-serif:Verdana,Helvetica,sans-serif;--font-serif:"Roboto Slab",Georgia,serif}::-moz-selection{background:var(--bg4);color:var(--fg0)}::selection{background:var(--bg4);color:var(--fg0)}.search{display:flex;grid-area:search;margin:0 1rem}#search__text{background:var(--bg2);border:1px solid var(--bg2);border-radius:.2rem;caret-color:var(--fg);color:var(--fg);outline:none;padding:0 .5rem;visibility:hidden;width:100%}#search__text:hover{border-color:var(--bg3)}#search__text:focus{border-color:var(--bg4)}#search__text::-moz-placeholder{color:var(--fg3)}#search__text::placeholder{color:var(--fg3)}#search__text[type=search]::-webkit-search-cancel-button{-webkit-appearance:none;appearance:none}#search__suggestions{background:var(--bg);border-radius:.2rem;box-shadow:0 .5rem 1rem var(--bg1);font-family:Roboto Slab,Georgia,serif;font-family:var(--font-serif);left:0;margin-top:2rem;position:absolute;width:95vw;z-index:1000}@media (min-width:768px){.search{position:relative}#search__suggestions{width:60vw}}.search__suggestions--hidden{display:none}.search__suggestion-item{border-bottom:1px dashed var(--bg2);display:grid;grid-template-columns:1fr 2fr}.search__suggestion-item:focus,.search__suggestion-item:focus-visible,.search__suggestion-item:hover{background:var(--bg1);cursor:pointer;outline:none}.search__suggestion-item:last-child{border:none}.search__suggestion-description,.search__suggestion-title{margin:1rem 0;padding:0 1rem}.search__suggestion-title{font-weight:700}.search__suggestion-description{border-left:1px solid var(--bg2)}.search__no-results{padding:.75rem}
+   
+</style>
+
+<link
+  rel="preload"
+  href="/css/non-critical.8ba2581cf256a695fc0d34b2b520f3b418e30c341689bf523573822a9f2cfa54365240011dc55bff2141e7caf096f1466448f8472ac23bb4cfbf8fa205c5a775.css"
+  as="style"
+  onload="this.onload=null;this.rel='stylesheet'"
+  
+    integrity="sha512-i6JYHPJWppX8DTSytSDztBjjDDQWib9SNXOCKp8s+lQ2UkABHcVb/yFB58rwlvFGZEj4RyrCO7TPv4+iBcWndQ=="
+  
+/>
+
+
+<link
+  id="prism-dark"
+  rel="preload"
+  href="/prism-themes/prism-gruvbox-dark.min.54aecc64074623a4f9898544dcbdab9e804f1560ef0b38f4cf8e10fcaaf72264e798cb407c601aca6ecd833ec4eb93d66535581f18d45ba202cf848b70dbc332.css"
+  as="style"
+  onload="this.onload=null;this.rel='stylesheet'"
+  integrity="sha512-VK7MZAdGI6T5iYVE3L2rnoBPFWDvCzj0z44Q/Kr3ImTnmMtAfGAaym7Ngz7E65PWZTVYHxjUW6ICz4SLcNvDMg=="
+  disabled
+/>
+
+
+<link
+  id="prism-light"
+  rel="preload"
+  href="/prism-themes/prism-gruvbox-light.min.42a221741efe997fcc94187c39d63c555560678789ac9ca856c74a5f0ddb2aa6c50d38b2ffbecc7a99038cbbd2efa99746e862267f781c559e0cfec10b88a5fc.css"
+  as="style"
+  onload="this.onload=null;this.rel='stylesheet'"
+  
+    integrity="sha512-QqIhdB7&#43;mX/MlBh8OdY8VVVgZ4eJrJyoVsdKXw3bKqbFDTiy/77MepkDjLvS76mXRuhiJn94HFWeDP7BC4il/A=="
+  
+  
+/>
+
+<noscript>
+  
+    <link
+      rel="stylesheet"
+      href="/prism-themes/prism-gruvbox-light.min.42a221741efe997fcc94187c39d63c555560678789ac9ca856c74a5f0ddb2aa6c50d38b2ffbecc7a99038cbbd2efa99746e862267f781c559e0cfec10b88a5fc.css"
+      
+        integrity="sha512-QqIhdB7&#43;mX/MlBh8OdY8VVVgZ4eJrJyoVsdKXw3bKqbFDTiy/77MepkDjLvS76mXRuhiJn94HFWeDP7BC4il/A=="
+      
+    />
+  
+
+
+  <link
+    rel="stylesheet"
+    href="/css/non-critical.8ba2581cf256a695fc0d34b2b520f3b418e30c341689bf523573822a9f2cfa54365240011dc55bff2141e7caf096f1466448f8472ac23bb4cfbf8fa205c5a775.css"
+    
+      integrity="sha512-i6JYHPJWppX8DTSytSDztBjjDDQWib9SNXOCKp8s+lQ2UkABHcVb/yFB58rwlvFGZEj4RyrCO7TPv4+iBcWndQ=="
+    
+  />
+</noscript>
+
+
+  
+
+  
+
+
+
+
+<script>
+  (()=>{function c(){if(localStorage&&localStorage.getItem("theme"))return localStorage.getItem("theme");if(window.matchMedia)return window.matchMedia("(prefers-color-scheme: light)").matches?"light":"dark"}function n(t){document.documentElement.setAttribute("data-theme",t);let e=document.getElementById("prism-dark"),i=document.getElementById("prism-light");e.toggleAttribute("disabled",t==="light"),i.toggleAttribute("disabled",t==="dark"),localStorage.setItem("theme",t)}var o=c();o&&n(o);function l(t){let e=t.currentTarget.classList.contains("light--hidden")?"light":"dark";n(e)}document.addEventListener("DOMContentLoaded",function(){document.querySelectorAll(".theme__toggle").forEach(e=>{e.addEventListener("click",l)})});})();
+
+</script>
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#282828" />
+<meta name="msapplication-TileColor" content="#282828" />
+<meta name="theme-color" content="#282828" />
+
+
+
+  
+  
+
+</head>
+
+  <body>
+    <div class="layout">
+      <header>
+  <a
+    class="logo"
+    href="/"
+  >
+    
+      <div class="logo__text">gruvbox</div>
+    
+    <div class="logo__chevron">></div>
+    <div class="logo__cursor">█</div>
+  </a>
+
+  <div class="search">
+    <input
+      id="search__text"
+      type="search"
+      placeholder="Search..."
+      aria-label="Search"
+      autocomplete="off"
+    />
+    <div id="search__suggestions" class="search__suggestions--hidden"></div>
+  </div>
+
+  <nav id="menu">
+    <ul class="menu--horizontal">
+      
+        <li class="menu__item">
+          <a href="/articles">Articles</a>
+        </li>
+      
+    </ul>
+
+    <div class="menu__burger">
+      
+      <input class="menu__item" type="checkbox" aria-label="Open main menu" />
+
+      
+
+
+  <svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  class="icon icon-tabler icons-tabler-outline icon-tabler-menu-2"
+>
+  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+  <path d="M4 6l16 0" />
+  <path d="M4 12l16 0" />
+  <path d="M4 18l16 0" />
+</svg>
+
+
+
+
+      <ul class="menu--vertical">
+        
+          <li>
+            <a class="menu__item" href="/articles">Articles</a>
+          </li>
+        
+      </ul>
+    </div>
+  </nav>
+
+  <button class="theme__toggle light--hidden" aria-label="Toggle light mode">
+    
+
+
+  <svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  class="icon icon-tabler icons-tabler-outline icon-tabler-sun"
+>
+  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+  <path d="M8 12a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" />
+  <path d="M3 12h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7" />
+</svg>
+
+
+  </button>
+
+  <button class="theme__toggle dark--hidden" aria-label="Toggle dark mode">
+    
+
+
+  <svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  class="icon icon-tabler icons-tabler-outline icon-tabler-moon"
+>
+  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+  <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454l0 .008" />
+</svg>
+
+
+  </button>
+</header>
+
+      <main>
+        <div class="content">
+          
+  <article class="post">
+    <div class="post-header">
+      <h1>Drone Swarm Project — Design Notes v3.1</h1>
+      <div class="post-meta"><span>2026-04-17</span>
+    <div class="post-tags">
+      <a class="post-tag" href="https://example.org/tags/archive">archive</a><a class="post-tag" href="https://example.org/tags/imported">imported</a>
+    </div>
+  
+
+  
+</div>
+
+    </div>
+
+    <div class="post-content">
+      <p><em>Localized Operation and Coordination Unit for Swarm Tactics — <strong>LOCUST</strong></em></p>
+<hr>
+<h1 id="todo">TODO<a href="#todo" class="post-heading__anchor" aria-hidden="true">#</a>
+</h1>
+<p>Okay, so this will be more military-based instead of for commercial use cases.</p>
+<ol>
+<li>Backpack installed drone with a good camera night vision and thermal imaging and strong connection so you can scan tunnels and shit (Meaning, instead of having it built warm for charging, it should be probably on the backpack for comfortability. Or maybe we could also have just extra ones on the backpack. We should also make it that the backpack has a motor that will, like, flip up so that the drones can go on, like, take off automatically)</li>
+<li>add also a holder for that can release an object with a command.</li>
+<li>More military-grade equipment, meaning, upgrade cameras instead of them being those cheap ones to be better quality, that can do dual mode for all cameras, and maybe even, like, for dual mode, um, meaning, seeing in the dark and, like, night vision and regular vision. Maybe I&rsquo;ll end up, we&rsquo;ll have to get an extra camera that will be able to do on all the drones, uh, heat signature mapping. And, uh, yeah, once again, military-grade equipment, not, uh, cheap stuff. I can&rsquo;t have this fail on me.</li>
+<li>Add suicide capability. (meaning for async and synchronous drones, meaning that you can just independently assign each drone a target, and well, the rest is history.)</li>
+</ol>
+<h3 id="synchronous-drones-sync">Synchronous Drones (Sync)<a href="#synchronous-drones-sync" class="post-heading__anchor" aria-hidden="true">#</a>
+</h3>
+<p><strong>Role</strong>: Surrounding the perimeter of the building while maintaining formation.</p>
+<ol>
+<li>
+<p><strong>Vision System Enhancement</strong>:</p>
+<ul>
+<li>Optimize the wide-angle camera (<code>OV2640</code>) with higher resolution or specialized sensors for better day and night surveillance.</li>
+<li>Add a thermal imaging option to the sync drones for heat signature detection, which could be crucial for detecting people inside buildings.</li>
+</ul>
+</li>
+<li>
+<p><strong>Formation Control</strong>:</p>
+<ul>
+<li>Use the centralized <code>Hailo-8</code> AI on the backpack to refine formation flying algorithms, ensuring that the sync drones maintain precise distances and patterns around the building.</li>
+<li>Implement advanced path planning software on Hailo-8 that allows drones to adapt their formation dynamically based on real-time data or commands.</li>
+</ul>
+</li>
+<li>
+<p><strong>Extended Flight Time</strong>:</p>
+<ul>
+<li>Since these drones are meant to stay in a stationary formation, focus on extending flight time through better battery management and solar charging systems (as previously discussed).</li>
+</ul>
+</li>
+<li>
+<p><strong>Communication Systems</strong>:</p>
+<ul>
+<li>Ensure the LoRa system used for communication with the backpack is secure and has low latency to maintain constant coordination.</li>
+</ul>
+</li>
+</ol>
+<h3 id="asynchronous-drones-async">Asynchronous Drones (Async)<a href="#asynchronous-drones-async" class="post-heading__anchor" aria-hidden="true">#</a>
+</h3>
+<p><strong>Role</strong>: Entering the building for reconnaissance inside.</p>
+<ol>
+<li>
+<p><strong>Sensor Suite Enhancement</strong>:</p>
+<ul>
+<li>Given that these drones will be penetrating interiors, ensure their cameras have good low-light capabilities, possibly with night vision enhancement.</li>
+<li>Consider adding a thermal camera to help locate heat sources even in complete darkness or through walls.</li>
+</ul>
+</li>
+<li>
+<p><strong>Autonomous Navigation</strong>:</p>
+<ul>
+<li>Implement advanced obstacle avoidance systems like the <code>VL53L5CX</code> time-of-flight sensor and use it in conjunction with SLAM (Simultaneous Localization And Mapping) algorithms for indoor navigation.</li>
+<li>Train a more sophisticated AI model on Hailo-8 to handle complex environments and adapt flight paths based on real-time feedback from sensors.</li>
+</ul>
+</li>
+<li>
+<p><strong>Stealth and Detection</strong>:</p>
+<ul>
+<li>Utilize the IR LED and UV LED for low-profile surveillance, as well as the thermal camera to detect heat signatures within the building.</li>
+<li>Implement license plate recognition and person re-identification across drone feeds to identify individuals or vehicles of interest in real-time.</li>
+</ul>
+</li>
+<li>
+<p><strong>Power Management</strong>:</p>
+<ul>
+<li>Prioritize power efficiency in both hardware (higher-capacity batteries) and software (optimized flight plans that conserve energy) aspects for longer operational times inside the building.</li>
+</ul>
+</li>
+<li>
+<p><strong>Secure Communication</strong>:</p>
+<ul>
+<li>If possible, encrypt communication between the async drones and the backpack or other drones to maintain confidentiality of collected data.</li>
+</ul>
+</li>
+</ol>
+<h3 id="improvements-list-based-on-your-query">Improvements List Based on Your Query<a href="#improvements-list-based-on-your-query" class="post-heading__anchor" aria-hidden="true">#</a>
+</h3>
+<ol>
+<li>Optimize camera systems for both day and night use on all drones.</li>
+<li>Enhance obstacle avoidance algorithms for indoor navigation on asynchronous drones.</li>
+<li>Implement thermal imaging capabilities for detecting heat signatures in buildings.</li>
+<li>Use advanced AI models to improve autonomous flight operations within complex environments.</li>
+<li>Extend flight times through better power management solutions.</li>
+<li>Ensure secure, encrypted communication between the central unit and all drone types.</li>
+<li>Develop a more sophisticated localization system (SLAM) for indoor navigation.</li>
+<li>Add stealth mode capabilities using IR LEDs and UV LEDs on async drones.</li>
+<li>Enhance formation control algorithms to improve precision in aerial displays by sync drones.</li>
+<li>Use advanced path planning software to dynamically adjust the formations of sync drones based on real-time inputs.</li>
+</ol>
+<p>By focusing on these improvements, your drone swarm system will be better suited for surrounding a building with synchronized vision and penetrating it with detailed reconnaissance capabilities from within.</p>
+<h2 id="overview">Overview<a href="#overview" class="post-heading__anchor" aria-hidden="true">#</a>
+</h2>
+<p>A multi-functional drone swarm system built around two drone types:</p>
+<ul>
+<li><strong>Async drones</strong> (×4, belt-worn) — full sensor suite, independently capable, used for recon, surveillance, podcasting, forensics, dark environments, pointing/scanning, and through-wall sensing.</li>
+<li><strong>Sync drones</strong> (×12, suitcase) — vision-first, centrally coordinated, used for formations, light shows, multi-angle filming, perimeter coverage, surveillance sweeps, and distributed sensing meshes.</li>
+</ul>
+<p>Both fleets connect to a <strong>computer backpack</strong> worn by the operator. A <strong>head-mounted display (HMD)</strong> shows drone feeds and controls. <strong>Motion gloves</strong> (or Quest 3 hand tracking) allow precision manual control. <strong>Solar panels</strong> on the suitcase and backpack extend field endurance without shore power.</p>
+<p>The onboard AI is called <strong>LOCUST</strong> — all voice commands are prefixed with its name. Example: <em>&ldquo;LOCUST, send the swarm to circle that building and scan for signs of life.&rdquo;</em></p>
+<blockquote>
+<p><strong>Acronym:</strong> <strong>L</strong>ocalized <strong>O</strong>peration and <strong>C</strong>oordination <strong>U</strong>nit for <strong>S</strong>warm <strong>T</strong>actics</p>
+</blockquote>
+<hr>
+<h2 id="drone-types">Drone Types<a href="#drone-types" class="post-heading__anchor" aria-hidden="true">#</a>
+</h2>
+<h3 id="shared-capabilities-both-async-and-sync">Shared Capabilities (Both Async and Sync)<a href="#shared-capabilities-both-async-and-sync" class="post-heading__anchor" aria-hidden="true">#</a>
+</h3>
+<p>Features present on every drone in the fleet:</p>
+<table>
+	<thead>
+			<tr>
+					<th>Feature</th>
+					<th>Notes</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>GPS positioning</td>
+					<td>Async: triangulation + last-known location. Sync: formation positioning.</td>
+			</tr>
+			<tr>
+					<td>LoRa communication</td>
+					<td>Backpack is master node; all drones share the same network with unique addresses.</td>
+			</tr>
+			<tr>
+					<td>USB-C calibration</td>
+					<td>Belt/suitcase plugs into backpack RPi. All drones flash ID, LoRa address, LED colour, flight profile in one shot. No Bluetooth needed.</td>
+			</tr>
+			<tr>
+					<td>WiFi CSI sensing (ESP32-S3)</td>
+					<td>Through-wall presence, motion, breathing, activity detection. See WiFi Sensing section.</td>
+			</tr>
+			<tr>
+					<td>Night mode (auto + voice)</td>
+					<td>LDR light sensor triggers automatic IR switch below a set lux threshold. Voice command &ldquo;LOCUST, night mode&rdquo; available as override for edge cases — e.g. a bright stage in a dark outdoor venue.</td>
+			</tr>
+			<tr>
+					<td>Geo-tagged evidence logging</td>
+					<td>Every clip/frame tagged with GPS coordinates, timestamp, and drone ID. Stored on backpack NVMe SSD.</td>
+			</tr>
+			<tr>
+					<td>Surveillance camera feed</td>
+					<td>Backpack Hailo-8 runs face detection, person tracking, and object detection on all active feeds simultaneously.</td>
+			</tr>
+	</tbody>
+</table>
+<hr>
+<h3 id="async-drones-belt-4">Async Drones (Belt, ×4)<a href="#async-drones-belt-4" class="post-heading__anchor" aria-hidden="true">#</a>
+</h3>
+<p>Full-featured drones for individual, autonomous tasks.</p>
+<p><strong>Async-exclusive capabilities:</strong></p>
+<ul>
+<li>Day/night dual-mode camera with switchable IR-cut filter</li>
+<li>IR LED illumination (850 nm) — night vision, invisible to the naked eye</li>
+<li>UV LED (395 nm) — forensic scanning</li>
+<li>White LED flashlight — caves, woods, dark interiors</li>
+<li>Time-of-flight sensor (VL53L5CX) — obstacle avoidance + gesture/pointing triangulation</li>
+<li>Thermal camera <em>(optional)</em> — heat detection, dark recon, forensics</li>
+<li>SDR module <em>(optional)</em> — passive RF listening, receive-only</li>
+<li><strong>Acconeer XM125 60 GHz pulsed radar</strong> — high-resolution through-wall sensing; complements WiFi CSI (see Through-Wall Sensing)</li>
+<li>License plate recognition (LPR) via Hailo-8</li>
+<li>Person re-identification across drone feeds</li>
+<li>Fall / incident detection</li>
+</ul>
+<p><strong>Palm Auto-Return:</strong>
+On low battery or voice command <em>&ldquo;LOCUST, return&rdquo;</em>:</p>
+<ol>
+<li>Drone navigates toward backpack GPS coordinates</li>
+<li>Switches to downward-facing camera</li>
+<li>Hailo-8 detects open palm in the frame</li>
+<li>Hovers ~10 cm above palm — grab it or let it land</li>
+</ol>
+<p>Async drones never die mid-air from neglect.</p>
+<p><strong>Activation:</strong> Toggle button on top + open palm → drone takes off, awaits LOCUST command.</p>
+<hr>
+<h3 id="sync-drones-suitcase-12">Sync Drones (Suitcase, ×12)<a href="#sync-drones-suitcase-12" class="post-heading__anchor" aria-hidden="true">#</a>
+</h3>
+<p>Lightweight, vision-first drones for coordinated swarm operations. All heavy AI runs on the backpack — not on each drone.</p>
+<p><strong>Design philosophy:</strong> Drop expensive per-drone sensors. Use one wide-angle camera per drone and let the Hailo-8 on the backpack handle depth estimation, obstacle avoidance, and formation positioning centrally. Saves ~$250 per unit, cuts weight, extends flight time. Same direction as Tesla Full Self-Driving.</p>
+<p><strong>Sync-exclusive capabilities:</strong></p>
+<ul>
+<li>Wide-angle camera (OV2640, 160° FOV) for vision + central AI depth estimation</li>
+<li>8× addressable RGB LEDs (WS2812B) — formation markers, light shows, identification, event choreography</li>
+<li>IR LED (850 nm, simplified) — basic IR illumination for night formation shots and stealth filming</li>
+<li>Suitcase auto-dock — IR beacon homing + magnetic pogo-pin capture, no manual plug-in</li>
+</ul>
+<p><strong>Sync use cases:</strong></p>
+<ul>
+<li>Flight formations — circling a perimeter, geometric patterns, synchronized movement</li>
+<li>Light shows and LED choreography for events</li>
+<li>Multi-angle filming — surround a subject from multiple simultaneous viewpoints</li>
+<li>Podcasting/event coverage from overhead or multiple angles</li>
+<li>Relay networks — extend communication range across large areas</li>
+<li>Group reconnaissance — multiple simultaneous viewpoints across a large area</li>
+<li><strong>Perimeter sensing mesh</strong> — station drones around a building; CSI data from all nodes fused into an occupancy map on the backpack (see WiFi Sensing section)</li>
+</ul>
+<p><strong>Suitcase Auto-Dock:</strong>
+On low battery or command:</p>
+<ol>
+<li>Drone receives suitcase GPS (broadcast by suitcase MCU over LoRa)</li>
+<li>Navigates to suitcase — works even if it has moved</li>
+<li>Switches to IR beacon homing for final approach</li>
+<li>Magnets capture and seat drone in bay precisely</li>
+<li>Pogo pins begin charging — no manual plug-in</li>
+</ol>
+<hr>
+<h2 id="through-wall-sensing">Through-Wall Sensing<a href="#through-wall-sensing" class="post-heading__anchor" aria-hidden="true">#</a>
+</h2>
+<p>Two complementary technologies work together on the async drone and as a distributed mesh on the sync fleet.</p>
+<h3 id="wifi-csi-esp32-s3--long-range-any-building">WiFi CSI (ESP32-S3) — Long Range, Any Building<a href="#wifi-csi-esp32-s3--long-range-any-building" class="post-heading__anchor" aria-hidden="true">#</a>
+</h3>
+<p>WiFi Channel State Information sensing reads how 2.4 GHz signals are disturbed as they pass through walls and interact with moving objects. Every person in a room creates a unique distortion pattern.</p>
+<p><strong>What it detects:</strong></p>
+<table>
+	<thead>
+			<tr>
+					<th>Capability</th>
+					<th>Status</th>
+					<th>Notes</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>Human presence</td>
+					<td>✅ Reliable</td>
+					<td>Works through drywall at 5–15 m</td>
+			</tr>
+			<tr>
+					<td>Motion detection</td>
+					<td>✅ Reliable</td>
+					<td>Sensitive enough to detect breathing</td>
+			</tr>
+			<tr>
+					<td>Breathing rate</td>
+					<td>✅ Reliable</td>
+					<td>Non-contact vital sign monitoring</td>
+			</tr>
+			<tr>
+					<td>Activity class (walking/sitting/falling)</td>
+					<td>✅ Reliable</td>
+					<td>CNN model on CSI spectrograms</td>
+			</tr>
+			<tr>
+					<td>Rough zone location</td>
+					<td>✅ Yes</td>
+					<td>Multiple nodes improve accuracy</td>
+			</tr>
+			<tr>
+					<td>Body pose / skeleton</td>
+					<td>⚠️ Experimental</td>
+					<td>Requires per-environment ML training</td>
+			</tr>
+			<tr>
+					<td>Number of people</td>
+					<td>⚠️ Partial</td>
+					<td>Reliable to ~3–5 per node</td>
+			</tr>
+			<tr>
+					<td>Images through walls</td>
+					<td>❌ Never</td>
+					<td>CSI is signal distortion, not a camera</td>
+			</tr>
+			<tr>
+					<td>Through metal / foil</td>
+					<td>❌ Blocked</td>
+					<td>Near-zero signal penetration</td>
+			</tr>
+	</tbody>
+</table>
+<p><strong>Wall penetration range:</strong></p>
+<table>
+	<thead>
+			<tr>
+					<th>Wall Type</th>
+					<th>Range</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>Drywall / plasterboard</td>
+					<td>5–15 m</td>
+			</tr>
+			<tr>
+					<td>Brick</td>
+					<td>3–10 m</td>
+			</tr>
+			<tr>
+					<td>Reinforced concrete</td>
+					<td>3–8 m</td>
+			</tr>
+			<tr>
+					<td>Glass</td>
+					<td>10–18 m</td>
+			</tr>
+			<tr>
+					<td>Metal / foil insulation</td>
+					<td>~0</td>
+			</tr>
+	</tbody>
+</table>
+<p><strong>Sensing modes:</strong></p>
+<ol>
+<li><strong>Active</strong> — drone transmits and reads its own reflected signal. Single-drone, best for 3–8 m walls.</li>
+<li><strong>Passive</strong> — drone reads distortion in ambient WiFi (building routers, phones). No transmission needed.</li>
+<li><strong>Multi-drone mesh</strong> — the most powerful mode. Deploy 4–8 sync drones around a building: one transmits, others receive from different angles. Multi-static geometry gives 360° room coverage. All CSI streams go back to the backpack via LoRa; Hailo-8 fuses them into a room-level occupancy map displayed in the HMD.</li>
+</ol>
+<p><strong>Hard limits:</strong></p>
+<ul>
+<li>Cannot produce images through walls — ever. This is signal distortion analysis, not imaging.</li>
+<li>Static people are harder — breathing still detects, but activity recognition drops.</li>
+<li>Environment-specific — furniture layout affects multipath. Presence and motion detection work out of the box; body pose requires 10–15 min environment training per location.</li>
+<li>2.4 GHz only — 5 GHz doesn&rsquo;t penetrate walls usefully.</li>
+<li>Multiple simultaneous active transmitters need time-slicing (managed by backpack scheduling).</li>
+</ul>
+<p><strong>Software stack:</strong></p>
+<ul>
+<li>Drone: ESP32-S3 running <code>esp-csi</code> (Espressif open source). Compressed CSI packets sent to backpack via LoRa burst.</li>
+<li>Backpack: Python/Rust CSI processor on RPi 5. ML inference on Hailo-8. Software options: <code>RuView</code> (full pose + vitals), <code>ESPectre</code> (simple presence), or custom CNN trained on CSI spectrograms.</li>
+</ul>
+<hr>
+<h3 id="acconeer-xm125-60-ghz-radar--async-drone-only">Acconeer XM125 60 GHz Radar — Async Drone Only<a href="#acconeer-xm125-60-ghz-radar--async-drone-only" class="post-heading__anchor" aria-hidden="true">#</a>
+</h3>
+<p>This is the second through-wall sensor on the async drone. It operates on completely different physics than WiFi CSI: it emits short bursts of 60 GHz radio pulses and reads the reflection directly, like a miniature radar.</p>
+<p><strong>What it adds over WiFi CSI:</strong></p>
+<table>
+	<thead>
+			<tr>
+					<th>Capability</th>
+					<th>XM125 Radar</th>
+					<th>WiFi CSI</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>Requires building to have WiFi</td>
+					<td>❌ No</td>
+					<td>Passive mode: yes</td>
+			</tr>
+			<tr>
+					<td>Works through metal-rich walls</td>
+					<td>⚠️ Better (60 GHz absorbs less in some materials)</td>
+					<td>❌ Blocked by metal</td>
+			</tr>
+			<tr>
+					<td>Point-and-read (single drone)</td>
+					<td>✅ Yes — up to 7 m through wall</td>
+					<td>✅ Yes — active mode</td>
+			</tr>
+			<tr>
+					<td>Breathing detection</td>
+					<td>✅ Yes — high accuracy</td>
+					<td>✅ Yes</td>
+			</tr>
+			<tr>
+					<td>Distributed mesh sensing</td>
+					<td>❌ Single-drone only</td>
+					<td>✅ Multi-drone</td>
+			</tr>
+			<tr>
+					<td>Range</td>
+					<td>Up to 7 m (presence), 20 m (with lens)</td>
+					<td>5–15 m (drywall)</td>
+			</tr>
+	</tbody>
+</table>
+<p><strong>Use together:</strong> WiFi CSI handles wide-area perimeter mesh sensing (sync fleet). XM125 on the async drone provides high-confidence, directed point-sensing when hovering close to a specific target. The two data streams are fused on the Hailo-8 for higher confidence readings.</p>
+<hr>
+<h3 id="why-sdr-doesnt-replace-either">Why SDR Doesn&rsquo;t Replace Either<a href="#why-sdr-doesnt-replace-either" class="post-heading__anchor" aria-hidden="true">#</a>
+</h3>
+<p>The question comes up because an SDR is effectively a general-purpose radio that can tune to almost any frequency — couldn&rsquo;t it emulate both WiFi CSI and UWB radar? Technically interesting, but practically no:</p>
+<ul>
+<li><strong>RTL-SDR</strong> (the cheap $35 dongle) is receive-only and tops out at ~1.7 GHz. Can&rsquo;t transmit, can&rsquo;t reach 60 GHz.</li>
+<li><strong>HackRF One</strong> covers 1 MHz–6 GHz and can transmit — but achieving the nanosecond pulse precision needed for ranging radar in software is extremely difficult. Dedicated chips handle this in hardware.</li>
+<li><strong>60 GHz (XM125 range)</strong> requires specialized mmWave front-ends. No consumer SDR reaches this band.</li>
+<li>The CSI approach specifically exploits the WiFi packet structure — it&rsquo;s not generic radio listening, it&rsquo;s reading per-subcarrier phase and amplitude data that WiFi chips expose as a side-channel. An SDR receiving raw 2.4 GHz energy wouldn&rsquo;t have access to this structured CSI data.</li>
+</ul>
+<p><strong>Bottom line:</strong> The SDR on the async drone is for passive RF spectrum monitoring (listening to what&rsquo;s on the air). The XM125 and ESP32-S3 handle through-wall sensing. These are three different tools for three different jobs.</p>
+<hr>
+<h2 id="locust-ai--voice-activation">LOCUST AI — Voice Activation<a href="#locust-ai--voice-activation" class="post-heading__anchor" aria-hidden="true">#</a>
+</h2>
+<p>All commands are prefixed with <strong>&ldquo;LOCUST&rdquo;</strong> to avoid the system triggering on normal conversation.</p>
+<p><strong>Example syntax:</strong></p>
+<blockquote>
+<p><em>&ldquo;LOCUST, send the swarm to circle that building and scan for signs of life.&rdquo;</em>
+<em>&ldquo;LOCUST, return all drones.&rdquo;</em>
+<em>&ldquo;LOCUST, give me control of drone alpha.&rdquo;</em></p>
+</blockquote>
+<p>LOCUST filters its name from the audio stream, then parses the command content. The ReSpeaker Mic Array v2.0 on the backpack handles far-field pickup and wind rejection. The Hailo-8 runs the voice processing model.</p>
+<p><strong>Core voice commands:</strong></p>
+<table>
+	<thead>
+			<tr>
+					<th>Command</th>
+					<th>Action</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>&ldquo;LOCUST, return&rdquo;</td>
+					<td>Async: palm auto-return. Sync: suitcase auto-dock.</td>
+			</tr>
+			<tr>
+					<td>&ldquo;LOCUST, deploy solar&rdquo;</td>
+					<td>Suitcase solar panels unfold + begin sun tracking.</td>
+			</tr>
+			<tr>
+					<td>&ldquo;LOCUST, night mode [on/off]&rdquo;</td>
+					<td>Override auto-IR. Activates IR camera + illumination across fleet.</td>
+			</tr>
+			<tr>
+					<td>&ldquo;LOCUST, scan that building&rdquo;</td>
+					<td>Async drone navigates to pointed target → CSI + radar sweep → HMD report.</td>
+			</tr>
+			<tr>
+					<td>&ldquo;LOCUST, track that person&rdquo;</td>
+					<td>Hailo-8 face/body lock on HMD reticle target.</td>
+			</tr>
+			<tr>
+					<td>&ldquo;LOCUST, cover the perimeter&rdquo;</td>
+					<td>Sync fleet takes distributed perimeter stations; breach detection goes active.</td>
+			</tr>
+			<tr>
+					<td>&ldquo;LOCUST, sweep the area&rdquo;</td>
+					<td>Swarm runs grid search pattern; Hailo-8 flags detected persons.</td>
+			</tr>
+			<tr>
+					<td>&ldquo;LOCUST, pull up feed [drone ID]&rdquo;</td>
+					<td>Displays that drone&rsquo;s camera in HMD.</td>
+			</tr>
+			<tr>
+					<td>&ldquo;LOCUST, give me control of [ID]&rdquo;</td>
+					<td>Activates precision glove/hand-tracking mode for that drone.</td>
+			</tr>
+			<tr>
+					<td>&ldquo;LOCUST, record and tag&rdquo;</td>
+					<td>Starts geo-tagged clip on current active feed.</td>
+			</tr>
+	</tbody>
+</table>
+<p><strong>Gesture commands (no LOCUST prefix needed):</strong></p>
+<table>
+	<thead>
+			<tr>
+					<th>Gesture</th>
+					<th>Action</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>Open palm held out</td>
+					<td>Drone takeoff / palm auto-return landing target</td>
+			</tr>
+			<tr>
+					<td>Point at object</td>
+					<td>Combined with voice command for scan/triangulation</td>
+			</tr>
+			<tr>
+					<td>Fist → open hand</td>
+					<td>Enable precision glove/hand-tracking mode</td>
+			</tr>
+			<tr>
+					<td>Double pointer-to-thumb tap</td>
+					<td>Pause drone in place (hover)</td>
+			</tr>
+	</tbody>
+</table>
+<hr>
+<h2 id="solar-power-system">Solar Power System<a href="#solar-power-system" class="post-heading__anchor" aria-hidden="true">#</a>
+</h2>
+<h3 id="suitcase-solar--primary-50w--sun-tracking">Suitcase Solar — Primary (50W + Sun Tracking)<a href="#suitcase-solar--primary-50w--sun-tracking" class="post-heading__anchor" aria-hidden="true">#</a>
+</h3>
+<p>The suitcase lid and sides carry <strong>4 modular 12.5W flexible solar panels</strong> (50W total) on motorized folding arms. Voice command or switch: <em>&ldquo;LOCUST, deploy solar&rdquo;</em> — panels unfold and sun tracking begins.</p>
+<p><strong>Sun-tracking sub-system:</strong></p>
+<ul>
+<li>4× LDR sensors per panel in quad arrangement (top/bottom/left/right) detect brightest direction</li>
+<li>Differential LDR readings drive 2× SG90 servos per panel (azimuth + tilt elevation)</li>
+<li>8 servos total, controlled by PCA9685 PWM driver on the suitcase MCU (already present)</li>
+<li>Tracking adds ~20–30% energy harvest vs fixed-angle panels</li>
+<li>Panels fold flat automatically when drones are launching or landing</li>
+</ul>
+<p><strong>Swappable panels:</strong> Each module connects via XT30 connector + bayonet mount. Swap a damaged panel in seconds. Spares store in the suitcase lid organizer.</p>
+<p><strong>Power routing:</strong> Suitcase solar → 4S MPPT controller → suitcase 4S LiPo → sync drone charging. In full sun: recharges ~2–3 drone batteries per hour, extending field ops well beyond the battery-alone 2-cycle limit.</p>
+<h3 id="backpack-solar--secondary-30w--sun-tracking">Backpack Solar — Secondary (30W + Sun Tracking)<a href="#backpack-solar--secondary-30w--sun-tracking" class="post-heading__anchor" aria-hidden="true">#</a>
+</h3>
+<p>A <strong>30W foldable panel</strong> attaches to the backpack rear via loop fasteners. The operator is typically stationary or slow-walking during swarm control — the panel gets reasonable sun exposure.</p>
+<ul>
+<li>30W direct sun ≈ 2A into 4S backpack battery</li>
+<li>Partially offsets RPi 5 + Hailo-8 draw (~15W combined)</li>
+<li>Optional motorized tilt servo on the mount — same sun-tracking logic as suitcase, simpler single-axis version</li>
+<li>MPPT controller maximises harvest</li>
+</ul>
+<p><strong>Belt:</strong> No solar. The belt is wired directly to the backpack — it draws from the same 20,000 mAh pack. There&rsquo;s no need for a separate power source or trickle charging.</p>
+<p><strong>Drones:</strong> No solar. A 3&quot;-class drone draws 30–50W in flight; a palm-sized cell produces ~0.1–0.5W. The physics don&rsquo;t work until solar cell efficiency improves significantly. Revisit when perovskite cells (~30–40% efficiency) become commercially available.</p>
+<h3 id="solar-summary">Solar Summary<a href="#solar-summary" class="post-heading__anchor" aria-hidden="true">#</a>
+</h3>
+<table>
+	<thead>
+			<tr>
+					<th>Device</th>
+					<th>Panel</th>
+					<th>Peak Output</th>
+					<th>Primary Benefit</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>Suitcase</td>
+					<td>4× 12.5W (50W) + 2-axis sun tracking</td>
+					<td>~40W effective</td>
+					<td>Recharges sync drone batteries in the field</td>
+			</tr>
+			<tr>
+					<td>Backpack</td>
+					<td>30W foldable + optional single-axis tracking</td>
+					<td>~25W in sun</td>
+					<td>Extends all-day operator endurance</td>
+			</tr>
+			<tr>
+					<td>Belt</td>
+					<td>None — wired to backpack battery</td>
+					<td>—</td>
+					<td>—</td>
+			</tr>
+			<tr>
+					<td>Drones</td>
+					<td>None — tech not viable yet</td>
+					<td>—</td>
+					<td>Revisit with perovskite cells</td>
+			</tr>
+	</tbody>
+</table>
+<hr>
+<h2 id="surveillance">Surveillance<a href="#surveillance" class="post-heading__anchor" aria-hidden="true">#</a>
+</h2>
+<h3 id="what-both-drones-share">What Both Drones Share<a href="#what-both-drones-share" class="post-heading__anchor" aria-hidden="true">#</a>
+</h3>
+<p>Both async and sync drones are surveillance platforms by default. The Hailo-8 on the backpack runs AI inference on all active feeds simultaneously. No extra hardware beyond the 1 TB NVMe SSD for recording.</p>
+<p><strong>Shared across all drones:</strong></p>
+<ul>
+<li>Face detection and real-time tracking</li>
+<li>Person detection and flagging</li>
+<li>Geo-tagged evidence logging (GPS + timestamp per clip/frame)</li>
+<li>Night mode camera feed (IR where hardware supports it)</li>
+<li>Live HMD feed display</li>
+</ul>
+<h3 id="async-only-surveillance">Async-Only Surveillance<a href="#async-only-surveillance" class="post-heading__anchor" aria-hidden="true">#</a>
+</h3>
+<ul>
+<li><strong>Person re-identification</strong> — if a subject leaves one drone&rsquo;s view, Hailo-8 matches their appearance features to re-identify them when they reappear</li>
+<li><strong>License plate recognition (LPR)</strong> — daylight camera can read plates at 3–6 m; Hailo-8 logs plate strings in real time</li>
+<li><strong>Night surveillance</strong> — IR illumination + IR camera filter off = invisible night-vision that subjects cannot detect</li>
+<li><strong>Thermal detection</strong> <em>(optional camera)</em> — heat signature detection for complete darkness, through light cover</li>
+<li><strong>XM125 radar</strong> — directed through-wall presence detection when hovering near a target</li>
+<li><strong>Fall / incident detection</strong> — person down, motionless subject flagged in HMD</li>
+</ul>
+<h3 id="sync-only-surveillance">Sync-Only Surveillance<a href="#sync-only-surveillance" class="post-heading__anchor" aria-hidden="true">#</a>
+</h3>
+<ul>
+<li><strong>Crowd counting</strong> — multiple overhead angles give dense-crowd estimates across large areas</li>
+<li><strong>Perimeter breach detection</strong> — any object crossing a defined virtual boundary triggers an HMD alert</li>
+<li><strong>Multi-angle subject lock</strong> — 4–6 drones surrounding a subject from different angles simultaneously</li>
+<li><strong>Formation surveillance sweep</strong> — swarm flies a grid pattern; Hailo-8 flags detected persons in each feed</li>
+<li><strong>WiFi CSI perimeter mesh</strong> — distributed through-wall sensing of an entire building&rsquo;s interior from outside</li>
+</ul>
+<h3 id="storage">Storage<a href="#storage" class="post-heading__anchor" aria-hidden="true">#</a>
+</h3>
+<p>A 1 TB NVMe SSD on the backpack RPi stores all drone feeds, detection thumbnails, CSI logs, and telemetry.
+At H.264/H.265, 16 simultaneous drone feeds ≈ ~25 MB/s → roughly <strong>11 hours of full-swarm recording</strong> per session.</p>
+<hr>
+<h2 id="hardware-systems">Hardware Systems<a href="#hardware-systems" class="post-heading__anchor" aria-hidden="true">#</a>
+</h2>
+<h3 id="computer-backpack">Computer Backpack<a href="#computer-backpack" class="post-heading__anchor" aria-hidden="true">#</a>
+</h3>
+<p>Core of the system. Worn as a backplate or compact backpack.</p>
+<table>
+	<thead>
+			<tr>
+					<th>Component</th>
+					<th>Part</th>
+					<th>Notes</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>Main computer</td>
+					<td>Raspberry Pi 5 (8 GB)</td>
+					<td>PCIe for Hailo HAT and NVMe</td>
+			</tr>
+			<tr>
+					<td>AI accelerator</td>
+					<td>Hailo-8 HAT (26 TOPS)</td>
+					<td>Face/object detection, depth, palm, voice, LPR, CSI inference</td>
+			</tr>
+			<tr>
+					<td>Microphone array</td>
+					<td>ReSpeaker Mic Array v2.0</td>
+					<td>Far-field to 5 m; outdoor wind rejection</td>
+			</tr>
+			<tr>
+					<td>Main battery</td>
+					<td>4S LiPo 20,000 mAh or 18650 cell pack</td>
+					<td>4–8 hrs runtime. 18650 safer for wearable; use proper BMS.</td>
+			</tr>
+			<tr>
+					<td>LoRa master</td>
+					<td>Ebyte E22-900M30S + SMA</td>
+					<td>All async + sync drones + suitcase on same network</td>
+			</tr>
+			<tr>
+					<td>USB-C hub</td>
+					<td>Anker 10-port powered</td>
+					<td>Belt × 4, suitcase tether × 1, HMD, gloves, spares</td>
+			</tr>
+			<tr>
+					<td>Active cooler</td>
+					<td>RPi 5 official active cooler</td>
+					<td>Mandatory under sustained AI + LoRa + USB load</td>
+			</tr>
+			<tr>
+					<td>Storage</td>
+					<td>1 TB NVMe SSD + RPi 5 NVMe HAT</td>
+					<td>Surveillance recording, CSI logs, telemetry</td>
+			</tr>
+			<tr>
+					<td>Solar</td>
+					<td>30W foldable panel + MPPT controller</td>
+					<td>Partial draw offset; extends all-day ops</td>
+			</tr>
+	</tbody>
+</table>
+<h3 id="drone-belt-4-bay-async">Drone Belt (4-bay, Async)<a href="#drone-belt-4-bay-async" class="post-heading__anchor" aria-hidden="true">#</a>
+</h3>
+<p>Wearable belt, 2 bays per side. Always physically tethered to the backpack via USB connection for data and power.</p>
+<ul>
+<li>USB-C charges and calibrates all 4 async drones simultaneously when plugged in</li>
+<li>MAX17048 fuel gauge ICs report each drone&rsquo;s charge status to the backpack continuously</li>
+<li>WS2812B status LEDs per bay: green = full, yellow = charging, red = low, white = calibrated + ready</li>
+<li>TPU drone cradles with USB-C guides and optional snap retention</li>
+<li>MOLLE webbing with quick-release buckles</li>
+</ul>
+<h3 id="drone-suitcase-12-bay-sync">Drone Suitcase (12-bay, Sync)<a href="#drone-suitcase-12-bay-sync" class="post-heading__anchor" aria-hidden="true">#</a>
+</h3>
+<p>Hard-shell Pelican-style case. The suitcase maintains a <strong>data connection to the backpack over LoRa</strong> at all times in the field (position broadcast, status uplink). USB tether is <strong>calibration mode</strong> for initial fleet setup.</p>
+<ul>
+<li>12 magnetic pogo-pin docking bays with TPU cradles</li>
+<li>IR landing beacons per bay (unique modulation frequency per slot)</li>
+<li>USB-C calibration hub (all 12 drones configured simultaneously)</li>
+<li>Battery fuel gauges + status display in lid</li>
+<li>GPS + LoRa (broadcasts suitcase position so returning drones can home in even if moved)</li>
+<li>Power: Meanwell 12V 20A for indoor; 4S 20Ah LiPo for field</li>
+<li>4× modular 12.5W flexible solar panels with 2-axis motorized sun-tracking arms</li>
+<li>MPPT controller + PCA9685 servo driver + quad-LDR sun sensors</li>
+</ul>
+<hr>
+<h2 id="head-mounted-display">Head-Mounted Display<a href="#head-mounted-display" class="post-heading__anchor" aria-hidden="true">#</a>
+</h2>
+<h3 id="path-a--realistic-meta-quest-3">Path A — Realistic: Meta Quest 3<a href="#path-a--realistic-meta-quest-3" class="post-heading__anchor" aria-hidden="true">#</a>
+</h3>
+<p>Buy a Quest 3 and build a custom app. Passthrough AR overlays drone feeds on your actual surroundings.</p>
+<ul>
+<li>Connect to backpack RPi via USB-C link cable (lowest latency) or wirelessly via Virtual Desktop</li>
+<li>App shows: drone feeds, formation controls, LOCUST voice shortcut buttons, CSI occupancy map, surveillance alerts, geo-tagged evidence log, solar power status</li>
+<li><strong>Hand tracking</strong> built into Quest 3 — can replace motion gloves entirely for most gestures. No extra hardware needed.</li>
+</ul>
+<h3 id="path-b--delusional-custom-smart-glasses">Path B — Delusional: Custom Smart Glasses<a href="#path-b--delusional-custom-smart-glasses" class="post-heading__anchor" aria-hidden="true">#</a>
+</h3>
+<p>Build from scratch. A multi-year sub-project in its own right.</p>
+<ul>
+<li><strong>FPGA</strong> (Lattice ECP5 or Xilinx Artix-7) — parallel graphics + sensor processing; MCUs too slow</li>
+<li><strong>Micro OLED displays</strong> (Sony ECX339A or eMagin) — one per eye + beam-splitter or prism optics</li>
+<li><strong>Waveguide / prism optics</strong> — the hard and expensive part; diffractive waveguides from Lumus/DigiLens need high MOQ</li>
+<li><strong>4× OV5640 cameras</strong> — 2 front-facing, 2 rear (arm tips) for 360° operator awareness</li>
+<li><strong>Hand tracking cameras</strong> — required for this path since there&rsquo;s no Quest to delegate to</li>
+<li><strong>MEMS microphones</strong> with DSP for outdoor noise cancellation</li>
+<li><strong>Optional retina scanner</strong> for biometric login</li>
+<li>Custom titanium or carbon fiber frame</li>
+</ul>
+<hr>
+<h2 id="motion-gloves">Motion Gloves<a href="#motion-gloves" class="post-heading__anchor" aria-hidden="true">#</a>
+</h2>
+<p>One pair for precision individual drone control.</p>
+<p><strong>Primary option:</strong> Physical gloves with flex sensors — most reliable, works without line-of-sight.
+<strong>Alternative (Quest 3 path only):</strong> Quest 3 hand tracking — cheaper, no hardware to build, covered by existing purchase.</p>
+<p><strong>Activation:</strong> Fist → open hand gesture (or Quest 3 hand raise)
+<strong>Pause drone:</strong> Double pointer-to-thumb tap</p>
+<p><strong>Per-glove components (physical option):</strong></p>
+<ul>
+<li>nRF52840 MCU (BLE built-in, ultra-low power)</li>
+<li>ICM-42688-P IMU — wrist roll/pitch/yaw</li>
+<li>5× Spectra Symbol flex sensors — one per finger</li>
+<li>LiPo 150–200 mAh in wrist band</li>
+<li>ERM haptic motor — feedback for command confirm, low battery, palm-return acknowledged</li>
+</ul>
+<hr>
+<h2 id="battery-strategy">Battery Strategy<a href="#battery-strategy" class="post-heading__anchor" aria-hidden="true">#</a>
+</h2>
+<h3 id="async-drones">Async Drones<a href="#async-drones" class="post-heading__anchor" aria-hidden="true">#</a>
+</h3>
+<ul>
+<li>15–25 min per charge (full sensor payload)</li>
+<li>3 batteries per drone, hot-swapped via belt</li>
+<li>4 drones × 3 batteries = 45–75 min continuous coverage</li>
+<li>Palm auto-return prevents mid-air battery death</li>
+</ul>
+<h3 id="sync-drones">Sync Drones<a href="#sync-drones" class="post-heading__anchor" aria-hidden="true">#</a>
+</h3>
+<ul>
+<li>25–35 min per charge (lighter payload = longer flight)</li>
+<li>2 batteries per drone; charge in suitcase between sets</li>
+<li>Plan 20-min formation or filming sets; suitcase solar recharges between rounds</li>
+</ul>
+<h3 id="backpack">Backpack<a href="#backpack" class="post-heading__anchor" aria-hidden="true">#</a>
+</h3>
+<ul>
+<li>20,000 mAh 4S LiPo: 4–8 hrs RPi 5 runtime + drone charging overhead</li>
+<li>30W solar adds meaningful top-off during all-day deployments</li>
+<li>Use 18650 pack with proper BMS — no puffing risk vs raw LiPo pouch cells</li>
+</ul>
+<hr>
+<h2 id="future-ideas">Future Ideas<a href="#future-ideas" class="post-heading__anchor" aria-hidden="true">#</a>
+</h2>
+<p><em>Anything that can be built now, should be. Budget review will determine what gets phased.</em></p>
+<ul>
+<li><strong>Nuclear micro-batteries</strong> — when commercially available, flight time becomes irrelevant. Until then: rotation.</li>
+<li><strong>Solid-state LiPo</strong> — projected to push flight times toward 40–45 min at this drone scale, potentially by ~2030.</li>
+<li><strong>On-drone AI</strong> (async) — if battery tech improves enough, each async drone carries its own inference chip for true independence from the backpack.</li>
+<li><strong>Suitcase auto-landing with moving suitcase</strong> — suitcase broadcasts GPS continuously; drones always have a live target even while it&rsquo;s being carried.</li>
+<li><strong>Perovskite solar cells</strong> — 30–40% efficiency vs 20–22% for current monocrystalline. Would nearly double harvest from the same panel area. Re-evaluate drone-mounted solar when these become available.</li>
+<li><strong>IEEE 802.11bf (WiFi SENS standard)</strong> — finalized in 2024. Future WiFi chips will expose CSI natively as a standard feature, improving hardware availability and driver support across all devices.</li>
+<li><strong>LOCUST acronym refinement</strong> — current working acronym: <em>Localized Operation and Coordination Unit for Swarm Tactics</em>. Open to revision.</li>
+</ul>
+<hr>
+<h2 id="legal-notes">Legal Notes<a href="#legal-notes" class="post-heading__anchor" aria-hidden="true">#</a>
+</h2>
+<table>
+	<thead>
+			<tr>
+					<th>Feature</th>
+					<th>Status</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>IR LED illumination (your own use)</td>
+					<td>✅ Legal</td>
+			</tr>
+			<tr>
+					<td>IR LED to blind/disable others&rsquo; cameras</td>
+					<td>❌ Illegal — US/EU/UK surveillance interference</td>
+			</tr>
+			<tr>
+					<td>UV LED 395 nm (forensics, resin)</td>
+					<td>✅ Legal — don&rsquo;t aim at eyes</td>
+			</tr>
+			<tr>
+					<td>UV LED 254 nm (disinfection)</td>
+					<td>⚠️ Eye/skin hazard — handle with care</td>
+			</tr>
+			<tr>
+					<td>SDR passive receive</td>
+					<td>✅ Legal with appropriate licence in some bands</td>
+			</tr>
+			<tr>
+					<td>RF jamming / signal blocking</td>
+					<td>❌ Federal crime US (47 U.S.C. §333), illegal EU/UK and globally</td>
+			</tr>
+			<tr>
+					<td>FAA drone registration (&gt;250g, US)</td>
+					<td>⚠️ Required — Part 107</td>
+			</tr>
+			<tr>
+					<td>Flying over people without waiver</td>
+					<td>⚠️ Prohibited without FAA waiver</td>
+			</tr>
+			<tr>
+					<td>Biometric auth of yourself</td>
+					<td>✅ Fine</td>
+			</tr>
+			<tr>
+					<td>Face/biometric scanning of others without consent</td>
+					<td>❌ BIPA, GDPR violations</td>
+			</tr>
+			<tr>
+					<td>WiFi CSI — your property or with consent</td>
+					<td>✅ Legal</td>
+			</tr>
+			<tr>
+					<td>WiFi CSI — private property without consent</td>
+					<td>❌ Privacy violation in most jurisdictions</td>
+			</tr>
+			<tr>
+					<td>Active WiFi CSI probing (ESP32-S3 power levels)</td>
+					<td>✅ FCC Part 15 compliant at standard output</td>
+			</tr>
+			<tr>
+					<td>Acconeer XM125 radar</td>
+					<td>✅ FCC Part 15 compliant per module certification</td>
+			</tr>
+			<tr>
+					<td>Drone surveillance cameras — public spaces</td>
+					<td>⚠️ Generally legal; varies by jurisdiction</td>
+			</tr>
+			<tr>
+					<td>Recording through private windows</td>
+					<td>❌ Voyeurism/wiretapping laws apply</td>
+			</tr>
+			<tr>
+					<td>License plate recognition — personal use</td>
+					<td>⚠️ Legal for personal security; commercial/LE use has additional regulation</td>
+			</tr>
+	</tbody>
+</table>
+<hr>
+<h2 id="recommended-build-order">Recommended Build Order<a href="#recommended-build-order" class="post-heading__anchor" aria-hidden="true">#</a>
+</h2>
+<ol>
+<li>Single async drone flying stably — FC, IMU, motors, props</li>
+<li>Add GPS + LoRa + backpack RPi</li>
+<li>Belt dock + USB calibration</li>
+<li>Voice commands via ReSpeaker + Hailo-8 + LOCUST wake word</li>
+<li>Palm auto-return — downward camera + palm detection model</li>
+<li>First sync drones + suitcase + IR beacon + magnetic dock</li>
+<li>USB calibration for suitcase fleet</li>
+<li>Swarm formation software on RPi</li>
+<li>HMD integration — Quest 3 app + hand tracking</li>
+<li>Motion gloves <em>(if not using Quest 3 hand tracking)</em></li>
+<li>WiFi CSI — ESP32-S3 on async drone; train presence model; test through-wall detection</li>
+<li>Sync fleet CSI mesh — 4+ sync drones as distributed nodes; fuse signals on backpack</li>
+<li>XM125 radar on async drone — directed through-wall sense; fuse with CSI</li>
+<li>Surveillance AI — face detection, LPR, re-ID, geo-tagged recording on Hailo-8</li>
+<li>Suitcase solar array — mount panels, wire MPPT, implement sun-tracking servo firmware</li>
+<li>Backpack solar — attach foldable panel, optional tracking mount, wire MPPT</li>
+</ol>
+
+    </div>
+
+    
+
+    
+  </article>
+
+        </div>
+        <div class="sidebar">
+  
+
+  
+  
+    <aside class="bio">
+      
+
+  <div class="jr__item jr-basics__item">
+    
+  <div class="jr-basics__image">
+    <img
+      src="https://hugo-theme-gruvbox.schnerring.net/richard-hendricks.webp"
+      alt="Picture of Richard Hendricks"
+      width="250"
+      height="250"
+    />
+  </div>
+
+
+
+    
+      <div class="jr-basics__name">Richard Hendricks</div>
+    
+
+    
+      <div class="jr-basics__label">Programmer</div>
+    
+
+    
+      <div class="jr-basics__email">richard.hendricks@piedpiper.com</div>
+    
+
+    
+      <div class="jr-basics__phone">(912) 555-4321</div>
+    
+
+    
+
+    
+      <div class="jr-basics__summary">Richard hails from Tulsa. He has earned degrees from the University of Oklahoma and Stanford. Before starting Pied Piper, he worked for Hooli as a part time software developer. While his work focuses on applied information theory, mostly optimizing lossless compression schema of both the length-limited and adaptive variants, his non-work interests range widely, everything from quantum computing to chaos theory.</div>
+    
+
+    
+      
+
+      
+
+      
+        <div class="jr-basics__location-city">San Francisco</div>
+      
+
+      
+
+      
+    
+
+    
+      <hr />
+      <div class="jr-basics__profile jr-basics__profile--col">
+        
+          
+
+<a href="https://github.com/schnerring/hugo-theme-gruvbox" target="_blank" rel="noreferrer me">
+
+<div class="jr-basics__profile-item">
+  <div class="jr-basics__profile-icon">
+    
+    <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+  </div>
+
+  
+    <div class="jr-basics__profile-username">hugo-theme-gruvbox</div>
+  
+</div>
+
+
+</a>
+
+        
+          
+
+<a href="https://github.com/schnerring/hugo-mod-json-resume" target="_blank" rel="noreferrer me">
+
+<div class="jr-basics__profile-item">
+  <div class="jr-basics__profile-icon">
+    
+    <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+  </div>
+
+  
+    <div class="jr-basics__profile-username">hugo-mod-json-resume</div>
+  
+</div>
+
+
+</a>
+
+        
+      </div>
+    
+
+    
+      <hr />
+      <div class="jr-basics__profile jr-basics__profile--row">
+        
+          
+
+<a href="https://x.com/SiliconHBO" target="_blank" rel="noreferrer me">
+
+<div class="jr-basics__profile-item">
+  <div class="jr-basics__profile-icon">
+    
+    <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>X</title><path d="M14.234 10.162 22.977 0h-2.072l-7.591 8.824L7.251 0H.258l9.168 13.343L.258 24H2.33l8.016-9.318L16.749 24h6.993zm-2.837 3.299-.929-1.329L3.076 1.56h3.182l5.965 8.532.929 1.329 7.754 11.09h-3.182z"/></svg>
+  </div>
+
+  
+</div>
+
+
+</a>
+
+        
+          
+
+<a href="https://silicon-valley.fandom.com/wiki/Richard_Hendricks" target="_blank" rel="noreferrer me">
+
+<div class="jr-basics__profile-item">
+  <div class="jr-basics__profile-icon">
+    
+    <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Fandom</title><path d="M8.123.008a.431.431 0 00-.512.42v9.746L4.104 6.666a.432.432 0 00-.66.064.428.428 0 00-.071.239v10.064a2.387 2.387 0 00.701 1.694l4.565 4.57a2.4 2.4 0 001.693.703h3.34c.635 0 1.242-.252 1.691-.701l4.565-4.572a2.394 2.394 0 00.699-1.694V13.41a2.39 2.39 0 00-.7-1.693L8.343.125a.427.427 0 00-.219-.117zM9.646 12.51a.719.719 0 01.508.21l1.848 1.85 1.844-1.85a.714.714 0 011.015 0l1.32 1.321a.724.724 0 01.212.508v1.406a.72.72 0 01-.21.508l-3.68 3.7a.72.72 0 01-1.019 0l-3.668-3.7a.716.716 0 01-.209-.506v-1.408a.71.71 0 01.211-.506l1.32-1.322a.713.713 0 01.508-.211Z"/></svg>
+  </div>
+
+  
+</div>
+
+
+</a>
+
+        
+          
+
+<a href="https://www.hbo.com/silicon-valley" target="_blank" rel="noreferrer me">
+
+<div class="jr-basics__profile-item">
+  <div class="jr-basics__profile-icon">
+    
+    <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>HBO</title><path d="M7.042 16.896H4.414v-3.754H2.708v3.754H.01L0 7.22h2.708v3.6h1.706v-3.6h2.628zm12.043.046C21.795 16.94 24 14.689 24 11.978a4.89 4.89 0 0 0-4.915-4.92c-2.707-.002-4.09 1.991-4.432 2.795.003-1.207-1.187-2.632-2.58-2.634H7.59v9.674l4.181.001c1.686 0 2.886-1.46 2.888-2.713.385.788 1.72 2.762 4.427 2.76zm-7.665-3.936c.387 0 .692.382.692.817 0 .435-.305.817-.692.817h-1.33v-1.634zm.005-3.633c.387 0 .692.382.692.817 0 .436-.305.818-.692.818h-1.33V9.373zm1.77 2.607c.305-.039.813-.387.992-.61-.063.276-.068 1.074.006 1.35-.204-.314-.688-.701-.998-.74zm3.43 0a2.462 2.462 0 1 1 4.924 0 2.462 2.462 0 0 1-4.925 0zm2.462 1.936a1.936 1.936 0 1 0 0-3.872 1.936 1.936 0 0 0 0 3.872Z"/></svg>
+  </div>
+
+  
+</div>
+
+
+</a>
+
+        
+          
+
+<a href="https://www.imdb.com/title/tt2575988/" target="_blank" rel="noreferrer me">
+
+<div class="jr-basics__profile-item">
+  <div class="jr-basics__profile-icon">
+    
+    <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>IMDb</title><path d="M22.3781 0H1.6218C.7411.0583.0587.7437.0018 1.5953l-.001 20.783c.0585.8761.7125 1.543 1.5559 1.6191A.337.337 0 0 0 1.6016 24h20.7971a.4579.4579 0 0 0 .0437-.002c.8727-.0768 1.5568-.8271 1.5568-1.7085V1.7098c0-.8914-.696-1.6416-1.584-1.7078A.3294.3294 0 0 0 22.3781 0zm0 .496a1.2144 1.2144 0 0 1 1.1252 1.2139v20.5797c0 .6377-.4875 1.1602-1.1045 1.2145H1.6016c-.5967-.0543-1.0645-.5297-1.1053-1.1258V1.6284C.5371 1.0185 1.0184.5364 1.6217.496h20.7564zM4.7954 8.2603v7.3636H2.8899V8.2603h1.9055zm6.5367 0v7.3636H9.6707v-4.9704l-.6711 4.9704H7.813l-.6986-4.8618-.0066 4.8618h-1.668V8.2603h2.468c.0748.4476.1492.9694.2307 1.5734l.2712 1.8713.4407-3.4447h2.4817zm2.9772 1.3289c.0742.0404.122.108.1417.2034.0279.0953.0345.3118.0345.6442v2.8548c0 .4881-.0345.7867-.0955.8954-.0609.1152-.2304.1695-.5018.1695V9.5211c.204 0 .3457.0205.4211.0681zm-.0211 6.0347c.4543 0 .8006-.0265 1.0245-.0742.2304-.0477.4204-.1357.5694-.2648.1556-.1218.2642-.298.3251-.5219.0611-.2238.1021-.6648.1021-1.3224v-2.5832c0-.6986-.0271-1.1668-.0742-1.4039-.041-.237-.1431-.4543-.3126-.6437-.1695-.1973-.4198-.3324-.7456-.421-.3191-.0808-.8542-.1285-1.7694-.1285h-1.4244v7.3636h2.3051zm5.14-1.7827c0 .3523-.0199.5762-.0544.6708-.033.0947-.1894.1424-.3046.1424-.1086 0-.19-.0477-.2238-.1351-.041-.0887-.0609-.2986-.0609-.6238v-1.9469c0-.3324.0199-.5423.0543-.6237.0338-.0808.1086-.122.2171-.122.1153 0 .2709.0412.3114.1425.041.0947.0609.2986.0609.6032v1.8926zm-2.4747-5.5809v7.3636h1.7157l.1152-.4675c.1556.1894.3251.3324.5152.4271.1828.0881.4608.1357.678.1357.3047 0 .5629-.0748.7802-.237.2165-.1562.3589-.3462.4198-.5628.0543-.2173.0887-.543.0887-.9841v-2.0675c0-.4409-.0139-.7324-.0344-.8681-.0199-.1357-.0742-.2781-.1695-.4204-.1021-.1425-.2437-.251-.4272-.3325-.1834-.0742-.3999-.1152-.6576-.1152-.2172 0-.4952.0477-.6846.1285-.1835.0887-.353.2238-.5086.4007V8.2603h-1.8309z"/></svg>
+  </div>
+
+  
+</div>
+
+
+</a>
+
+        
+          
+
+<a href="https://en.wikipedia.org/wiki/List_of_Silicon_Valley_characters#Richard_Hendricks" target="_blank" rel="noreferrer me">
+
+<div class="jr-basics__profile-item">
+  <div class="jr-basics__profile-icon">
+    
+    <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Wikipedia</title><path d="M12.09 13.119c-.936 1.932-2.217 4.548-2.853 5.728-.616 1.074-1.127.931-1.532.029-1.406-3.321-4.293-9.144-5.651-12.409-.251-.601-.441-.987-.619-1.139-.181-.15-.554-.24-1.122-.271C.103 5.033 0 4.982 0 4.898v-.455l.052-.045c.924-.005 5.401 0 5.401 0l.051.045v.434c0 .119-.075.176-.225.176l-.564.031c-.485.029-.727.164-.727.436 0 .135.053.33.166.601 1.082 2.646 4.818 10.521 4.818 10.521l.136.046 2.411-4.81-.482-1.067-1.658-3.264s-.318-.654-.428-.872c-.728-1.443-.712-1.518-1.447-1.617-.207-.023-.313-.05-.313-.149v-.468l.06-.045h4.292l.113.037v.451c0 .105-.076.15-.227.15l-.308.047c-.792.061-.661.381-.136 1.422l1.582 3.252 1.758-3.504c.293-.64.233-.801.111-.947-.07-.084-.305-.22-.812-.24l-.201-.021c-.052 0-.098-.015-.145-.051-.045-.031-.067-.076-.067-.129v-.427l.061-.045c1.247-.008 4.043 0 4.043 0l.059.045v.436c0 .121-.059.178-.193.178-.646.03-.782.095-1.023.439-.12.186-.375.589-.646 1.039l-2.301 4.273-.065.135 2.792 5.712.17.048 4.396-10.438c.154-.422.129-.722-.064-.895-.197-.172-.346-.273-.857-.295l-.42-.016c-.061 0-.105-.014-.152-.045-.043-.029-.072-.075-.072-.119v-.436l.059-.045h4.961l.041.045v.437c0 .119-.074.18-.209.18-.648.03-1.127.18-1.443.421-.314.255-.557.616-.736 1.067 0 0-4.043 9.258-5.426 12.339-.525 1.007-1.053.917-1.503-.031-.571-1.171-1.773-3.786-2.646-5.71l.053-.036z"/></svg>
+  </div>
+
+  
+</div>
+
+
+</a>
+
+        
+      </div>
+    
+  </div>
+
+
+
+      
+    </aside>
+  
+
+  
+</div>
+
+      </main>
+      <footer>
+  <div class="copyright">
+    
+  </div>
+</footer>
+
+
+
+  
+
+
+
+
+
+
+
+  
+  
+
+
+
+<script src="/js/main.1a26ab6933f55e92f3e11bd8d138bdca1488cd1a2bb304546396d9f060304f3196d81ea3d928320e8b8958560ca0359a3ea8f12108b81ceea7ce64643b353eaa.js" integrity="sha512-GiaraTP1XpLz4RvY0Ti9yhSIzRorswRUY5bZ8GAwTzGW2B6j2SgyDouJWFYMoDWaPqjxIQi4HO6nzmRkOzU&#43;qg=="></script>
+<script src="/js/flexsearch.1b9a1ed55a283f09aca3b2958615f3b3da7e83246c00911e79663bd26b53a315b160d34bdacdbc10edfd53d6d7eff10947e380d25c6b5b5f466383e8a76504cb.js" integrity="sha512-G5oe1VooPwmso7KVhhXzs9p&#43;gyRsAJEeeWY70mtToxWxYNNL2s28EO39U9bX7/EJR&#43;OA0lxrW19GY4Pop2UEyw=="></script>
+
+
+
+
+
+
+    </div>
+  </body>
+</html>

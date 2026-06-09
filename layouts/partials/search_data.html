@@ -1,0 +1,57 @@
+{{ $pages := where .Site.Pages "Kind" "in" (slice "page" "section") }}
+{{ $pages = where $pages "RelPermalink" "ne" "/" }}
+
+{{ $pageData := slice }}
+{{ range $pages }}
+  {{ $s := .Summary | plainify | truncate 300 }}
+  {{ if not $s }}
+    {{ $s = .Params.description | default "" }}
+  {{ end }}
+  {{ $d := "" }}
+  {{ if not .Date.IsZero }}
+    {{ $d = .Date.Format "2006-01-02T15:04:05-07:00" }}
+  {{ end }}
+  {{ $pageData = $pageData | append (dict
+    "title" .Title
+    "url" .RelPermalink
+    "summary" $s
+    "tags" (.Params.tags | default slice)
+    "date" $d
+  )}}
+{{ end }}
+
+<script src="{{ "js/flexsearch.bundle.min.js" | relURL }}"></script>
+<script>
+(function() {
+  var pages = {{ $pageData | jsonify | safeJS }};
+
+  pages.forEach(function(p, i) { p.id = i; });
+
+  window.__searchIndex = new FlexSearch.Document({
+    document: {
+      id: "id",
+      index: ["title", "summary", "tags"],
+      store: ["title", "url", "summary", "tags", "date"]
+    },
+    tokenize: "forward"
+  });
+
+  pages.forEach(function(p) { window.__searchIndex.add(p); });
+  window.__searchPages = pages;
+
+  window.__search = function(query, limit) {
+    limit = limit || 10;
+    if (!query || !query.trim()) return [];
+    var raw = window.__searchIndex.search(query.trim(), { limit: limit });
+    var ids = [];
+    for (var i = 0; i < raw.length; i++) {
+      var field = raw[i];
+      for (var j = 0; j < field.result.length; j++) {
+        ids.push(field.result[j]);
+      }
+    }
+    ids = Array.from(new Set(ids));
+    return ids.map(function(id) { return pages[id]; });
+  };
+})();
+</script>

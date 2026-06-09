@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Fiction on Betzalel&#39;s Writings</title>
+		<link>http://localhost:1313/tags/fiction/</link>
+		<description>Recent content in Fiction on Betzalel&#39;s Writings</description>
+		<generator>Hugo</generator>
+		<language>en-us</language>
+		
+		
+		
+		
+			<atom:link href="http://localhost:1313/tags/fiction/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Chapter 1: The Call</title>
+				<link>http://localhost:1313/novels/demo-saga/volume-1/chapter-1/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/novels/demo-saga/volume-1/chapter-1/</guid>
+				<description>&lt;p&gt;An ordinary day turned extraordinary.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Chapter 1: Turning Point</title>
+				<link>http://localhost:1313/novels/demo-saga/volume-2/chapter-1/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/novels/demo-saga/volume-2/chapter-1/</guid>
+				<description>&lt;p&gt;Everything changed when they reached the city.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Chapter 2: The Road</title>
+				<link>http://localhost:1313/novels/demo-saga/volume-1/chapter-2/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/novels/demo-saga/volume-1/chapter-2/</guid>
+				<description>&lt;p&gt;The path forward was unclear, but there was no turning back.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Demo Saga</title>
+				<link>http://localhost:1313/novels/demo-saga/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/novels/demo-saga/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Demo Saga Volume 1: The Beginning</title>
+				<link>http://localhost:1313/novels/demo-saga/volume-1/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/novels/demo-saga/volume-1/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Demo Saga Volume 2: The Middle</title>
+				<link>http://localhost:1313/novels/demo-saga/volume-2/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/novels/demo-saga/volume-2/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>The Long Game</title>
+				<link>http://localhost:1313/novels/the-long-game/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/novels/the-long-game/</guid>
+				<description>&lt;p&gt;Select a chapter to continue the story.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Winter City</title>
+				<link>http://localhost:1313/novels/winter-city/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/novels/winter-city/</guid>
+				<description>&lt;p&gt;Choose a chapter to explore Winter City.&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>

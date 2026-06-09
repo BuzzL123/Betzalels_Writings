@@ -1,0 +1,1158 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr" class="h-full">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Infective vs effective thinking | Betzalel&#39;s writings</title>
+<link rel="canonical" href="http://localhost:1313/drafts/infective-vs-effective-thinking/">
+<meta name="description" content="Betzalel&#39;s writings">
+
+<meta property="og:site_name" content="Betzalel&#39;s writings">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Infective vs effective thinking">
+<meta property="og:description" content="Betzalel&#39;s writings">
+<meta property="og:url" content="http://localhost:1313/drafts/infective-vs-effective-thinking/">
+<meta property="og:locale" content="en_US">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Infective vs effective thinking">
+<meta name="twitter:description" content="Betzalel&#39;s writings">
+
+
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0b1220">
+<script>
+  (function() {
+    try {
+      var t = localStorage.getItem('theme');
+      var dark = t ? (t === 'dark') : (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches);
+      if (dark) document.documentElement.classList.add('dark');
+    } catch (_) {}
+  })();
+  </script>
+<style>
+  html.dark, html.dark body { background-color: #0b1220; }
+  html { color-scheme: light dark; }
+  </style>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link rel="dns-prefetch" href="//busuanzi.ibruce.info">
+<link rel="preconnect" href="https://busuanzi.ibruce.info" crossorigin>
+
+<link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
+<link rel="shortcut icon" href="/favicon/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
+<link rel="manifest" href="/favicon/site.webmanifest" />
+
+
+  
+    <link rel="stylesheet" href="/css/style.css">
+  
+
+
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+
+      <script src="/js/main.js"></script>
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
+
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    
+    renderMathInElement(document.body, {
+      delimiters: [
+        {left: "$$", right: "$$", display: true},
+        {left: "$", right: "$", display: false}
+      ],
+      throwOnError: false
+    });
+
+    document.querySelectorAll('[data-code-block]').forEach(function(block) {
+      const copyButton = block.querySelector('.copy-button');
+      if (!copyButton) return;
+
+      function getCodeText() {
+        const selectors = [
+          '.code-highlight-variant code[data-lang]',
+          '.code-highlight-variant td:last-child code',
+          '.code-highlight-variant code:last-of-type'
+        ];
+
+        for (const selector of selectors) {
+          const codeElement = block.querySelector(selector);
+          const code = (codeElement && codeElement.textContent) ? codeElement.textContent.replace(/\n$/, '') : '';
+          if (code) return code;
+        }
+
+        return '';
+      }
+
+      copyButton.addEventListener('click', function() {
+        const code = getCodeText();
+        if (!code) return;
+
+        navigator.clipboard.writeText(code).then(function() {
+          copyButton.setAttribute('aria-label', 'Copied');
+          copyButton.setAttribute('title', 'Copied');
+          copyButton.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>';
+
+          setTimeout(function() {
+            copyButton.setAttribute('aria-label', 'Copy code');
+            copyButton.setAttribute('title', 'Copy code');
+            copyButton.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3" /></svg>';
+          }, 1600);
+        });
+      });
+    });
+  });
+</script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    
+    const footnoteBacklinks = document.querySelectorAll('.footnote-backref');
+    
+    footnoteBacklinks.forEach(function(backlink) {
+      backlink.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+        
+        const href = backlink.getAttribute('href');
+        
+        if (href) {
+          
+          const target = document.querySelector(href);
+          
+          if (target) {
+            
+            target.scrollIntoView({ behavior: 'smooth' });
+            
+            
+            target.classList.add('footnote-highlight');
+            setTimeout(function() {
+              target.classList.remove('footnote-highlight');
+            }, 2000);
+          }
+        }
+      });
+    });
+  });
+</script>
+
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    
+    (function themeInit() {
+      const storageKey = 'theme';
+      const root = document.documentElement;
+      const btn = document.getElementById('theme-toggle');
+
+      function systemPrefersDark() {
+        return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+      }
+
+      function currentPref() {
+        const v = localStorage.getItem(storageKey);
+        if (v === 'dark') return 'dark';
+        if (v === 'light') return 'light';
+        return systemPrefersDark() ? 'dark' : 'light';
+      }
+
+      function apply(theme) {
+        root.classList.toggle('dark', theme === 'dark');
+        if (btn) btn.setAttribute('aria-pressed', theme === 'dark' ? 'true' : 'false');
+        if (btn) btn.setAttribute('aria-label', theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode');
+      }
+
+      let theme = currentPref();
+      apply(theme);
+
+      if (btn) {
+        btn.addEventListener('mousedown', function (e) {
+          e.preventDefault();
+        });
+
+        btn.addEventListener('click', function () {
+          theme = theme === 'dark' ? 'light' : 'dark';
+          localStorage.setItem(storageKey, theme);
+          apply(theme);
+          btn.blur();
+        });
+      }
+
+      
+      try {
+        const media = window.matchMedia('(prefers-color-scheme: dark)');
+        const handler = function () {
+          const explicit = localStorage.getItem(storageKey);
+          if (!explicit) { theme = currentPref(); apply(theme); }
+        };
+        if (media && media.addEventListener) media.addEventListener('change', handler);
+        else if (media && media.addListener) media.addListener(handler);
+      } catch (_) {}
+    })();
+    let currentHighlighted = null;
+    let scrollArmTimer = null;
+
+    function removeHandlers() {
+      window.removeEventListener('scroll', clearOnce);
+      window.removeEventListener('keydown', clearOnce);
+      window.removeEventListener('pointerdown', clearOnce);
+      window.removeEventListener('touchstart', clearOnce);
+    }
+
+    function clearOnce() {
+      if (currentHighlighted) {
+        currentHighlighted.classList.remove('anchor-highlight');
+        currentHighlighted = null;
+      }
+      removeHandlers();
+    }
+
+    function headerHeight() {
+      const hd = document.querySelector('body > header');
+      return hd ? hd.getBoundingClientRect().height : 0;
+    }
+
+    function scrollToTarget(el) {
+      if (!el) return;
+      const offset = headerHeight() + 8; 
+      const rect = el.getBoundingClientRect();
+      const top = window.pageYOffset + rect.top - offset;
+      window.scrollTo({ top, behavior: 'smooth' });
+    }
+
+    function pickHighlightTarget(el) {
+      if (!el) return null;
+      
+      
+      if (el.tagName === 'IMG') return el;
+      
+      if (el.classList && (el.classList.contains('katex-display') || el.classList.contains('katex'))) return el;
+      
+      if (el.tagName === 'SPAN') {
+        const img = el.querySelector('img');
+        if (img) return img;
+        const kx = el.querySelector('.katex-display, .katex');
+        if (kx) return kx;
+        
+        return el;
+      }
+      
+      const head = el.closest('h1,h2,h3,h4,h5,h6');
+      if (head) return head;
+      
+      const code = el.closest('.code-block-container');
+      if (code) return code;
+      
+      const math = el.closest('.katex-display');
+      if (math) return math;
+      
+      const blk = el.closest('pre,figure,table,blockquote,li');
+      if (blk) return blk;
+      
+      if (el.closest('p')) return el;
+      return el;
+    }
+
+    function highlightById(id) {
+      if (!id) return;
+      try { id = decodeURIComponent(id); } catch (e) {}
+      const el = document.getElementById(id);
+      if (!el) return;
+      const target = pickHighlightTarget(el);
+      if (currentHighlighted && currentHighlighted !== target) {
+        currentHighlighted.classList.remove('anchor-highlight');
+      }
+      target.classList.add('anchor-highlight');
+      currentHighlighted = target;
+      
+      setTocActive(id);
+      scrollToTarget(target);
+      
+      removeHandlers();
+      
+      window.addEventListener('keydown', clearOnce, { once: true });
+      window.addEventListener('pointerdown', clearOnce, { once: true });
+      window.addEventListener('touchstart', clearOnce, { once: true });
+      if (scrollArmTimer) clearTimeout(scrollArmTimer);
+      scrollArmTimer = setTimeout(() => {
+        window.addEventListener('scroll', clearOnce, { once: true });
+      }, 1500);
+    }
+
+    
+    if (location.hash && location.hash.length > 1) {
+      
+      setTimeout(() => highlightById(location.hash.slice(1)), 0);
+    }
+
+    
+    window.addEventListener('hashchange', function () {
+      if (location.hash && location.hash.length > 1) {
+        highlightById(location.hash.slice(1));
+      }
+    });
+
+    
+    document.addEventListener('click', function (e) {
+      const a = e.target.closest('a[href^="#"]');
+      if (!a) return;
+      
+      if (a.classList && a.classList.contains('heading-anchor')) return;
+      const href = a.getAttribute('href');
+      if (!href || href === '#' || href.length < 2) return;
+      const id = href.slice(1);
+      if (!document.getElementById(id)) return; 
+      e.preventDefault();
+      if (history.pushState) { history.pushState(null, '', '#' + id); }
+      else { location.hash = id; }
+      highlightById(id);
+    }, true);
+
+    
+    window.addEventListener('popstate', function () {
+      if (location.hash && location.hash.length > 1) highlightById(location.hash.slice(1));
+    });
+
+    function setTocActive(id) {
+      try { id = decodeURIComponent(id); } catch (e) {}
+      const toc = document.getElementById('TableOfContents');
+      if (!toc) return;
+      const esc = (window.CSS && CSS.escape) ? CSS.escape : (s)=>String(s).replace(/[^a-zA-Z0-9_\-]/g, '\\$&');
+      toc.querySelectorAll('a.toc-active').forEach(a => a.classList.remove('toc-active'));
+      const link = toc.querySelector('a[href="#' + esc(id) + '"]');
+      if (link) link.classList.add('toc-active');
+    }
+
+    
+    function copyText(text) {
+      if (window.isSecureContext && navigator.clipboard && navigator.clipboard.writeText) {
+        return navigator.clipboard.writeText(text);
+      }
+      return new Promise(function (resolve, reject) {
+        try {
+          const ta = document.createElement('textarea');
+          ta.value = text;
+          ta.setAttribute('readonly', '');
+          ta.style.position = 'fixed'; ta.style.top = '-1000px'; ta.style.left = '-1000px'; ta.style.opacity = '0';
+          document.body.appendChild(ta);
+          ta.focus(); ta.select();
+          try { ta.setSelectionRange(0, ta.value.length); } catch (_) {}
+          const ok = document.execCommand && document.execCommand('copy');
+          document.body.removeChild(ta);
+          ok ? resolve() : reject(new Error('copy failed'));
+        } catch (e) { reject(e); }
+      });
+    }
+
+    
+    (function addHeadingAnchorCopy() {
+      const container = document.querySelector('article .prose');
+      if (!container) return;
+      const heads = container.querySelectorAll('h1[id],h2[id],h3[id],h4[id],h5[id],h6[id]');
+      heads.forEach((h) => {
+        const id = h.getAttribute('id');
+        if (!id) return;
+        let a = h.querySelector('.heading-anchor');
+        if (!a) {
+          a = document.createElement('a');
+          a.className = 'heading-anchor';
+          a.href = '#' + id;
+          a.setAttribute('aria-label', 'Copy link to this section');
+          a.innerHTML = '<svg viewBox="0 0 1024 1024" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M633.417143 429.007238a174.567619 174.567619 0 0 1 0 246.857143l-155.306667 155.306667a186.709333 186.709333 0 1 1-264.045714-264.045715l76.483048-76.507428 51.73638 51.736381-76.507428 76.507428a113.566476 113.566476 0 1 0 160.597333 160.597334l155.306667-155.306667a101.424762 101.424762 0 0 0 0-143.408762z m208.603428-225.816381a186.709333 186.709333 0 0 1 0 264.045714L765.561905 543.744l-51.736381-51.712 76.507428-76.507429a113.566476 113.566476 0 1 0-160.597333-160.597333l-155.306667 155.306667a101.424762 101.424762 0 0 0 0 143.408762l-51.736381 51.736381a174.567619 174.567619 0 0 1 0-246.857143l155.306667-155.306667a186.709333 186.709333 0 0 1 264.045714 0z"/></svg>';
+          h.appendChild(a);
+        }
+        function copyPermalink() {
+          const url = location.origin + location.pathname + '#' + id;
+          const done = function () {
+            a.classList.add('copied');
+            a.setAttribute('aria-label', 'Copied');
+            setTimeout(() => { a.classList.remove('copied'); a.setAttribute('aria-label', 'Copy link to this section'); }, 1200);
+          };
+          copyText(url).then(done).catch(done);
+        }
+        a.addEventListener('click', function (e) { e.preventDefault(); e.stopPropagation(); copyPermalink(); });
+
+        
+        h.classList.add('heading-clickable');
+        h.addEventListener('click', function (e) {
+          if (e.target.closest('a') && !e.target.closest('.heading-anchor')) return; 
+          copyPermalink();
+        });
+      });
+
+      
+      document.addEventListener('click', function (e) {
+        const btn = e.target.closest('a.heading-anchor');
+        if (!btn) return;
+        
+        e.preventDefault(); e.stopPropagation();
+        const href = btn.getAttribute('href') || '';
+        const id = href.startsWith('#') ? href.slice(1) : '';
+        const url = href.startsWith('#') ? (location.origin + location.pathname + href) : href;
+        copyText(url).finally(() => {
+          btn.classList.add('copied'); btn.setAttribute('aria-label', 'Copied');
+          setTimeout(() => { btn.classList.remove('copied'); btn.setAttribute('aria-label', 'Copy link to this section'); }, 1200);
+          if (id) {
+            try { if (history.pushState) history.pushState(null, '', '#' + id); else location.hash = id; } catch (_) {}
+            try { highlightById(id); } catch (_) {}
+          }
+        });
+      }, false);
+    })();
+  });
+</script>
+
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  <style>[x-cloak] { display: none !important; }</style>
+</head>
+<body class="flex flex-col bg-gray-50 font-bilingual">
+  <header class="fixed top-0 left-0 z-30 w-full bg-white shadow-sm">
+    <div class="w-full max-w-4xl mx-auto px-6 overflow-x-auto sm:overflow-visible">
+      <div class="site-header">
+  <div class="site-title-wrap">
+    <a href="/" class="site-title-link">
+      Betzalel&#39;s writings
+    </a>
+  </div>
+
+  <div class="relative mx-2 hidden sm:block flex-1 max-w-xs">
+    <svg class="absolute left-2.5 top-1/2 -translate-y-1/2 h-4 w-4 text-gray-400 pointer-events-none" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <circle cx="11" cy="11" r="8" /><path d="M21 21l-4.35-4.35" />
+    </svg>
+    <input id="header-search-input" type="search" placeholder="Search..." autocomplete="off" class="w-full pl-8 pr-3 py-1.5 text-sm rounded-md border border-gray-200 dark:border-slate-700 bg-gray-50 dark:bg-slate-800 text-gray-800 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+    <div id="header-search-results" class="hidden absolute top-full left-0 right-0 mt-1 z-50 bg-white dark:bg-slate-900 rounded-lg shadow-lg border border-gray-200 dark:border-slate-700 max-h-96 overflow-y-auto"></div>
+  </div>
+
+  <div class="nav-desktop">
+    
+  <nav>
+    <ul>
+    <li>
+      <a href="/essays">Essays</a>
+    </li>
+    <li>
+      <a href="/novels">Novels</a>
+    </li>
+    <li>
+      <a href="/tags">Tags</a>
+    </li>
+    </ul>
+  </nav>
+  </div>
+
+  
+  
+  
+    <a href="/drafts" class="nav-drafts-desktop">Drafts</a>
+  
+
+  <div class="nav-mobile">
+    <button id="nav-toggle-btn" class="nav-toggle-btn" aria-label="Toggle menu" aria-expanded="false">
+      <svg class="nav-icon-hamburger" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+      <svg class="nav-icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M6 18L18 6M6 6l12 12" />
+      </svg>
+    </button>
+    <div class="nav-mobile-backdrop"></div>
+    <div class="nav-mobile-drawer">
+      <nav>
+        
+          <a href="/essays" class="nav-mobile-link">Essays</a>
+        
+          <a href="/novels" class="nav-mobile-link">Novels</a>
+        
+          <a href="/tags" class="nav-mobile-link">Tags</a>
+        
+        
+          <a href="/drafts" class="nav-mobile-link">Drafts</a>
+        
+      </nav>
+      <div class="mt-4 px-4 sm:hidden">
+        <input id="header-search-input-mobile" type="search" placeholder="Search..." autocomplete="off" class="w-full px-3 py-2 text-sm rounded-md border border-gray-200 dark:border-slate-700 bg-gray-50 dark:bg-slate-800 text-gray-800 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500">
+      </div>
+    </div>
+  </div>
+
+  <button id="theme-toggle" type="button" class="theme-toggle theme-toggle-btn" aria-label="Toggle dark mode" aria-pressed="false">
+    <svg class="icon-sun" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path d="M512 192c179.2 0 320 140.8 320 320s-140.8 320-320 320-320-140.8-320-320S332.8 192 512 192M512 128C300.8 128 128 300.8 128 512s172.8 384 384 384 384-172.8 384-384S723.2 128 512 128L512 128z" fill="currentColor"></path>
+      <path d="M544 416l236.8 0C774.4 403.2 768 384 761.6 371.2L544 371.2 544 416z" fill="currentColor"></path>
+      <path d="M544 608l0 44.8 217.6 0c6.4-12.8 12.8-32 19.2-44.8L544 608z" fill="currentColor"></path>
+      <path d="M544 723.2 544 768 640 768c25.6-12.8 44.8-25.6 64-44.8L544 723.2z" fill="currentColor"></path>
+      <path d="M800 492.8l-256 0 0 44.8 256 0c0-6.4 0-12.8 0-25.6S800 499.2 800 492.8z" fill="currentColor"></path>
+      <path d="M544 300.8 704 300.8c-19.2-19.2-38.4-32-64-44.8L544 256 544 300.8z" fill="currentColor"></path>
+    </svg>
+    <svg class="icon-moon" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path d="M512 832c-179.2 0-320-140.8-320-320s140.8-320 320-320 320 140.8 320 320S691.2 832 512 832M512 896c211.2 0 384-172.8 384-384s-172.8-384-384-384S128 300.8 128 512 300.8 896 512 896L512 896zM800 512c0-160-128-288-288-288l0 576C672 800 800 672 800 512zM480 608 243.2 608C249.6 620.8 256 640 262.4 652.8l217.6 0L480 608zM480 416 480 371.2 262.4 371.2C256 384 249.6 403.2 243.2 416L480 416zM480 300.8 480 256 384 256C358.4 268.8 339.2 281.6 320 300.8L480 300.8zM224 537.6l256 0L480 492.8l-256 0c0 6.4 0 12.8 0 19.2S224 524.8 224 537.6zM480 723.2 320 723.2c19.2 19.2 38.4 32 64 44.8l96 0L480 723.2z" fill="currentColor"></path>
+    </svg>
+  </button>
+</div>
+
+<script>
+(function() {
+  var searchInput = document.getElementById('header-search-input');
+  var searchInputMobile = document.getElementById('header-search-input-mobile');
+  var resultsEl = document.getElementById('header-search-results');
+
+  function highlight(text, query) {
+    if (!query || !text) return text;
+    var words = query.trim().split(/\s+/).filter(Boolean);
+    var result = text;
+    for (var w = 0; w < words.length; w++) {
+      var word = words[w].replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+      var re = new RegExp('(' + word + ')', 'gi');
+      result = result.replace(re, '<mark class="bg-yellow-200 dark:bg-yellow-700/40 rounded px-0.5">$1</mark>');
+    }
+    return result;
+  }
+
+  function doSearch(q) {
+    if (!window.__search) {
+      resultsEl.innerHTML = '<div class="p-3 text-sm text-gray-500">Loading...</div>';
+      resultsEl.classList.remove('hidden');
+      return;
+    }
+    if (!q.trim()) {
+      resultsEl.classList.add('hidden');
+      return;
+    }
+    var results = window.__search(q, 8);
+    if (!results.length) {
+      resultsEl.innerHTML = '<div class="p-3 text-sm text-gray-500 dark:text-gray-400">No results.</div>';
+      resultsEl.classList.remove('hidden');
+      return;
+    }
+    var html = '';
+    for (var i = 0; i < results.length; i++) {
+      var p = results[i];
+      var title = highlight(p.title, q);
+      var summary = p.summary ? highlight(p.summary, q) : '';
+      html += '<a href="' + p.url + '" class="block p-3 border-b border-gray-100 dark:border-slate-700 last:border-0 hover:bg-gray-50 dark:hover:bg-slate-800 transition-colors">';
+      html += '<div class="text-sm font-medium text-gray-800 dark:text-gray-100">' + title + '</div>';
+      if (summary) {
+        html += '<div class="text-xs text-gray-500 dark:text-gray-400 mt-0.5 line-clamp-1">' + summary + '</div>';
+      }
+      html += '</a>';
+    }
+    resultsEl.innerHTML = html;
+    resultsEl.classList.remove('hidden');
+  }
+
+  function handleInput(e) {
+    doSearch(e.target.value);
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener('input', handleInput);
+    searchInput.addEventListener('blur', function() {
+      setTimeout(function() { resultsEl.classList.add('hidden'); }, 200);
+    });
+    searchInput.addEventListener('focus', function() {
+      if (this.value.trim()) doSearch(this.value);
+    });
+  }
+
+  if (searchInputMobile) {
+    searchInputMobile.addEventListener('input', function(e) {
+      if (searchInput) {
+        searchInput.value = e.target.value;
+        doSearch(e.target.value);
+      }
+    });
+  }
+
+  var navBtn = document.getElementById('nav-toggle-btn');
+  var navBackdrop = document.querySelector('.nav-mobile-backdrop');
+
+  if (navBtn) {
+    navBtn.addEventListener('click', function() {
+      var isOpen = document.body.classList.toggle('nav-open');
+      this.setAttribute('aria-expanded', isOpen);
+    });
+  }
+
+  if (navBackdrop) {
+    navBackdrop.addEventListener('click', function() {
+      document.body.classList.remove('nav-open');
+      if (navBtn) navBtn.setAttribute('aria-expanded', 'false');
+    });
+  }
+})();
+</script>
+    </div>
+  </header>
+  
+  <div class="flex-1 flex flex-col min-h-screen pt-24">
+    <main class="flex-1 w-full max-w-4xl overflow-x-auto sm:overflow-visible mx-auto px-6">
+      
+  <div class="max-w-4xl mx-auto px-4 py-8">
+    <section class="mb-10">
+      <h1 class="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-4 relative after:block after:w-12 after:h-0.5 after:bg-blue-500 after:mt-2">Infective vs effective thinking</h1>
+
+      
+
+      
+
+      
+      
+      
+        
+      
+        
+      
+        
+      
+        
+      
+
+      
+        
+        
+
+        <div class="space-y-4 my-6">
+          
+            
+
+
+
+  
+  
+
+<div class="relative">
+  <a href="/drafts/infective-vs-effective-thinking/introduction/" class="absolute inset-0 z-10" aria-label="Introduction"></a>
+  <div class="bg-white dark:bg-slate-900 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 overflow-hidden group">
+    <div class="p-5">
+      
+      <h3 class="text-lg font-medium text-gray-800 dark:text-gray-100 group-hover:text-blue-600 transition-colors">Introduction</h3>
+      
+      
+      <div class="flex items-center gap-3 text-xs text-gray-500 dark:text-gray-400 mt-2">
+        
+          <time datetime="2026-06-08T22:04:36&#43;03:00">Jun 8, 2026</time>
+        
+        <span>1 min read</span>
+        <span>170 words</span>
+        <span class="page-pv" data-bsz-path="/drafts/infective-vs-effective-thinking/introduction/">- views</span>
+        
+        
+      </div>
+      
+      <div class="mt-3">
+        <span class="inline-flex items-center text-blue-600 text-sm group-hover:translate-x-1 transition-transform duration-300">
+          Read more
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+          </svg>
+        </span>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+          
+            
+
+
+
+  
+  
+
+<div class="relative">
+  <a href="/drafts/infective-vs-effective-thinking/chapter-1.-the-infectious-disease-of-the-modern-left/" class="absolute inset-0 z-10" aria-label="Chapter 1. The Infectious Disease of the Modern Left"></a>
+  <div class="bg-white dark:bg-slate-900 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 overflow-hidden group">
+    <div class="p-5">
+      
+      <h3 class="text-lg font-medium text-gray-800 dark:text-gray-100 group-hover:text-blue-600 transition-colors">Chapter 1. The Infectious Disease of the Modern Left</h3>
+      
+      
+      <div class="flex items-center gap-3 text-xs text-gray-500 dark:text-gray-400 mt-2">
+        
+          <time datetime="2026-06-08T22:10:04&#43;03:00">Jun 8, 2026</time>
+        
+        <span>4 min read</span>
+        <span>658 words</span>
+        <span class="page-pv" data-bsz-path="/drafts/infective-vs-effective-thinking/chapter-1.-the-infectious-disease-of-the-modern-left/">- views</span>
+        
+        
+      </div>
+      
+      <div class="mt-3">
+        <span class="inline-flex items-center text-blue-600 text-sm group-hover:translate-x-1 transition-transform duration-300">
+          Read more
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+          </svg>
+        </span>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+          
+            
+
+
+
+  
+  
+
+<div class="relative">
+  <a href="/drafts/infective-vs-effective-thinking/chapter-2.-demonizing-institutions-and-normalizing-the-unnormalized/" class="absolute inset-0 z-10" aria-label="Chapter 2. Demonizing Institutions and Normalizing the Unnormalized"></a>
+  <div class="bg-white dark:bg-slate-900 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 overflow-hidden group">
+    <div class="p-5">
+      
+      <h3 class="text-lg font-medium text-gray-800 dark:text-gray-100 group-hover:text-blue-600 transition-colors">Chapter 2. Demonizing Institutions and Normalizing the Unnormalized</h3>
+      
+      
+      <div class="flex items-center gap-3 text-xs text-gray-500 dark:text-gray-400 mt-2">
+        
+          <time datetime="2026-06-09T16:29:40&#43;03:00">Jun 9, 2026</time>
+        
+        <span>4 min read</span>
+        <span>785 words</span>
+        <span class="page-pv" data-bsz-path="/drafts/infective-vs-effective-thinking/chapter-2.-demonizing-institutions-and-normalizing-the-unnormalized/">- views</span>
+        
+        
+      </div>
+      
+      <div class="mt-3">
+        <span class="inline-flex items-center text-blue-600 text-sm group-hover:translate-x-1 transition-transform duration-300">
+          Read more
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+          </svg>
+        </span>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+          
+            
+
+
+
+  
+  
+
+<div class="relative">
+  <a href="/drafts/infective-vs-effective-thinking/chapter-3.-truth-versus-ideals-and-religion-as-a-vaccine/" class="absolute inset-0 z-10" aria-label="Chapter 3. Truth versus Ideals and Religion as a Vaccine"></a>
+  <div class="bg-white dark:bg-slate-900 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 overflow-hidden group">
+    <div class="p-5">
+      
+      <h3 class="text-lg font-medium text-gray-800 dark:text-gray-100 group-hover:text-blue-600 transition-colors">Chapter 3. Truth versus Ideals and Religion as a Vaccine</h3>
+      
+      
+      <div class="flex items-center gap-3 text-xs text-gray-500 dark:text-gray-400 mt-2">
+        
+          <time datetime="2026-06-09T18:12:08&#43;03:00">Jun 9, 2026</time>
+        
+        <span>4 min read</span>
+        <span>816 words</span>
+        <span class="page-pv" data-bsz-path="/drafts/infective-vs-effective-thinking/chapter-3.-truth-versus-ideals-and-religion-as-a-vaccine/">- views</span>
+        
+        
+      </div>
+      
+      <div class="mt-3">
+        <span class="inline-flex items-center text-blue-600 text-sm group-hover:translate-x-1 transition-transform duration-300">
+          Read more
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+          </svg>
+        </span>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+          
+        </div>
+        
+
+      
+    </section>
+  </div>
+
+    </main>
+  </div>
+  
+  <footer class="w-full max-w-4xl mx-auto px-6 overflow-x-auto sm:overflow-visible">
+    <div class="py-8 border-t border-gray-200 bg-gray-50 shadow-inner mt-10">
+  <div class="container mx-auto px-4 max-w-4xl">
+    
+     
+    
+
+    
+    <div class="flex justify-center space-x-8">
+      
+      
+
+      
+      
+
+      
+      
+    </div>
+
+    <div class="text-center mt-6 text-sm text-gray-500">
+      &copy; 2026 Betzalel&#39;s writings | Powered by <a href="https://github.com/Daucloud/hugo-theme-void" class="text-gray-600 hover:text-gray-900 hover:underline">hugo-theme-void</a> | <span id="busuanzi_container_site_pv" style="display: none;">Total visits: <span id="busuanzi_value_site_pv" class="text-gray-600"></span></span>
+    </div>
+    
+  </div>
+</div>
+
+  </footer>
+  
+
+
+
+
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+    
+  
+  
+  
+  
+
+  
+  
+    
+  
+  
+  
+  
+
+  
+  
+    
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+    
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+    
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+    
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+    
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+    
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+
+<script src="/js/flexsearch.bundle.min.js"></script>
+<script>
+(function() {
+  var pages = [{"date":"","summary":"An ordinary day turned extraordinary.\n","tags":["fiction","fantasy","epic"],"title":"Chapter 1: The Call","url":"/novels/demo-saga/volume-1/chapter-1/"},{"date":"","summary":"The city never sleeps, and neither did the plan. Every choice was a move toward an end no one could see yet.\n","tags":[],"title":"Chapter 1: The Opening","url":"/novels/the-long-game/chapter-1/"},{"date":"","summary":"Everything changed when they reached the city.\n","tags":["fiction","fantasy","epic"],"title":"Chapter 1: Turning Point","url":"/novels/demo-saga/volume-2/chapter-1/"},{"date":"","summary":"This group of essays started out as \u0026ldquo;intellectually slandering\u0026rdquo; the modern American left specifically because I see the infection spreading to my country (Israel). I was going to make a mega essay on that subject but then realized I\u0026rsquo;d just be falling into the hands of whoever …","tags":[],"title":"Introduction","url":"/drafts/infective-vs-effective-thinking/introduction/"},{"date":"","summary":"Isn\u0026rsquo;t That Offensive? Before wrapping up, let\u0026rsquo;s address the term head-on. When I describe certain strands of modern leftist idealism as an \u0026ldquo;infectious disease,\u0026rdquo; I\u0026rsquo;m not reaching for shock value or cheap rhetoric. I\u0026rsquo;m using the word in its precise, dictionary …","tags":[],"title":"Chapter 1. The Infectious Disease of the Modern Left","url":"/drafts/infective-vs-effective-thinking/chapter-1.-the-infectious-disease-of-the-modern-left/"},{"date":"","summary":"The plan was clearer now: move through the shadows, avoid the obvious, and trust only the structure.\n","tags":[],"title":"Chapter 2: The Board","url":"/novels/the-long-game/chapter-2/"},{"date":"","summary":"The path forward was unclear, but there was no turning back.\n","tags":["fiction","fantasy","epic"],"title":"Chapter 2: The Road","url":"/novels/demo-saga/volume-1/chapter-2/"},{"date":"","summary":"Demonizing Institutions and Normalizing the Unnormalized The modern left often portrays the state (or traditional institutions) as inherently oppressive or evil—e.g., \u0026ldquo;defund the police,\u0026rdquo; systemic racism baked into government, or viewing borders/national sovereignty as xenophobic. This …","tags":[],"title":"Chapter 2. Demonizing Institutions and Normalizing the Unnormalized","url":"/drafts/infective-vs-effective-thinking/chapter-2.-demonizing-institutions-and-normalizing-the-unnormalized/"},{"date":"","summary":"Focus: Truth/ideals metaphors + full vaccine antidote + ancient cults parallel + forced religion note. (Closes the series with solution.)\nKey Content / Chapters:\nTruth versus Ideals Plato\u0026rsquo;s Cave: shadows (feelings, self-ID, ideals) mistaken for reality; Left attacks sunlight (biology, …","tags":[],"title":"Chapter 3. Truth versus Ideals and Religion as a Vaccine","url":"/drafts/infective-vs-effective-thinking/chapter-3.-truth-versus-ideals-and-religion-as-a-vaccine/"},{"date":"","summary":"Bullet points:\nit\u0026rsquo;s just the loom all over again are the movies right? every invention has its ups and downs (good and bad) our work is going to be needed elsewhere (space navigation?) another path: the cyberpunk world of 2077 the choice is up to us https://youtu.be/09y65-vH2Mk ","tags":[],"title":"AI as progression","url":"/drafts/ai-as-progression/"},{"date":"","summary":"Bullet points:\nCognitive limitations Is it just a ","tags":[],"title":"can you make a one-man army","url":"/drafts/can-you-make-a-one-man-army/"},{"date":"","summary":"The city was a maze of steel and frost. Every alley carried the weight of a thousand whispers.\n","tags":[],"title":"Chapter 1: Frost Lines","url":"/novels/winter-city/chapter-1/"},{"date":"","summary":"A sprawling epic told across multiple volumes.","tags":["fiction","fantasy","epic"],"title":"Demo Saga","url":"/novels/demo-saga/"},{"date":"","summary":"The journey starts here.","tags":["fiction","fantasy","epic"],"title":"Demo Saga Volume 1: The Beginning","url":"/novels/demo-saga/volume-1/"},{"date":"","summary":"Things get complicated.","tags":["fiction","fantasy","epic"],"title":"Demo Saga Volume 2: The Middle","url":"/novels/demo-saga/volume-2/"},{"date":"","summary":"Bullet points:\nreference code Geass reference invincibles (\u0026ldquo;either you\u0026rsquo;re the good guy or you\u0026rsquo;re the one who saves the world\u0026rdquo; quote) I\u0026rsquo;m not saying what Hitler did wasn\u0026rsquo;t bad but because of that Israel is a country and the Jews are safer than ever looking at Good …","tags":[],"title":"doing evil for the sake of good","url":"/drafts/doing-evil-for-the-sake-of-good/"},{"date":"","summary":"","tags":[],"title":"Drafts","url":"/drafts/"},{"date":"","summary":"Welcome to the essays section. Browse below to read short-form writing and reflective pieces.\n","tags":[],"title":"Essays","url":"/essays/"},{"date":"","summary":"This is a placeholder essay to show how the essays section now works. You can add your own content here and it will appear as a compact card in the essays list.\n","tags":["philosophy","writing"],"title":"First Essay","url":"/essays/first-essay/"},{"date":"","summary":"","tags":[],"title":"Infective vs effective thinking","url":"/drafts/infective-vs-effective-thinking/"},{"date":"","summary":"Bullet points:\nis democracy better than all our other options? looking at empire\u0026rsquo;s as a mechanical structure and not only in the voice of empathy class based hierarchy the star trooper republic: if you contribute to your country (eg. Service in the army or National) you get to vote the …","tags":[],"title":"is democracy the best we can do","url":"/drafts/is-democracy-the-best-we-can-do/"},{"date":"","summary":"Bullet points:\ndepressed songs can make you depressed music as a virus (reference snow crash) why is music that makes you feel bad so addicting? you are what you listen to ","tags":[],"title":"music as an influence for emotion","url":"/drafts/music-as-an-influence-for-emotion/"},{"date":"","summary":"Browse multiple novels below. Each novel is a folder, and inside you'll find chapter selections.","tags":[],"title":"Novels","url":"/novels/"},{"date":"","summary":"Bullet points:\nwhat\u0026rsquo;s the difference ","tags":["philosophy","politics"],"title":"Psyops and conspiracies","url":"/drafts/psyops-and-conspiracies/"},{"date":"","summary":"Bullet points:\nthe neurology behind it (disable racism disable belief in God) about racism death by other tribes becomes more of a possibility tribalism is biological the progress against the firewall ","tags":[],"title":"racism as a defense mechanism","url":"/drafts/racism-as-a-defense-mechanism/"},{"date":"","summary":"","tags":[],"title":"Sense of humor and of mindsets","url":"/drafts/sense-of-humor-and-of-mindsets/"},{"date":"","summary":"About a year ago I watched a video on Spinoza\u0026rsquo;s ethics (spicificly on love) and I saw it as world shattering, fast forward to today (13/04/2026) and I recalled what I watched, and then it hit me. We don\u0026rsquo;t like to admit it but we unconsciously follow that system when it comes to dating. …","tags":[],"title":"Spinoza's ethics and modern dating","url":"/drafts/spinozas-ethics-and-modern-dating/"},{"date":"","summary":"Bullet points:\nthe cause. ","tags":[],"title":"Terrorism and extremism","url":"/drafts/terrorism-and-extremism/"},{"date":"","summary":"Bullet points:\nwhat\u0026rsquo;s broken, and was it done on purpose? University style schooling system we need more questions than rules do we need stupid (lesser in intelligence) people anymore? the breeding of mindless drones just made to do biddings without questioning we need a system that breeds …","tags":[],"title":"The broken school system","url":"/drafts/the-broken-school-system/"},{"date":"","summary":"Bullet points:\nwhy would someone break a perfectly working system on purpose? If it was working perfectly fine that is consumerism the temporary effects of prescribed medication and why there has to be a better way of dealing with those problems modernity and how it leads to nihilism the age of the …","tags":[],"title":"The broken society we don't know we live in","url":"/drafts/the-broken-society-we-dont-know-we-live-in/"},{"date":"","summary":"Bullet points:\na physical (more interactive?) version of Carl Jung\u0026rsquo;s collective unconscious maybe talk about how echo Chambers are somewhat like being in loop of some sort? how is this going to impact the future? ","tags":[],"title":"the collective unconscious we call the internet","url":"/drafts/the-collective-unconscious-we-call-the-internet/"},{"date":"","summary":"Bullet points:\nthe taboo index (reference sword art online) Judaism was just a stepping stone ","tags":[],"title":"the days of Messiah","url":"/drafts/the-days-of-messiah/"},{"date":"","summary":"Bullet points:\nhttps://youtu.be/6gUtpptU5xE the holy bible of identity (the DSM \u0026ldquo;Manual\u0026rdquo;) ","tags":[],"title":"The DSM, Identity and the spectrum","url":"/drafts/the-dsm-identity-and-the-spectrum/"},{"date":"","summary":"Bullet points:\nhttps://youtu.be/2uDEM9R5E2Y https://youtu.be/8OzGilusxtA we fear what we don\u0026rsquo;t have: men with their strength, women with their beauty ","tags":[],"title":"the gender war","url":"/drafts/the-gender-war/"},{"date":"","summary":"Bullet points;\none less variable makes the calculation more predictable but less accurate we refuse to tell ourselves we don\u0026rsquo;t know something that is beyond our control / imagination ","tags":[],"title":"the god variable","url":"/drafts/the-god-variable/"},{"date":"","summary":"Bullet points:\nrepeating an action to death because it\u0026rsquo;s easier then the alternative. This also explains why people \u0026ldquo;stay in their lane\u0026rdquo; it\u0026rsquo;s comfortable and eazy, the \u0026ldquo;doing something else\u0026rdquo; or switching a lane is a disruption to the norm and scary. The problem is …","tags":[],"title":"The hell you don't want to leave","url":"/drafts/the-hell-you-dont-want-to-leave/"},{"date":"","summary":"Bullet points:\nmaybe it\u0026rsquo;s not all politics (the left as the victim of big corporations wanting you to believe stupid things so that they make money) the 1954 rat experiment (where there was a rat that they hooked electrodes to the stimulus part of the rat\u0026rsquo;s brain and it kept on pressing …","tags":[],"title":"The industries that control are every move","url":"/drafts/the-industries-that-control-are-every-move/"},{"date":"","summary":"Select a chapter to continue the story.\n","tags":["strategy","fiction","philosophy"],"title":"The Long Game","url":"/novels/the-long-game/"},{"date":"","summary":"Bullet points:\nmeaning will always change one day will be we got to fight a war against ex-person and win it and that could be a great powerful anchor for meaning but then what happens when that ends what is the next one what happens after let\u0026rsquo;s just say for example hypothetically everybody …","tags":[],"title":"the meaning bucket list","url":"/drafts/the-meaning-bucket-list/"},{"date":"","summary":"Bullet points:\nmaterialism / naturalism the materialistic gods and our unconscious rituals we perform to them. Specifically talking about three of them maybe even four sex money and the crowd which I would also add Fame as one of but I think that one would be more connected with the crowd God is …","tags":[],"title":"the modern gods","url":"/drafts/the-modern-gods/"},{"date":"","summary":"Bullet points:\nfind psychological meaning in each mitzvah and what they were meant / symbolized maybe add some philosophical pinpoints on certain mitzvot ","tags":[],"title":"the psychology behind mitzvot and Judaism","url":"/drafts/the-psychology-behind-mitzvot-and-judaism/"},{"date":"","summary":"","tags":[],"title":"twin competition","url":"/drafts/twin-competition/"},{"date":"","summary":"Bullet points:\nworking inside hierarchies emotional thinking versus rational thinking (reference thinking fast and slow) just because you\u0026rsquo;re smart doesn\u0026rsquo;t mean you\u0026rsquo;re immune to toxic empathy examples: same sex partners for better with children, as propaganda and false …","tags":[],"title":"Why smart people believe stupid things","url":"/drafts/why-smart-people-believe-stupid-things/"},{"date":"","summary":"Choose a chapter to explore Winter City.\n","tags":["fiction","mystery","noir"],"title":"Winter City","url":"/novels/winter-city/"},{"date":"","summary":"Babylon Brief retelling of Genesis 11: one language, one tower, pride, forced unity → divine confusion and scattering. Thesis: woke ideology is repeating the exact same mistake today.\n","tags":[],"title":"Wokeism is the the Tower of Babel story all over again","url":"/drafts/wokeism-is-the-the-tower-of-babel-story-all-over-again/"}];
+
+  pages.forEach(function(p, i) { p.id = i; });
+
+  window.__searchIndex = new FlexSearch.Document({
+    document: {
+      id: "id",
+      index: ["title", "summary", "tags"],
+      store: ["title", "url", "summary", "tags", "date"]
+    },
+    tokenize: "forward"
+  });
+
+  pages.forEach(function(p) { window.__searchIndex.add(p); });
+  window.__searchPages = pages;
+
+  window.__search = function(query, limit) {
+    limit = limit || 10;
+    if (!query || !query.trim()) return [];
+    var raw = window.__searchIndex.search(query.trim(), { limit: limit });
+    var ids = [];
+    for (var i = 0; i < raw.length; i++) {
+      var field = raw[i];
+      for (var j = 0; j < field.result.length; j++) {
+        ids.push(field.result[j]);
+      }
+    }
+    ids = Array.from(new Set(ids));
+    return ids.map(function(id) { return pages[id]; });
+  };
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Jab! on My New Hugo Project</title>
+		<link>https://example.org/categories/jab/</link>
+		<description>Recent content in Jab! on My New Hugo Project</description>
+		<generator>Hugo</generator>
+		<language>en-us</language>
+		
+		
+		
+		
+			<lastBuildDate>Sun, 27 Apr 2025 01:35:17 +0300</lastBuildDate>
+		
+			<atom:link href="https://example.org/categories/jab/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>2025-04-27</title>
+				<link>https://example.org/articles/drafts/jab/game-dev/jab/diary/2025-04-27/</link>
+				<pubDate>Sun, 27 Apr 2025 01:35:17 +0300</pubDate>
+				<guid>https://example.org/articles/drafts/jab/game-dev/jab/diary/2025-04-27/</guid>
+				<description>&lt;p&gt;Need to fix &amp;ldquo;attack_hitbox&amp;rdquo; flipping.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Welcome</title>
+				<link>https://example.org/articles/drafts/jab/welcome/</link>
+				<pubDate>Fri, 25 Apr 2025 18:00:05 +0300</pubDate>
+				<guid>https://example.org/articles/drafts/jab/welcome/</guid>
+				<description>&lt;p&gt;This is your new &lt;em&gt;vault&lt;/em&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Make a note of something, [[create a link]], or try &lt;a&#xA;  href=&#34;https://help.obsidian.md/Plugins/Importer&#34;&#xA;  &#xA;  &#xA;    class=&#34;link--external&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&#xA;  &#xA;&gt;the Importer&lt;/a&gt;!&lt;/p&gt;&#xA;&lt;p&gt;When you&amp;rsquo;re ready, delete this note and make the vault your own.&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,23 @@
+{{ if or .Paginator.HasPrev .Paginator.HasNext }}
+<div class="flex items-center justify-center gap-2">
+  {{ if .Paginator.HasPrev }}
+  <a href="{{ .Paginator.Prev.URL }}" class="inline-flex items-center px-3 py-2 bg-white dark:bg-slate-900 shadow-sm rounded-md text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-slate-800 transition-colors text-sm">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+    Previous
+  </a>
+  {{ end }}
+  <div class="flex items-center gap-1">
+    {{ range .Paginator.Pagers }}
+    <a href="{{ .URL }}" class="inline-flex items-center justify-center w-8 h-8 rounded-md text-sm transition-colors{{ if eq .PageNumber $.Paginator.PageNumber }} bg-blue-600 text-white shadow-sm{{ else }} bg-white dark:bg-slate-900 text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-slate-800 shadow-sm{{ end }}">
+      {{ .PageNumber }}
+    </a>
+    {{ end }}
+  </div>
+  {{ if .Paginator.HasNext }}
+  <a href="{{ .Paginator.Next.URL }}" class="inline-flex items-center px-3 py-2 bg-white dark:bg-slate-900 shadow-sm rounded-md text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-slate-800 transition-colors text-sm">
+    Next
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+  </a>
+  {{ end }}
+</div>
+{{ end }}

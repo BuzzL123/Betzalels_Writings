@@ -1,0 +1,48 @@
+{{ define "main" }}
+  <style>
+    .single-nav {
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+      margin: 2rem 0 1rem;
+      flex-wrap: wrap;
+    }
+    .single-nav a {
+      padding: 0.75rem 1rem;
+      border: 1px solid var(--bg4);
+      border-radius: 0.75rem;
+      background: var(--bg2);
+      color: var(--fg);
+      text-decoration: none;
+    }
+    .single-nav a:hover {
+      border-color: var(--fg4);
+    }
+    .single-subtitle {
+      margin: 0.5rem 0 1rem;
+      color: var(--fg2);
+      font-size: 1rem;
+    }
+  </style>
+
+  <div class="content-section">
+    <h1>{{ .Title | markdownify }}</h1>
+    {{ with .Params.subtitle }}
+      <p class="single-subtitle">{{ . }}</p>
+    {{ end }}
+    <div class="single-content">{{ .Content }}</div>
+  </div>
+
+  {{ if or .PrevInSection .NextInSection }}
+    <nav class="single-nav">
+      {{ if .NextInSection }}
+        <a href="{{ .NextInSection.RelPermalink }}">← {{ .NextInSection.Title }}</a>
+      {{ else }}
+        <span></span>
+      {{ end }}
+      {{ if .PrevInSection }}
+        <a href="{{ .PrevInSection.RelPermalink }}">{{ .PrevInSection.Title }} →</a>
+      {{ end }}
+    </nav>
+  {{ end }}
+{{ end }}

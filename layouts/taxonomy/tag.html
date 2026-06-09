@@ -1,0 +1,113 @@
+{{ define "main" }}
+<div class="max-w-4xl mx-auto px-4 py-8">
+  <div class="mb-8 text-center">
+    <div class="flex items-center justify-center mb-2">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-600 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z" />
+      </svg>
+      <h1 class="text-3xl font-bold text-gray-800 dark:text-gray-100">{{ .Title }}</h1>
+    </div>
+    <div class="text-gray-600 text-sm">
+      {{ len .Pages }} articles
+    </div>
+  </div>
+
+  {{ $paginated := .Paginate (.Pages.ByDate.Reverse) }}
+  {{ $prevYear := 0 }}
+  {{ $groupOpen := false }}
+  <div class="space-y-16">
+  {{ range $paginated.Pages }}
+    {{ $d := .Date }}{{ if $d.IsZero }}{{ with .File }}{{ with .FileInfo.ModTime }}{{ if not .IsZero }}{{ $d = . }}{{ end }}{{ end }}{{ end }}{{ end }}
+    {{ $year := $d.Year }}
+    {{ if and (gt $year 1) (ne $year $prevYear) }}
+      {{ if $groupOpen }}</div></div>{{ end }}
+      {{ $groupOpen = true }}{{ $prevYear = $year }}
+      <div class="relative">
+        <div class="mb-8 flex items-center">
+          <div class="flex-shrink-0 w-16 h-16 rounded-full bg-gradient-to-br from-blue-100 to-blue-50 dark:from-slate-700/40 dark:to-slate-800/40 flex items-center justify-center text-blue-700 dark:text-blue-300 font-bold text-xl shadow-sm relative">
+            <span class="relative z-10">{{ $year }}</span>
+            <div class="absolute inset-0 rounded-full bg-blue-200 dark:bg-slate-600 opacity-20 blur-sm"></div>
+          </div>
+          <div class="ml-4 h-0.5 bg-gradient-to-r from-blue-200 via-blue-100 to-transparent flex-grow"></div>
+        </div>
+        <div class="ml-8 space-y-6">
+    {{ end }}
+    <div class="relative">
+      <a href="{{ .RelPermalink }}" class="absolute inset-0 z-10" aria-label="{{ .Title }}"></a>
+      <div class="bg-white dark:bg-slate-900 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 overflow-hidden group">
+        <div class="p-5">
+          <h3 class="text-lg font-medium text-gray-800 dark:text-gray-100 group-hover:text-blue-600 transition-colors">{{ .Title }}</h3>
+          <div class="flex items-center gap-3 text-xs text-gray-500 dark:text-gray-400 mt-1 mb-2">
+            {{ if not $d.IsZero }}
+            <time datetime="{{ $d.Format "2006-01-02T15:04:05-07:00" }}">{{ $d.Format "Jan 2, 2006" }}</time>
+            {{ end }}
+            {{ if gt .ReadingTime 0 }}
+            <span>{{ .ReadingTime }} min read</span>
+            {{ end }}
+            {{ $wc := .WordCount }}{{ if gt $wc 0 }}
+            <span>{{ $wc }} words</span>
+            {{ end }}
+            <span class="page-pv" data-bsz-path="{{ .RelPermalink }}">- views</span>
+          </div>
+          {{ with .Summary }}
+          <div class="text-gray-600 dark:text-gray-300 text-sm line-clamp-2">{{ . | plainify | truncate 140 }}</div>
+          {{ end }}
+          {{ with .Params.tags }}
+          <div class="flex flex-wrap gap-1.5 mt-1.5 relative z-20">
+            {{ range . }}
+            {{ $isCurrentTag := eq . $.Title }}
+            <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}" class="inline-flex items-center px-2 py-0.5 rounded-full text-xs {{ if $isCurrentTag }}bg-blue-100 dark:bg-slate-800 text-blue-700 dark:text-blue-300{{ else }}bg-blue-50 text-blue-600 dark:bg-blue-900/30 dark:text-blue-400{{ end }}" onclick="event.stopPropagation();">{{ . }}</a>
+            {{ end }}
+          </div>
+          {{ end }}
+          <div class="mt-3">
+            <span class="inline-flex items-center text-blue-600 text-sm group-hover:translate-x-1 transition-transform duration-300">
+              Read more
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+              </svg>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  {{ end }}
+  {{ if $groupOpen }}</div></div>{{ end }}
+  </div>
+
+  {{ if or .Paginator.HasPrev .Paginator.HasNext }}
+  <div class="mt-8 flex justify-between">
+    {{ if .Paginator.HasPrev }}
+      <a href="{{ .Paginator.Prev.URL }}" class="inline-flex items-center px-4 py-2 bg-white dark:bg-slate-900 shadow-sm rounded-md text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-slate-800 transition-colors text-sm">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+        </svg>
+        Previous
+      </a>
+    {{ else }}
+      <div></div>
+    {{ end }}
+    {{ if .Paginator.HasNext }}
+      <a href="{{ .Paginator.Next.URL }}" class="inline-flex items-center px-4 py-2 bg-white dark:bg-slate-900 shadow-sm rounded-md text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-slate-800 transition-colors text-sm">
+        Next
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+        </svg>
+      </a>
+    {{ else }}
+      <div></div>
+    {{ end }}
+  </div>
+  {{ end }}
+
+  <div class="mt-12 flex justify-center">
+    <a href="{{ "/" | relLangURL }}" class="inline-flex items-center px-4 py-2 bg-white dark:bg-slate-900 shadow-sm rounded-md text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-slate-800 transition-colors text-sm">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+      </svg>
+      Back to Home
+    </a>
+  </div>
+</div>
+{{ partial "busuanzi_list.html" . }}
+{{ end }}
