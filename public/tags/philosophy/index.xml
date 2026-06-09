@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
 		<title>Philosophy on Betzalel&#39;s Writings</title>
-		<link>http://localhost:1313/tags/philosophy/</link>
+		<link>http://localhost:1313/Betzalels_Writings/tags/philosophy/</link>
 		<description>Recent content in Philosophy on Betzalel&#39;s Writings</description>
 		<generator>Hugo</generator>
 		<language>en-us</language>
@@ -10,19 +10,19 @@
 		
 		
 		
-			<atom:link href="http://localhost:1313/tags/philosophy/index.xml" rel="self" type="application/rss+xml" />
+			<atom:link href="http://localhost:1313/Betzalels_Writings/tags/philosophy/index.xml" rel="self" type="application/rss+xml" />
 			<item>
 				<title>First Essay</title>
-				<link>http://localhost:1313/essays/first-essay/</link>
+				<link>http://localhost:1313/Betzalels_Writings/essays/first-essay/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-				<guid>http://localhost:1313/essays/first-essay/</guid>
+				<guid>http://localhost:1313/Betzalels_Writings/essays/first-essay/</guid>
 				<description>&lt;p&gt;This is a placeholder essay to show how the essays section now works. You can add your own content here and it will appear as a compact card in the essays list.&lt;/p&gt;</description>
 			</item>
 			<item>
 				<title>The Long Game</title>
-				<link>http://localhost:1313/novels/the-long-game/</link>
+				<link>http://localhost:1313/Betzalels_Writings/novels/the-long-game/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-				<guid>http://localhost:1313/novels/the-long-game/</guid>
+				<guid>http://localhost:1313/Betzalels_Writings/novels/the-long-game/</guid>
 				<description>&lt;p&gt;Select a chapter to continue the story.&lt;/p&gt;</description>
 			</item>
 	</channel>

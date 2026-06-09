@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
 		<title>Mystery on Betzalel&#39;s Writings</title>
-		<link>http://localhost:1313/tags/mystery/</link>
+		<link>http://localhost:1313/Betzalels_Writings/tags/mystery/</link>
 		<description>Recent content in Mystery on Betzalel&#39;s Writings</description>
 		<generator>Hugo</generator>
 		<language>en-us</language>
@@ -10,12 +10,12 @@
 		
 		
 		
-			<atom:link href="http://localhost:1313/tags/mystery/index.xml" rel="self" type="application/rss+xml" />
+			<atom:link href="http://localhost:1313/Betzalels_Writings/tags/mystery/index.xml" rel="self" type="application/rss+xml" />
 			<item>
 				<title>Winter City</title>
-				<link>http://localhost:1313/novels/winter-city/</link>
+				<link>http://localhost:1313/Betzalels_Writings/novels/winter-city/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-				<guid>http://localhost:1313/novels/winter-city/</guid>
+				<guid>http://localhost:1313/Betzalels_Writings/novels/winter-city/</guid>
 				<description>&lt;p&gt;Choose a chapter to explore Winter City.&lt;/p&gt;</description>
 			</item>
 	</channel>

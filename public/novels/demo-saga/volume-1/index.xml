@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
 		<title>Demo Saga Volume 1: The Beginning on Betzalel&#39;s Writings</title>
-		<link>http://localhost:1313/novels/demo-saga/volume-1/</link>
+		<link>http://localhost:1313/Betzalels_Writings/novels/demo-saga/volume-1/</link>
 		<description>Recent content in Demo Saga Volume 1: The Beginning on Betzalel&#39;s Writings</description>
 		<generator>Hugo</generator>
 		<language>en-us</language>
@@ -10,19 +10,19 @@
 		
 		
 		
-			<atom:link href="http://localhost:1313/novels/demo-saga/volume-1/index.xml" rel="self" type="application/rss+xml" />
+			<atom:link href="http://localhost:1313/Betzalels_Writings/novels/demo-saga/volume-1/index.xml" rel="self" type="application/rss+xml" />
 			<item>
 				<title>Chapter 1: The Call</title>
-				<link>http://localhost:1313/novels/demo-saga/volume-1/chapter-1/</link>
+				<link>http://localhost:1313/Betzalels_Writings/novels/demo-saga/volume-1/chapter-1/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-				<guid>http://localhost:1313/novels/demo-saga/volume-1/chapter-1/</guid>
+				<guid>http://localhost:1313/Betzalels_Writings/novels/demo-saga/volume-1/chapter-1/</guid>
 				<description>&lt;p&gt;An ordinary day turned extraordinary.&lt;/p&gt;</description>
 			</item>
 			<item>
 				<title>Chapter 2: The Road</title>
-				<link>http://localhost:1313/novels/demo-saga/volume-1/chapter-2/</link>
+				<link>http://localhost:1313/Betzalels_Writings/novels/demo-saga/volume-1/chapter-2/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-				<guid>http://localhost:1313/novels/demo-saga/volume-1/chapter-2/</guid>
+				<guid>http://localhost:1313/Betzalels_Writings/novels/demo-saga/volume-1/chapter-2/</guid>
 				<description>&lt;p&gt;The path forward was unclear, but there was no turning back.&lt;/p&gt;</description>
 			</item>
 	</channel>
