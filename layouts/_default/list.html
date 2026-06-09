@@ -13,20 +13,42 @@
         </div>
       {{ end }}
 
-      {{ $entries := slice }}
-      {{ range .Sections }}
-        {{ $entries = $entries | append . }}
+      {{ $showTimeline := and .Parent .Parent.IsHome }}
+      {{ $entries := .Pages }}
+      {{ if $showTimeline }}
+        {{ $entries = $entries.ByDate.Reverse }}
       {{ end }}
-      {{ range .RegularPages }}
-        {{ $entries = $entries | append . }}
-      {{ end }}
-
       {{ if gt (len $entries) 0 }}
-        {{ $paginator := .Paginate $entries }}
+        {{ $paginated := .Paginate $entries }}
         {{ partial "pagination.html" . }}
-        <div class="space-y-4 my-6">
-          {{ range $paginator.Pages }}
-            {{ partial "card.html" . }}
+        
+        <div class="{{ if $showTimeline }}space-y-16{{ else }}space-y-4{{ end }} my-6">
+          {{ if $showTimeline }}
+            {{ $prevYear := 0 }}
+            {{ $groupOpen := false }}
+            {{ range $paginated.Pages }}
+              {{ $d := .Date }}{{ if $d.IsZero }}{{ with .File }}{{ with .FileInfo.ModTime }}{{ if not .IsZero }}{{ $d = . }}{{ end }}{{ end }}{{ end }}{{ end }}
+              {{ $year := $d.Year }}
+              {{ if and (gt $year 1) (ne $year $prevYear) }}
+                {{ if $groupOpen }}</div></div>{{ end }}
+                {{ $groupOpen = true }}{{ $prevYear = $year }}
+                <div class="relative">
+                  <div class="mb-8 flex items-center">
+                    <div class="flex-shrink-0 w-16 h-16 rounded-full bg-gradient-to-br from-blue-100 to-blue-50 dark:from-slate-700/40 dark:to-slate-800/40 flex items-center justify-center text-blue-700 dark:text-blue-300 font-bold text-xl shadow-sm relative">
+                      <span class="relative z-10">{{ $year }}</span>
+                      <div class="absolute inset-0 rounded-full bg-blue-200 dark:bg-slate-600 opacity-20 blur-sm"></div>
+                    </div>
+                    <div class="ml-4 h-0.5 bg-gradient-to-r from-blue-200 via-blue-100 to-transparent flex-grow"></div>
+                  </div>
+                  <div class="ml-8 space-y-6">
+              {{ end }}
+              {{ partial "card.html" . }}
+            {{ end }}
+            {{ if $groupOpen }}</div></div>{{ end }}
+          {{ else }}
+            {{ range $paginated.Pages }}
+              {{ partial "card.html" . }}
+            {{ end }}
           {{ end }}
         </div>
         {{ partial "pagination.html" . }}

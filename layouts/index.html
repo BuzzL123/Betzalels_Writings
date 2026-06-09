@@ -13,6 +13,7 @@
       {{ range .RegularPages }}{{ $essayEntries = $essayEntries | append . }}{{ end }}
       {{ range .Sections }}{{ $essayEntries = $essayEntries | append . }}{{ end }}
     {{ end }}
+    {{ $essayEntries = sort $essayEntries "Date" "desc" }}
     {{ if $essayEntries }}
       <section class="mb-10">
         <h2 class="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-6 relative after:block after:w-12 after:h-0.5 after:bg-blue-500 after:mt-2">Recent Essays</h2>
@@ -29,6 +30,7 @@
         {{ else }}{{ $novelEntries = $novelEntries | append . }}{{ end }}
       {{ end }}
     {{ end }}
+    {{ $novelEntries = sort $novelEntries "Date" "desc" }}
     {{ if $novelEntries }}
       <section class="mb-10">
         <h2 class="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-6 relative after:block after:w-12 after:h-0.5 after:bg-blue-500 after:mt-2">Recent Novels</h2>
@@ -43,6 +45,7 @@
       {{ range .RegularPages }}{{ $draftEntries = $draftEntries | append . }}{{ end }}
       {{ range .Sections }}{{ $draftEntries = $draftEntries | append . }}{{ end }}
     {{ end }}
+    {{ $draftEntries = sort $draftEntries "Date" "desc" }}
     {{ if $draftEntries }}
       <section class="mb-10">
         <h2 class="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-6 relative after:block after:w-12 after:h-0.5 after:bg-blue-500 after:mt-2">Drafts</h2>

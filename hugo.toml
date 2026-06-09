@@ -26,6 +26,9 @@ theme = "void"
 
 paginate = 5
 
+[frontmatter]
+  date = ["date", "publishDate", "lastmod", ":filename", ":fileModTime"]
+
 [build.buildStats]
   enable = true
 
